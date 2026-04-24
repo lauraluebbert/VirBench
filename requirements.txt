@@ -1,0 +1,12 @@
+anthropic
+edison-client
+gget
+matplotlib
+numpy
+openai
+pandas
+python-dotenv
+biomni
+langchain_openai
+langchain-anthropic
+gget>=0.30.3

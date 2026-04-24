@@ -1,0 +1,628 @@
+{
+  "timestamp": "20260221_144104",
+  "model": "gpt-5.2",
+  "total_queries": 10,
+  "total_runs": 30,
+  "results": [
+    {
+      "query_id": 1,
+      "run_number": 1,
+      "expected_count": 14,
+      "retrieved_count": 14,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "14\n```json\n{\n  \"methods\": [\"pip install --upgrade gget\", \"gget.virus (NCBI Virus + NCBI E-utilities)\", \"counted rows in output metadata CSV\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with filters: geographic_location='Africa', collection & release dates 2020-01-01..2025-12-31, min_seq_length=11000, max_ambiguous_chars=10.\",\n    \"gget reported: 201 total records -> 25 after metadata-only filters -> 14 after sequence-dependent ambiguous-character filter.\",\n    \"Final count taken as number of records in 3052518_metadata.csv.\"\n  ]\n}\n```",
+      "duration_seconds": 18.242604,
+      "tool_call_count": 1,
+      "methods": [
+        "pip install --upgrade gget",
+        "gget.virus (NCBI Virus + NCBI E-utilities)",
+        "counted rows in output metadata CSV"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052518 with filters: geographic_location='Africa', collection & release dates 2020-01-01..2025-12-31, min_seq_length=11000, max_ambiguous_chars=10.",
+        "gget reported: 201 total records -> 25 after metadata-only filters -> 14 after sequence-dependent ambiguous-character filter.",
+        "Final count taken as number of records in 3052518_metadata.csv."
+      ]
+    },
+    {
+      "query_id": 1,
+      "run_number": 2,
+      "expected_count": 14,
+      "retrieved_count": 14,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "14\n```json\n{\n  \"methods\": [\"gget.virus (gget 0.30.2) querying NCBI Virus metadata + NCBI E-utilities sequence fetch\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with filters: geographic_location='Africa', collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min_seq_length=11000, max_ambiguous_chars=10.\",\n    \"NCBI Virus metadata stage: 201 records total; 25 passed metadata-only filters.\",\n    \"Sequence-dependent filtering removed 11 for >10 ambiguous characters, leaving 14 final sequences.\"\n  ]\n}\n```",
+      "duration_seconds": 24.253613,
+      "tool_call_count": 6,
+      "methods": [
+        "gget.virus (gget 0.30.2) querying NCBI Virus metadata + NCBI E-utilities sequence fetch"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052518 with filters: geographic_location='Africa', collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min_seq_length=11000, max_ambiguous_chars=10.",
+        "NCBI Virus metadata stage: 201 records total; 25 passed metadata-only filters.",
+        "Sequence-dependent filtering removed 11 for >10 ambiguous characters, leaving 14 final sequences."
+      ]
+    },
+    {
+      "query_id": 1,
+      "run_number": 3,
+      "expected_count": 14,
+      "retrieved_count": 14,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "14\n\n```json\n{\n  \"methods\": [\"gget==0.30.2 (gget.virus) querying NCBI Virus + NCBI E-utilities via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with filters: geographic_location=Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min_seq_length=11000, max_ambiguous_chars=10\",\n    \"gget reported: 201 total records from API \u2192 25 after metadata-only filters \u2192 14 after sequence-dependent filters (ambiguous chars)\"\n  ]\n}\n```",
+      "duration_seconds": 33.08578,
+      "tool_call_count": 9,
+      "methods": [
+        "gget==0.30.2 (gget.virus) querying NCBI Virus + NCBI E-utilities via gget"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052518 with filters: geographic_location=Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min_seq_length=11000, max_ambiguous_chars=10",
+        "gget reported: 201 total records from API \u2192 25 after metadata-only filters \u2192 14 after sequence-dependent filters (ambiguous chars)"
+      ]
+    },
+    {
+      "query_id": 2,
+      "run_number": 1,
+      "expected_count": 13,
+      "retrieved_count": 13,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "13\n```json\n{\n  \"methods\": [\"gget.virus (NCBI Virus metadata API + NCBI E-utilities efetch for FASTA)\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with filters: geographic_location=Africa, collection_date 2020-01-01..2025-12-31, release_date 2020-01-01..2025-12-31, length 4000..6000\",\n    \"Applied sequence-dependent filter max_ambiguous_chars=10 after downloading FASTA for metadata-filtered accessions\",\n    \"Final count taken from the rows in the saved metadata CSV (3052518_metadata.csv) after all filters\"\n  ]\n}\n```",
+      "duration_seconds": 11.472545,
+      "tool_call_count": 1,
+      "methods": [
+        "gget.virus (NCBI Virus metadata API + NCBI E-utilities efetch for FASTA)"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052518 with filters: geographic_location=Africa, collection_date 2020-01-01..2025-12-31, release_date 2020-01-01..2025-12-31, length 4000..6000",
+        "Applied sequence-dependent filter max_ambiguous_chars=10 after downloading FASTA for metadata-filtered accessions",
+        "Final count taken from the rows in the saved metadata CSV (3052518_metadata.csv) after all filters"
+      ]
+    },
+    {
+      "query_id": 2,
+      "run_number": 2,
+      "expected_count": 13,
+      "retrieved_count": 13,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "13\n```json\n{\n  \"methods\": \"pip install --upgrade gget; used gget.virus() (NCBI Virus + NCBI E-utilities) with filters: taxid=3052518, geographic_location='Africa', collection_date 2020-01-01..2025-12-31, release_date 2020-01-01..2025-12-31, length 4000..6000, max_ambiguous_chars=10; counted rows in the resulting *_metadata.csv\",\n  \"reasoning\": [\n    \"NCBI Virus metadata filtering yielded 14 candidate accessions\",\n    \"Sequence-dependent filter (max ambiguous chars) removed 1 record\",\n    \"Final dataset contained 13 sequences\"\n  ]\n}\n```",
+      "duration_seconds": 24.044312,
+      "tool_call_count": 2,
+      "methods": "pip install --upgrade gget; used gget.virus() (NCBI Virus + NCBI E-utilities) with filters: taxid=3052518, geographic_location='Africa', collection_date 2020-01-01..2025-12-31, release_date 2020-01-01..2025-12-31, length 4000..6000, max_ambiguous_chars=10; counted rows in the resulting *_metadata.csv",
+      "reasoning": [
+        "NCBI Virus metadata filtering yielded 14 candidate accessions",
+        "Sequence-dependent filter (max ambiguous chars) removed 1 record",
+        "Final dataset contained 13 sequences"
+      ]
+    },
+    {
+      "query_id": 2,
+      "run_number": 3,
+      "expected_count": 13,
+      "retrieved_count": 13,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "13\n```json\n{\n  \"methods\": [\"gget.virus (NCBI Virus API + NCBI E-utilities via gget)\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with geographic_location='Africa', collection date and release date within 2020-01-01..2025-12-31, and length 4000..6000 bp.\",\n    \"Applied sequence-dependent filter max_ambiguous_chars=10; 1 of 14 sequences was removed at this step.\",\n    \"Counted final accessions from the generated metadata CSV (13 rows).\"\n  ]\n}\n```",
+      "duration_seconds": 22.307698,
+      "tool_call_count": 2,
+      "methods": [
+        "gget.virus (NCBI Virus API + NCBI E-utilities via gget)"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052518 with geographic_location='Africa', collection date and release date within 2020-01-01..2025-12-31, and length 4000..6000 bp.",
+        "Applied sequence-dependent filter max_ambiguous_chars=10; 1 of 14 sequences was removed at this step.",
+        "Counted final accessions from the generated metadata CSV (13 rows)."
+      ]
+    },
+    {
+      "query_id": 3,
+      "run_number": 1,
+      "expected_count": 23,
+      "retrieved_count": 23,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "23\n```json\n{\n  \"methods\": [\"gget.virus (gget 0.30.2) querying NCBI Virus/E-utilities; counted rows in 3052518_metadata.csv\"],\n  \"reasoning\": [\n    \"Applied metadata filters: geographic_location=Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, length 1000..2000\",\n    \"Applied sequence-dependent filter: max_ambiguous_chars=10\",\n    \"Final count taken from the filtered metadata CSV (23 records)\"\n  ]\n}\n```",
+      "duration_seconds": 12.11111,
+      "tool_call_count": 1,
+      "methods": [
+        "gget.virus (gget 0.30.2) querying NCBI Virus/E-utilities; counted rows in 3052518_metadata.csv"
+      ],
+      "reasoning": [
+        "Applied metadata filters: geographic_location=Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, length 1000..2000",
+        "Applied sequence-dependent filter: max_ambiguous_chars=10",
+        "Final count taken from the filtered metadata CSV (23 records)"
+      ]
+    },
+    {
+      "query_id": 3,
+      "run_number": 2,
+      "expected_count": 23,
+      "retrieved_count": 23,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "23\n\n```json\n{\n  \"methods\": {\n    \"tool\": \"gget.virus (gget 0.30.2)\",\n    \"data_source\": \"NCBI Virus metadata + NCBI E-utilities sequence fetch\",\n    \"filters\": {\n      \"taxid\": 3052518,\n      \"geographic_location\": \"Africa\",\n      \"collection_date_range\": [\"2020-01-01\", \"2025-12-31\"],\n      \"release_date_range\": [\"2020-01-01\", \"2025-12-31\"],\n      \"sequence_length_bp\": [1000, 2000],\n      \"max_ambiguous_chars\": 10\n    }\n  },\n  \"reasoning\": [\n    \"Ran gget virus query for TaxID 3052518 with specified metadata and sequence filters.\",\n    \"Counted rows in the final filtered metadata CSV (one row per retained accession).\",\n    \"Final sequences passing all filters = 23.\"\n  ]\n}\n```",
+      "duration_seconds": 14.747691,
+      "tool_call_count": 1,
+      "methods": {
+        "tool": "gget.virus (gget 0.30.2)",
+        "data_source": "NCBI Virus metadata + NCBI E-utilities sequence fetch",
+        "filters": {
+          "taxid": 3052518,
+          "geographic_location": "Africa",
+          "collection_date_range": [
+            "2020-01-01",
+            "2025-12-31"
+          ],
+          "release_date_range": [
+            "2020-01-01",
+            "2025-12-31"
+          ],
+          "sequence_length_bp": [
+            1000,
+            2000
+          ],
+          "max_ambiguous_chars": 10
+        }
+      },
+      "reasoning": [
+        "Ran gget virus query for TaxID 3052518 with specified metadata and sequence filters.",
+        "Counted rows in the final filtered metadata CSV (one row per retained accession).",
+        "Final sequences passing all filters = 23."
+      ]
+    },
+    {
+      "query_id": 3,
+      "run_number": 3,
+      "expected_count": 23,
+      "retrieved_count": 23,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "23\n```json\n{\n  \"methods\": [\"pip install --upgrade gget\", \"gget.virus (NCBI Virus + NCBI E-utilities)\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with geographic_location=Africa, collection/release date windows 2020-01-01..2025-12-31, length 1000..2000 bp, max_ambiguous_chars=10.\",\n    \"Count taken from the final filtered metadata CSV produced by gget virus (23 rows), consistent with the run summary 'After all filters (final): 23'.\"\n  ]\n}\n```",
+      "duration_seconds": 15.390322,
+      "tool_call_count": 1,
+      "methods": [
+        "pip install --upgrade gget",
+        "gget.virus (NCBI Virus + NCBI E-utilities)"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052518 with geographic_location=Africa, collection/release date windows 2020-01-01..2025-12-31, length 1000..2000 bp, max_ambiguous_chars=10.",
+        "Count taken from the final filtered metadata CSV produced by gget virus (23 rows), consistent with the run summary 'After all filters (final): 23'."
+      ]
+    },
+    {
+      "query_id": 4,
+      "run_number": 1,
+      "expected_count": 13,
+      "retrieved_count": 13,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "13\n\n```json\n{\n  \"methods\": [\"gget.virus (NCBI Virus API + NCBI E-utilities efetch)\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052310 with geographic_location=Nigeria, collection and release date ranges (2020-01-01 to 2025-12-31), and min_seq_length=6000.\",\n    \"Applied max_ambiguous_chars=10 as a sequence-dependent filter after downloading FASTA.\",\n    \"Counted rows in the final gget-produced metadata CSV (records passing all filters).\"\n  ]\n}\n```",
+      "duration_seconds": 10.839981,
+      "tool_call_count": 1,
+      "methods": [
+        "gget.virus (NCBI Virus API + NCBI E-utilities efetch)"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052310 with geographic_location=Nigeria, collection and release date ranges (2020-01-01 to 2025-12-31), and min_seq_length=6000.",
+        "Applied max_ambiguous_chars=10 as a sequence-dependent filter after downloading FASTA.",
+        "Counted rows in the final gget-produced metadata CSV (records passing all filters)."
+      ]
+    },
+    {
+      "query_id": 4,
+      "run_number": 2,
+      "expected_count": 13,
+      "retrieved_count": 13,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "13\n```json\n{\n  \"methods\": [\"gget.virus (pip package gget; NCBI Virus API + NCBI E-utilities sequence fetch)\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052310 with server-side metadata filters: Nigeria, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min length 6000.\",\n    \"Downloaded sequences for metadata-passing accessions and applied sequence-dependent filter max_ambiguous_chars=10.\",\n    \"Final count taken from the resulting metadata CSV (one row per retained sequence).\"\n  ]\n}\n```",
+      "duration_seconds": 15.334898,
+      "tool_call_count": 2,
+      "methods": [
+        "gget.virus (pip package gget; NCBI Virus API + NCBI E-utilities sequence fetch)"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052310 with server-side metadata filters: Nigeria, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min length 6000.",
+        "Downloaded sequences for metadata-passing accessions and applied sequence-dependent filter max_ambiguous_chars=10.",
+        "Final count taken from the resulting metadata CSV (one row per retained sequence)."
+      ]
+    },
+    {
+      "query_id": 4,
+      "run_number": 3,
+      "expected_count": 13,
+      "retrieved_count": 13,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "13\n```json\n{\n  \"methods\": [\"pip install --upgrade gget\", \"gget.virus (NCBI Virus API + NCBI E-utilities efetch)\", \"Counted rows in gget output metadata CSV\"],\n  \"reasoning\": [\n    \"Applied filters: geographic_location=Nigeria; collection_date 2020-01-01..2025-12-31; release_date 2020-01-01..2025-12-31; length>=6000; ambiguous_chars<=10\",\n    \"gget metadata-only filtering yielded 14 accessions; sequence-dependent N-filter removed 1\",\n    \"Final sequences passing all criteria: 13\"\n  ]\n}\n```",
+      "duration_seconds": 14.192862,
+      "tool_call_count": 1,
+      "methods": [
+        "pip install --upgrade gget",
+        "gget.virus (NCBI Virus API + NCBI E-utilities efetch)",
+        "Counted rows in gget output metadata CSV"
+      ],
+      "reasoning": [
+        "Applied filters: geographic_location=Nigeria; collection_date 2020-01-01..2025-12-31; release_date 2020-01-01..2025-12-31; length>=6000; ambiguous_chars<=10",
+        "gget metadata-only filtering yielded 14 accessions; sequence-dependent N-filter removed 1",
+        "Final sequences passing all criteria: 13"
+      ]
+    },
+    {
+      "query_id": 5,
+      "run_number": 1,
+      "expected_count": 6,
+      "retrieved_count": 6,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "6\n```json\n{\n  \"methods\": [\n    \"pip install --upgrade gget\",\n    \"gget.virus(query_taxid=3052310, geographic_location='Nigeria', min/max_collection_date, min/max_release_date, min/max_seq_length, max_ambiguous_chars=10)\",\n    \"Counted rows in the final filtered metadata CSV produced by gget virus\"\n  ],\n  \"reasoning\": [\n    \"Applied all requested metadata and sequence-dependent filters via gget virus.\",\n    \"NCBI Virus API returned 309 records; 8 passed metadata-only filters; 6 passed all filters after excluding 2 for >10 ambiguous bases.\",\n    \"Final count equals the number of sequences in the output metadata file.\"\n  ]\n}\n```",
+      "duration_seconds": 11.753327,
+      "tool_call_count": 1,
+      "methods": [
+        "pip install --upgrade gget",
+        "gget.virus(query_taxid=3052310, geographic_location='Nigeria', min/max_collection_date, min/max_release_date, min/max_seq_length, max_ambiguous_chars=10)",
+        "Counted rows in the final filtered metadata CSV produced by gget virus"
+      ],
+      "reasoning": [
+        "Applied all requested metadata and sequence-dependent filters via gget virus.",
+        "NCBI Virus API returned 309 records; 8 passed metadata-only filters; 6 passed all filters after excluding 2 for >10 ambiguous bases.",
+        "Final count equals the number of sequences in the output metadata file."
+      ]
+    },
+    {
+      "query_id": 5,
+      "run_number": 2,
+      "expected_count": 6,
+      "retrieved_count": 6,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "6\n```json\n{\n  \"methods\": [\"gget.virus (gget v0.30.2) querying NCBI Virus metadata + NCBI E-utilities sequence fetch; filters: geographic_location=Nigeria, collection/release date ranges, length 2500-4000 bp, max_ambiguous_chars=10\"],\n  \"reasoning\": [\n    \"NCBI Virus metadata returned 309 records for TaxID 3052310; 8 passed metadata-only filters (location/date/length).\",\n    \"After downloading those 8 sequences, 2 were excluded by the max_ambiguous_chars=10 filter.\",\n    \"Final sequences passing all criteria = 6 (counted from the final metadata CSV/FASTA outputs).\"\n  ]\n}\n```",
+      "duration_seconds": 34.328453,
+      "tool_call_count": 12,
+      "methods": [
+        "gget.virus (gget v0.30.2) querying NCBI Virus metadata + NCBI E-utilities sequence fetch; filters: geographic_location=Nigeria, collection/release date ranges, length 2500-4000 bp, max_ambiguous_chars=10"
+      ],
+      "reasoning": [
+        "NCBI Virus metadata returned 309 records for TaxID 3052310; 8 passed metadata-only filters (location/date/length).",
+        "After downloading those 8 sequences, 2 were excluded by the max_ambiguous_chars=10 filter.",
+        "Final sequences passing all criteria = 6 (counted from the final metadata CSV/FASTA outputs)."
+      ]
+    },
+    {
+      "query_id": 5,
+      "run_number": 3,
+      "expected_count": 6,
+      "retrieved_count": 6,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "6\n```json\n{\n  \"methods\": {\n    \"tool\": \"gget.virus (pip package: gget)\",\n    \"source\": \"NCBI Virus via INSDC/NCBI E-utilities (as implemented by gget virus)\",\n    \"filters\": {\n      \"taxid\": \"3052310\",\n      \"geographic_location\": \"Nigeria\",\n      \"min_collection_date\": \"2020-01-01\",\n      \"max_collection_date\": \"2025-12-31\",\n      \"min_release_date\": \"2020-01-01\",\n      \"max_release_date\": \"2025-12-31\",\n      \"min_seq_length\": 2500,\n      \"max_seq_length\": 4000,\n      \"max_ambiguous_chars\": 10\n    },\n    \"counting\": \"Counted rows in gget output metadata CSV after all filters\"\n  },\n  \"reasoning\": [\n    \"Queried NCBI Virus for TaxID 3052310 and applied metadata-only filters first (location/dates/length).\",\n    \"Downloaded sequences for passing accessions and applied sequence-level filter for ambiguous characters (<=10 N's).\",\n    \"Final count equals number of records in the filtered metadata CSV.\"\n  ]\n}\n```",
+      "duration_seconds": 14.477891,
+      "tool_call_count": 1,
+      "methods": {
+        "tool": "gget.virus (pip package: gget)",
+        "source": "NCBI Virus via INSDC/NCBI E-utilities (as implemented by gget virus)",
+        "filters": {
+          "taxid": "3052310",
+          "geographic_location": "Nigeria",
+          "min_collection_date": "2020-01-01",
+          "max_collection_date": "2025-12-31",
+          "min_release_date": "2020-01-01",
+          "max_release_date": "2025-12-31",
+          "min_seq_length": 2500,
+          "max_seq_length": 4000,
+          "max_ambiguous_chars": 10
+        },
+        "counting": "Counted rows in gget output metadata CSV after all filters"
+      },
+      "reasoning": [
+        "Queried NCBI Virus for TaxID 3052310 and applied metadata-only filters first (location/dates/length).",
+        "Downloaded sequences for passing accessions and applied sequence-level filter for ambiguous characters (<=10 N's).",
+        "Final count equals number of records in the filtered metadata CSV."
+      ]
+    },
+    {
+      "query_id": 6,
+      "run_number": 1,
+      "expected_count": 6,
+      "retrieved_count": 6,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "6\n\n```json\n{\n  \"methods\": [\"pip install --upgrade gget\", \"gget.virus (NCBI Virus + NCBI E-utilities via gget)\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052310 with geographic_location='Sierra Leone' and collection/release date windows 2020-01-01..2025-12-31\",\n    \"Applied min_seq_length=6000 and max_ambiguous_chars=10 (post-download sequence filter)\",\n    \"Counted final passing records from the saved metadata CSV (6 sequences)\"\n  ]\n}\n```",
+      "duration_seconds": 12.515393,
+      "tool_call_count": 1,
+      "methods": [
+        "pip install --upgrade gget",
+        "gget.virus (NCBI Virus + NCBI E-utilities via gget)"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052310 with geographic_location='Sierra Leone' and collection/release date windows 2020-01-01..2025-12-31",
+        "Applied min_seq_length=6000 and max_ambiguous_chars=10 (post-download sequence filter)",
+        "Counted final passing records from the saved metadata CSV (6 sequences)"
+      ]
+    },
+    {
+      "query_id": 6,
+      "run_number": 2,
+      "expected_count": 6,
+      "retrieved_count": 6,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "6\n```json\n{\"methods\":[\"gget.virus (pip package `gget`, querying NCBI Virus + NCBI E-utilities)\"],\"reasoning\":[\"Queried TaxID 3052310 with filters: geographic_location='Sierra Leone', collection_date and release_date within 2020-01-01..2025-12-31, min_seq_length=6000, max_ambiguous_chars=10.\",\"gget returned 122 metadata records, 9 after metadata-only filters, and 6 after sequence-dependent ambiguous-character filtering; final count taken from the saved metadata CSV (6 unique accessions).\"]}\n```",
+      "duration_seconds": 14.888232,
+      "tool_call_count": 1,
+      "methods": [
+        "gget.virus (pip package `gget`, querying NCBI Virus + NCBI E-utilities)"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052310 with filters: geographic_location='Sierra Leone', collection_date and release_date within 2020-01-01..2025-12-31, min_seq_length=6000, max_ambiguous_chars=10.",
+        "gget returned 122 metadata records, 9 after metadata-only filters, and 6 after sequence-dependent ambiguous-character filtering; final count taken from the saved metadata CSV (6 unique accessions)."
+      ]
+    },
+    {
+      "query_id": 6,
+      "run_number": 3,
+      "expected_count": 6,
+      "retrieved_count": 6,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "6\n```json\n{\n  \"methods\": [\"gget.virus (gget 0.30.2) querying NCBI Virus + NCBI E-utilities; counted rows in output metadata CSV\"],\n  \"reasoning\": [\n    \"Applied requested metadata filters (geographic_location=Sierra Leone; collection/release dates within 2020-01-01..2025-12-31; min_seq_length=6000) via gget.virus.\",\n    \"Downloaded sequences for passing accessions, then applied sequence-dependent filter max_ambiguous_chars=10.\",\n    \"Final count taken from the resulting 3052310_metadata.csv (6 rows).\"\n  ]\n}\n```",
+      "duration_seconds": 14.705563,
+      "tool_call_count": 2,
+      "methods": [
+        "gget.virus (gget 0.30.2) querying NCBI Virus + NCBI E-utilities; counted rows in output metadata CSV"
+      ],
+      "reasoning": [
+        "Applied requested metadata filters (geographic_location=Sierra Leone; collection/release dates within 2020-01-01..2025-12-31; min_seq_length=6000) via gget.virus.",
+        "Downloaded sequences for passing accessions, then applied sequence-dependent filter max_ambiguous_chars=10.",
+        "Final count taken from the resulting 3052310_metadata.csv (6 rows)."
+      ]
+    },
+    {
+      "query_id": 7,
+      "run_number": 1,
+      "expected_count": 19,
+      "retrieved_count": 19,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "19\n```json\n{\n  \"methods\": [\"gget.virus (gget v0.30.2) querying NCBI Virus + NCBI E-utilities; counted FASTA headers and cross-checked metadata CSV rows\"],\n  \"reasoning\": [\n    \"Applied filters: TaxID 3052310, geographic_location='Sierra Leone', collection_date 2020-01-01..2025-12-31, release_date 2020-01-01..2025-12-31, length 2500..4000, max_ambiguous_chars=10.\",\n    \"gget reported 122 API records \u2192 25 after metadata-only filters \u2192 19 after sequence-dependent ambiguous-character filter.\",\n    \"Final count verified by counting sequences in the output FASTA (19) and matching metadata CSV rows (19).\"\n  ]\n}\n```",
+      "duration_seconds": 33.245986,
+      "tool_call_count": 9,
+      "methods": [
+        "gget.virus (gget v0.30.2) querying NCBI Virus + NCBI E-utilities; counted FASTA headers and cross-checked metadata CSV rows"
+      ],
+      "reasoning": [
+        "Applied filters: TaxID 3052310, geographic_location='Sierra Leone', collection_date 2020-01-01..2025-12-31, release_date 2020-01-01..2025-12-31, length 2500..4000, max_ambiguous_chars=10.",
+        "gget reported 122 API records \u2192 25 after metadata-only filters \u2192 19 after sequence-dependent ambiguous-character filter.",
+        "Final count verified by counting sequences in the output FASTA (19) and matching metadata CSV rows (19)."
+      ]
+    },
+    {
+      "query_id": 7,
+      "run_number": 2,
+      "expected_count": 19,
+      "retrieved_count": 19,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "19\n```json\n{\n  \"methods\": [\n    \"pip install --upgrade gget\",\n    \"gget.virus (NCBI Virus / INSDC via NCBI)\",\n    \"count rows in output *_metadata.csv\"\n  ],\n  \"reasoning\": [\n    \"Applied Sierra Leone geographic_location, collection/release date windows (2020-01-01 to 2025-12-31), length (2500-4000 bp), and max_ambiguous_chars=10 via gget.virus.\",\n    \"Used the generated metadata CSV as the definitive list of sequences passing all metadata + sequence-dependent filters.\",\n    \"Final count computed as the number of rows in that filtered metadata CSV.\"\n  ]\n}\n```",
+      "duration_seconds": 16.894249,
+      "tool_call_count": 2,
+      "methods": [
+        "pip install --upgrade gget",
+        "gget.virus (NCBI Virus / INSDC via NCBI)",
+        "count rows in output *_metadata.csv"
+      ],
+      "reasoning": [
+        "Applied Sierra Leone geographic_location, collection/release date windows (2020-01-01 to 2025-12-31), length (2500-4000 bp), and max_ambiguous_chars=10 via gget.virus.",
+        "Used the generated metadata CSV as the definitive list of sequences passing all metadata + sequence-dependent filters.",
+        "Final count computed as the number of rows in that filtered metadata CSV."
+      ]
+    },
+    {
+      "query_id": 7,
+      "run_number": 3,
+      "expected_count": 19,
+      "retrieved_count": 19,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "19\n```json\n{\n  \"methods\": [\"gget.virus (gget v0.30.2) querying NCBI Virus + NCBI E-utilities FASTA fetch\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052310 with geographic_location='Sierra Leone', collection/release date windows, and length (2500-4000 bp) filters via gget virus\",\n    \"Applied max_ambiguous_chars=10 as a sequence-dependent filter after FASTA download\",\n    \"Final sequence count taken from the resulting filtered metadata/FASTA (19 accessions)\"\n  ]\n}\n```",
+      "duration_seconds": 28.284376,
+      "tool_call_count": 9,
+      "methods": [
+        "gget.virus (gget v0.30.2) querying NCBI Virus + NCBI E-utilities FASTA fetch"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052310 with geographic_location='Sierra Leone', collection/release date windows, and length (2500-4000 bp) filters via gget virus",
+        "Applied max_ambiguous_chars=10 as a sequence-dependent filter after FASTA download",
+        "Final sequence count taken from the resulting filtered metadata/FASTA (19 accessions)"
+      ]
+    },
+    {
+      "query_id": 8,
+      "run_number": 1,
+      "expected_count": 19,
+      "retrieved_count": 19,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "19\n\n```json\n{\n  \"methods\": [\"gget.virus (gget via pip)\", \"NCBI Virus API (metadata)\", \"NCBI E-utilities efetch (FASTA download)\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052310 with filters: geographic_location=Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min length 6000, max ambiguous chars 10.\",\n    \"After metadata-only filtering: 23 accessions; after sequence-dependent ambiguous-N filter: 19 sequences.\",\n    \"Count taken from the final gget output metadata CSV (3052310_metadata.csv) row count.\"\n  ]\n}\n```",
+      "duration_seconds": 12.990871,
+      "tool_call_count": 1,
+      "methods": [
+        "gget.virus (gget via pip)",
+        "NCBI Virus API (metadata)",
+        "NCBI E-utilities efetch (FASTA download)"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052310 with filters: geographic_location=Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min length 6000, max ambiguous chars 10.",
+        "After metadata-only filtering: 23 accessions; after sequence-dependent ambiguous-N filter: 19 sequences.",
+        "Count taken from the final gget output metadata CSV (3052310_metadata.csv) row count."
+      ]
+    },
+    {
+      "query_id": 8,
+      "run_number": 2,
+      "expected_count": 19,
+      "retrieved_count": 19,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "19\n\n```json\n{\n  \"methods\": [\"pip install --upgrade gget\", \"gget.virus() against NCBI Virus/E-utilities; counted rows in *_metadata.csv\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052310 with geographic_location=Africa, collection+release date bounds (2020-01-01..2025-12-31), min_seq_length=6000, max_ambiguous_chars=10\",\n    \"gget reported 755 records from API, 23 after metadata-only filters, and 19 after sequence-dependent N-count filtering\",\n    \"Final count taken from the saved metadata CSV row count (19)\"\n  ]\n}\n```",
+      "duration_seconds": 13.976187,
+      "tool_call_count": 1,
+      "methods": [
+        "pip install --upgrade gget",
+        "gget.virus() against NCBI Virus/E-utilities; counted rows in *_metadata.csv"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052310 with geographic_location=Africa, collection+release date bounds (2020-01-01..2025-12-31), min_seq_length=6000, max_ambiguous_chars=10",
+        "gget reported 755 records from API, 23 after metadata-only filters, and 19 after sequence-dependent N-count filtering",
+        "Final count taken from the saved metadata CSV row count (19)"
+      ]
+    },
+    {
+      "query_id": 8,
+      "run_number": 3,
+      "expected_count": 19,
+      "retrieved_count": 19,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "19\n\n```json\n{\n  \"methods\": [\"gget.virus (gget v0.30.2) via NCBI Virus + NCBI E-utilities; counted rows in output 3052310_metadata.csv\"],\n  \"reasoning\": [\n    \"Applied filters: geographic_location='Africa', collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min_seq_length=6000, max_ambiguous_chars=10\",\n    \"gget retrieved 755 metadata records, 23 passed metadata-only filters, and 19 passed sequence-dependent N-count filtering\",\n    \"Final count taken as number of unique accessions in the filtered metadata CSV (19)\"\n  ]\n}\n```",
+      "duration_seconds": 41.01165,
+      "tool_call_count": 10,
+      "methods": [
+        "gget.virus (gget v0.30.2) via NCBI Virus + NCBI E-utilities; counted rows in output 3052310_metadata.csv"
+      ],
+      "reasoning": [
+        "Applied filters: geographic_location='Africa', collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, min_seq_length=6000, max_ambiguous_chars=10",
+        "gget retrieved 755 metadata records, 23 passed metadata-only filters, and 19 passed sequence-dependent N-count filtering",
+        "Final count taken as number of unique accessions in the filtered metadata CSV (19)"
+      ]
+    },
+    {
+      "query_id": 9,
+      "run_number": 1,
+      "expected_count": 25,
+      "retrieved_count": 25,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "25\n\n```json\n{\n  \"methods\": [\"gget.virus (NCBI Virus + NCBI E-utilities via gget v0.30.2)\", \"Counted rows in 3052310_metadata.csv / confirmed via command_summary.txt\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052310 with geographic_location='Africa' and collection/release date windows 2020-01-01..2025-12-31\",\n    \"Applied length filter 2500..4000 bp and max_ambiguous_chars=10\",\n    \"Final sequences passing all filters = 25\"\n  ]\n}\n```",
+      "duration_seconds": 27.582017,
+      "tool_call_count": 7,
+      "methods": [
+        "gget.virus (NCBI Virus + NCBI E-utilities via gget v0.30.2)",
+        "Counted rows in 3052310_metadata.csv / confirmed via command_summary.txt"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052310 with geographic_location='Africa' and collection/release date windows 2020-01-01..2025-12-31",
+        "Applied length filter 2500..4000 bp and max_ambiguous_chars=10",
+        "Final sequences passing all filters = 25"
+      ]
+    },
+    {
+      "query_id": 9,
+      "run_number": 2,
+      "expected_count": 25,
+      "retrieved_count": 25,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "25\n\n```json\n{\n  \"methods\": [\n    \"pip install --upgrade gget\",\n    \"gget.virus (NCBI Virus via INSDC/NCBI E-utilities)\",\n    \"Counted unique accessions in the final gget metadata CSV\"\n  ],\n  \"reasoning\": [\n    \"Applied filters: geographic_location=Africa; collection and release dates within 2020-01-01 to 2025-12-31; length 2500\u20134000 bp; max_ambiguous_chars=10.\",\n    \"Used the final post-filter output (after sequence-dependent filtering) produced by gget.\",\n    \"Computed the final count from the filtered metadata table (unique accessions).\"\n  ]\n}\n```",
+      "duration_seconds": 15.661175,
+      "tool_call_count": 1,
+      "methods": [
+        "pip install --upgrade gget",
+        "gget.virus (NCBI Virus via INSDC/NCBI E-utilities)",
+        "Counted unique accessions in the final gget metadata CSV"
+      ],
+      "reasoning": [
+        "Applied filters: geographic_location=Africa; collection and release dates within 2020-01-01 to 2025-12-31; length 2500\u20134000 bp; max_ambiguous_chars=10.",
+        "Used the final post-filter output (after sequence-dependent filtering) produced by gget.",
+        "Computed the final count from the filtered metadata table (unique accessions)."
+      ]
+    },
+    {
+      "query_id": 9,
+      "run_number": 3,
+      "expected_count": 25,
+      "retrieved_count": 25,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "25\n```json\n{\n  \"methods\": [\"gget.virus (NCBI Virus/INSDC metadata + NCBI E-utilities FASTA fetch)\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052310 with filters: Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, length 2500..4000 bp, max ambiguous chars 10\",\n    \"gget returned 33 accessions after metadata-only filtering; 8 were removed by ambiguous-character filtering\",\n    \"Final FASTA contained 25 records (counted by '>' headers)\"\n  ]\n}\n```",
+      "duration_seconds": 18.568947,
+      "tool_call_count": 2,
+      "methods": [
+        "gget.virus (NCBI Virus/INSDC metadata + NCBI E-utilities FASTA fetch)"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052310 with filters: Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, length 2500..4000 bp, max ambiguous chars 10",
+        "gget returned 33 accessions after metadata-only filtering; 8 were removed by ambiguous-character filtering",
+        "Final FASTA contained 25 records (counted by '>' headers)"
+      ]
+    },
+    {
+      "query_id": 10,
+      "run_number": 1,
+      "expected_count": 4,
+      "retrieved_count": 4,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "4\n\n```json\n{\n  \"methods\": [\"pip install --upgrade gget\", \"gget.virus() via NCBI Virus + NCBI E-utilities; counted rows in the output metadata CSV\"],\n  \"reasoning\": [\n    \"Applied requested filters: Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, length 5000+, max ambiguous chars (N) <= 10\",\n    \"gget reported 5 passing metadata filters, with 1 removed by ambiguous-character filtering, leaving 4 final sequences\",\n    \"Final count taken from the saved metadata CSV row count (4)\"\n  ]\n}\n```",
+      "duration_seconds": 12.534864,
+      "tool_call_count": 1,
+      "methods": [
+        "pip install --upgrade gget",
+        "gget.virus() via NCBI Virus + NCBI E-utilities; counted rows in the output metadata CSV"
+      ],
+      "reasoning": [
+        "Applied requested filters: Africa, collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, length 5000+, max ambiguous chars (N) <= 10",
+        "gget reported 5 passing metadata filters, with 1 removed by ambiguous-character filtering, leaving 4 final sequences",
+        "Final count taken from the saved metadata CSV row count (4)"
+      ]
+    },
+    {
+      "query_id": 10,
+      "run_number": 2,
+      "expected_count": 4,
+      "retrieved_count": 4,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "4\n```json\n{\n  \"methods\": [\"gget.virus (pip install --upgrade gget) querying NCBI Virus + NCBI E-utilities; counted rows in output metadata CSV\"],\n  \"reasoning\": [\n    \"Applied filters: Africa geographic_location; collection date 2020-01-01..2025-12-31; release date 2020-01-01..2025-12-31; min length 5000; max ambiguous chars 10\",\n    \"NCBI Virus metadata filtering yielded 5 accessions; sequence-dependent N-count filter removed 1\",\n    \"Final count taken from /tmp/gget_hantavirus/1980442_metadata.csv (4 rows)\"\n  ]\n}\n```",
+      "duration_seconds": 12.400927,
+      "tool_call_count": 1,
+      "methods": [
+        "gget.virus (pip install --upgrade gget) querying NCBI Virus + NCBI E-utilities; counted rows in output metadata CSV"
+      ],
+      "reasoning": [
+        "Applied filters: Africa geographic_location; collection date 2020-01-01..2025-12-31; release date 2020-01-01..2025-12-31; min length 5000; max ambiguous chars 10",
+        "NCBI Virus metadata filtering yielded 5 accessions; sequence-dependent N-count filter removed 1",
+        "Final count taken from /tmp/gget_hantavirus/1980442_metadata.csv (4 rows)"
+      ]
+    },
+    {
+      "query_id": 10,
+      "run_number": 3,
+      "expected_count": 4,
+      "retrieved_count": 4,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "4\n\n```json\n{\n  \"methods\": [\"pip install --upgrade gget (v0.30.2)\", \"gget.virus (NCBI Virus API + NCBI E-utilities efetch)\"],\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with filters: geographic_location=Africa; collection date 2020-01-01..2025-12-31; release date 2020-01-01..2025-12-31; min_seq_length=5000; max_ambiguous_chars=10.\",\n    \"NCBI Virus API returned 165 metadata records; 5 passed metadata-only filters; 1 was removed by the ambiguous-character filter after FASTA download.\",\n    \"Final count equals rows in the saved filtered metadata CSV (1980442_metadata.csv): 4.\"\n  ]\n}\n```",
+      "duration_seconds": 15.860023,
+      "tool_call_count": 2,
+      "methods": [
+        "pip install --upgrade gget (v0.30.2)",
+        "gget.virus (NCBI Virus API + NCBI E-utilities efetch)"
+      ],
+      "reasoning": [
+        "Queried TaxID 1980442 with filters: geographic_location=Africa; collection date 2020-01-01..2025-12-31; release date 2020-01-01..2025-12-31; min_seq_length=5000; max_ambiguous_chars=10.",
+        "NCBI Virus API returned 165 metadata records; 5 passed metadata-only filters; 1 was removed by the ambiguous-character filter after FASTA download.",
+        "Final count equals rows in the saved filtered metadata CSV (1980442_metadata.csv): 4."
+      ]
+    }
+  ],
+  "summary": {
+    "correct_runs": 30,
+    "incorrect_runs": 0,
+    "error_runs": 0,
+    "accuracy": 1.0
+  }
+}

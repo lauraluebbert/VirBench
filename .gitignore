@@ -1,0 +1,69 @@
+# =========================
+# Data directories
+# =========================
+data/
+archive/
+tmp/
+scratch/
+logs/
+.claude/
+__pycache__/
+/__pycache__/
+**/__pycache__/
+
+# Large sequencing files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.sam
+*.cram
+*.vcf
+*.vcf.gz
+*.bcf
+*.bed
+*.bed.gz
+
+# Reference genomes / indices
+*.fa
+*.fasta
+*.fna
+*.fa.gz
+*.fasta.gz
+*.dict
+*.fai
+*.gff
+*.gtf
+*.gtf.gz
+*.gff3
+
+# ML models / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.h5
+
+# Terra / Cromwell / WDL outputs
+cromwell-executions/
+call-*/
+execution/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
