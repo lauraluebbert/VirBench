@@ -1,6 +1,8 @@
 # =========================
 # Data directories
 # =========================
+docs/virseq_benchmark.csv
+
 data/
 archive/
 tmp/
