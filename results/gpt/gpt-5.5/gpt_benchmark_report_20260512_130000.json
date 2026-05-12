@@ -1,0 +1,53 @@
+{
+  "timestamp": "20260512_130000",
+  "model": "gpt-5.5",
+  "total_queries": 1,
+  "total_runs": 3,
+  "results": [
+    {
+      "query_id": 1,
+      "run_number": 1,
+      "expected_count": 14,
+      "retrieved_count": null,
+      "is_correct": false,
+      "error": "Error code: 403 - {'error': {'message': 'Project `proj_kIaC1CllQpJfewbnLK41IjUf` does not have access to model `gpt-5.5`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}",
+      "raw_response": null,
+      "duration_seconds": 31.657266,
+      "tool_call_count": 0,
+      "methods": null,
+      "reasoning": null
+    },
+    {
+      "query_id": 1,
+      "run_number": 2,
+      "expected_count": 14,
+      "retrieved_count": null,
+      "is_correct": false,
+      "error": "Error code: 403 - {'error': {'message': 'Project `proj_kIaC1CllQpJfewbnLK41IjUf` does not have access to model `gpt-5.5`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}",
+      "raw_response": null,
+      "duration_seconds": 0.814677,
+      "tool_call_count": 0,
+      "methods": null,
+      "reasoning": null
+    },
+    {
+      "query_id": 1,
+      "run_number": 3,
+      "expected_count": 14,
+      "retrieved_count": null,
+      "is_correct": false,
+      "error": "Error code: 403 - {'error': {'message': 'Project `proj_kIaC1CllQpJfewbnLK41IjUf` does not have access to model `gpt-5.5`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}",
+      "raw_response": null,
+      "duration_seconds": 0.845071,
+      "tool_call_count": 0,
+      "methods": null,
+      "reasoning": null
+    }
+  ],
+  "summary": {
+    "correct_runs": 0,
+    "incorrect_runs": 0,
+    "error_runs": 3,
+    "accuracy": 0.0
+  }
+}
