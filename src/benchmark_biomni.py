@@ -9,8 +9,8 @@ and results are compared against expected counts.
 Usage:
     python benchmark_biomni.py                         # run all queries
     python benchmark_biomni.py --test                  # first query only
-    python benchmark_biomni.py --gget-virus            # include gget docs
-    python benchmark_biomni.py --llm claude-sonnet-4-20250514
+    python benchmark_biomni.py --gget-virus            # include gget docs and prompt model to use gget virus
+    python benchmark_biomni.py --llm claude-sonnet-4-20250514 # Default model: claude-sonnet-4-20250514
 """
 
 import os

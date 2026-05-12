@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Claude Sonnet 4 Benchmark
+Claude Benchmark
 
-Benchmarks Claude Sonnet 4 (via Anthropic Messages API with tool use) on
+Benchmarks Claude (via Anthropic Messages API with tool use) on
 viral sequence count retrieval from NCBI.
 
 The model is given:
@@ -15,10 +15,10 @@ ALLOWLIST for all outbound connections from the execute_python subprocess to
 reduce risk.
 
 Usage:
-    python benchmark_claude.py                          # run all queries
-    python benchmark_claude.py --test                   # first query only
-    python benchmark_claude.py --use-gget-virus         # include gget docs
-    python benchmark_claude.py --model claude-sonnet-4-6
+    python benchmark_claude.py                           # run all queries
+    python benchmark_claude.py --test                    # first query only
+    python benchmark_claude.py --use-gget-virus          # include gget docs and prompt model to use gget virus
+    python benchmark_claude.py --model claude-sonnet-4-6 # Default model: claude-sonnet-4-20250514
 
 K-Dense scientific skills (optional):
     The --kdense flag loads curated scientific skill documentation from the

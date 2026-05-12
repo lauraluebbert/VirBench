@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-GPT-5.2-pro Benchmark
+GPT Benchmark
 
-Benchmarks GPT-5.2-pro (via OpenAI Responses API) on viral sequence count
+Benchmarks GPT (via OpenAI Responses API) on viral sequence count
 retrieval from NCBI. The model is given a code execution function tool so it
 can write and run Python (e.g. gget, BioPython) to query NCBI.
 
@@ -12,8 +12,8 @@ execute_python subprocess (same guard pattern as for the Claude benchmark).
 Usage:
     python benchmark_gpt.py                         # run all queries
     python benchmark_gpt.py --test                  # first query only
-    python benchmark_gpt.py --use-gget-virus        # include gget docs
-    python benchmark_gpt.py --model gpt-5.2-pro
+    python benchmark_gpt.py --use-gget-virus        # include gget docs and prompt model to use gget virus
+    python benchmark_gpt.py --model gpt-5.5-pro     # Default model: gpt-5.2-pro
 """
 
 import asyncio

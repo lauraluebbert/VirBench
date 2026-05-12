@@ -9,7 +9,7 @@ NUM_RUNS times and results are compared against expected counts.
 Usage:
     python benchmark_edison_analysis.py                # run all queries
     python benchmark_edison_analysis.py --test         # first query only
-    python benchmark_edison_analysis.py --gget-virus   # include gget docs
+    python benchmark_edison_analysis.py --gget-virus   # include gget docs and prompt model to use gget virus
 """
 
 import os
