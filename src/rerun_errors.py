@@ -52,15 +52,15 @@ ROOT_DIR = Path(__file__).resolve().parent.parent
 CSV_PATH = str(ROOT_DIR / "docs" / "virseq_benchmark.csv")
 
 SOURCES = {
-    "Edison Analysis": ("results/edison_analysis/benchmark_report_*.json", "_gv_"),
-    "Edison Analysis + gget": ("results/edison_analysis/benchmark_report_gv_*.json", None),
-    "Biomni": ("results/biomni/biomni_benchmark_report_*.json", "_gv_"),
-    "Biomni + gget": ("results/biomni/biomni_benchmark_report_gv_*.json", None),
+    "Edison Analysis": ("results/edison_analysis/*/benchmark_report_*.json", "_gv_"),
+    "Edison Analysis + gget": ("results/edison_analysis/*/benchmark_report_gv_*.json", None),
+    "Biomni": ("results/biomni/*/biomni_benchmark_report_*.json", "_gv_"),
+    "Biomni + gget": ("results/biomni/*/biomni_benchmark_report_gv_*.json", None),
     "gget virus": ("results/gget_virus/gget_direct_benchmark_summary_*.csv", None),
-    "Claude Sonnet 4": ("results/claude/claude_benchmark_report_*.json", "_gv_"),
-    "Claude Sonnet 4 + gget": ("results/claude/claude_benchmark_report_gv_*.json", None),
-    "GPT-5.2-pro": ("results/gpt/gpt_benchmark_report_*.json", "_gv_"),
-    "GPT-5.2-pro + gget": ("results/gpt/gpt_benchmark_report_gv_*.json", None),
+    "Claude Sonnet 4": ("results/claude/*/claude_benchmark_report_*.json", "_gv_"),
+    "Claude Sonnet 4 + gget": ("results/claude/*/claude_benchmark_report_gv_*.json", None),
+    "GPT-5.2-pro": ("results/gpt/*/gpt_benchmark_report_*.json", "_gv_"),
+    "GPT-5.2-pro + gget": ("results/gpt/*/gpt_benchmark_report_gv_*.json", None),
 }
 
 # Map from technology label to filename markers
@@ -80,6 +80,8 @@ def get_report_paths():
         files = sorted(glob(str(ROOT_DIR / pattern)))
         for f in files:
             if exclude and exclude in f:
+                continue
+            if "/pilot/" in f:
                 continue
             report_paths.append(os.path.abspath(f))
     return report_paths

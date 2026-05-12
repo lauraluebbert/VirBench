@@ -102,8 +102,8 @@ async def run_benchmark(
     from biomni.agent import A1
 
     # Create output directory
-    output_path = Path(output_dir)
-    output_path.mkdir(exist_ok=True)
+    output_path = Path(output_dir) / llm
+    output_path.mkdir(exist_ok=True, parents=True)
 
     # Parse configurations
     print("Parsing CSV configuration...")

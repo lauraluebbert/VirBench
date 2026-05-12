@@ -367,7 +367,7 @@ async def run_benchmark(
     resume_from: Optional[str] = None,
 ):
     """Run the full benchmark suite."""
-    output_path = Path(output_dir)
+    output_path = Path(output_dir) / model
     output_path.mkdir(exist_ok=True, parents=True)
 
     print("Parsing CSV configuration...")

@@ -64,20 +64,20 @@ def get_target_query_ids() -> set[int]:
 
 RERUN_FILES = {
     # "claude": {
-    #     "json": ROOT / "results/claude/claude_benchmark_report_gv_20260227_112923_rerun_20260302_123424.json",
-    #     "csv":  ROOT / "results/claude/claude_benchmark_summary_gv_20260227_112923_rerun_20260302_123424.csv",
+    #     "json": ROOT / "results/claude/claude-sonnet-4-20250514/claude_benchmark_report_gv_20260227_112923_rerun_20260302_123424.json",
+    #     "csv":  ROOT / "results/claude/claude-sonnet-4-20250514/claude_benchmark_summary_gv_20260227_112923_rerun_20260302_123424.csv",
     # },
     # "gpt": {
-    #     "json": ROOT / "results/gpt/gpt_benchmark_report_gv_20260227_114331_rerun_20260302_214334.json",
-    #     "csv":  ROOT / "results/gpt/gpt_benchmark_summary_gv_20260227_114331_rerun_20260302_214334.csv",
+    #     "json": ROOT / "results/gpt/gpt-5.2-pro/gpt_benchmark_report_gv_20260227_114331_rerun_20260302_214334.json",
+    #     "csv":  ROOT / "results/gpt/gpt-5.2-pro/gpt_benchmark_summary_gv_20260227_114331_rerun_20260302_214334.csv",
     # },
     "edison": {
-        "json": ROOT / "results/edison_analysis/benchmark_report_gv_20260227_113028_rerun_20260302_094332.json",
-        "csv":  ROOT / "results/edison_analysis/benchmark_summary_gv_20260227_113028_rerun_20260302_094332.csv",
+        "json": ROOT / "results/edison_analysis/2026-02-26/benchmark_report_gv_20260227_113028_rerun_20260302_094332.json",
+        "csv":  ROOT / "results/edison_analysis/2026-02-26/benchmark_summary_gv_20260227_113028_rerun_20260302_094332.csv",
     },
     "biomni": {
-        "json": ROOT / "results/biomni/biomni_benchmark_report_gv_20260227_113135_rerun_20260302_105027.json",
-        "csv":  ROOT / "results/biomni/biomni_benchmark_summary_gv_20260227_113135_rerun_20260302_105027.csv",
+        "json": ROOT / "results/biomni/claude-sonnet-4-20250514/biomni_benchmark_report_gv_20260227_113135_rerun_20260302_105027.json",
+        "csv":  ROOT / "results/biomni/claude-sonnet-4-20250514/biomni_benchmark_summary_gv_20260227_113135_rerun_20260302_105027.csv",
     },
 }
 

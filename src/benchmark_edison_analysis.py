@@ -16,7 +16,7 @@ import os
 import json
 import csv
 import asyncio
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 from dataclasses import asdict
 from typing import Optional
@@ -119,8 +119,8 @@ async def run_benchmark(
         use_gget_virus: If True, tell agent to use the gget virus module.
     """
     # Create output directory
-    output_path = Path(output_dir)
-    output_path.mkdir(exist_ok=True)
+    output_path = Path(output_dir) / date.today().isoformat()
+    output_path.mkdir(exist_ok=True, parents=True)
 
     # Parse configurations
     print("Parsing CSV configuration...")

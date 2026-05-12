@@ -23,15 +23,19 @@ VirBench/
 │   ├── benchmark_biomni.py           # Biomni data-lake agent benchmark
 │   ├── benchmark_gget_virus.py       # gget virus benchmark (no agent)
 │   ├── benchmark_claude.py           # Claude Sonnet 4 benchmark (Anthropic API + code execution)
-│   └── benchmark_gpt.py              # GPT-5.2-pro benchmark (OpenAI Responses API + code execution)
+│   └── benchmark_gpt.py              # GPT benchmark (OpenAI Responses API + code execution)
 │   └── rerun_errors.py               # Rerun failed runs for all technologies
 │
 ├── results/                      # Benchmark output (CSV summaries + JSON reports)
 │   ├── edison_analysis/          # Edison agent results
+│   │   └── <date>/              # Results grouped by run date (YYYY-MM-DD)
 │   ├── biomni/                   # Biomni agent results
+│   │   └── <model>/             # Results grouped by LLM model name
 │   ├── gget_virus/               # gget virus results
-│   ├── claude/                   # Claude Sonnet 4 results
-│   └── gpt/                      # GPT-5.2-pro results
+│   ├── claude/                   # Claude results
+│   │   └── <model>/             # Results grouped by model name
+│   └── gpt/                      # GPT results
+│       └── <model>/             # Results grouped by model name
 │
 ├── notebooks/                    # Analysis and visualization notebooks
 │
@@ -64,8 +68,9 @@ python src/benchmark_claude.py --test \
     --kdense-skills biopython,gget --kdense-refs
 
 # Custom model / output directory
+# Results are automatically saved in a model subdirectory (e.g., results/gpt/gpt-5.2-pro/)
 python src/benchmark_claude.py --model claude-sonnet-4-20250514 -o results/claude
-python src/benchmark_gpt.py --model gpt-5.2-pro -o results/gpt
+python src/benchmark_gpt.py --model gpt-5.5-pro -o results/gpt
 ```
 
 ## Benchmarking process
@@ -234,7 +239,7 @@ The `src/rerun_errors.py` script identifies errored runs across all benchmark re
 python src/rerun_errors.py
 
 # Rerun errors for a specific report
-python src/rerun_errors.py --report results/gpt/gpt_benchmark_report_20260226_211117.json
+python src/rerun_errors.py --report results/gpt/gpt-5.2-pro/gpt_benchmark_report_20260226_211117.json
 ```
 
 ### Shared utilities (`src/utils.py`)
