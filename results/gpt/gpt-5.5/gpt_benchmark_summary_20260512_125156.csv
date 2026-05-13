@@ -1,3 +1,0 @@
-query_id,run_number,expected_count,retrieved_count,is_correct,error,duration_seconds,tool_call_count
-1,1,14,,False,"Error code: 403 - {'error': {'message': 'Project `proj_kIaC1CllQpJfewbnLK41IjUf` does not have access to model `gpt-5.5`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}",87.735973,0
-1,2,14,,False,"Error code: 403 - {'error': {'message': 'Project `proj_kIaC1CllQpJfewbnLK41IjUf` does not have access to model `gpt-5.5`', 'type': 'invalid_request_error', 'param': None, 'code': 'model_not_found'}}",0.840424,0
