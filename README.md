@@ -45,6 +45,8 @@ VirBench/
 ## Usage
 
 ```bash
+# Add the virseq_benchmark.csv file (CONTACT US FOR ACCESS) into the docs folder
+
 # Set up environment
 cp .env.example .env   # add your API keys
 pip install -r requirements.txt
