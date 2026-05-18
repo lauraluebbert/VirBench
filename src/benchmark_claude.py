@@ -388,7 +388,7 @@ async def run_claude_agent(
 
         # Unexpected stop_reason — return text if any; else continue (e.g. server tool turn with no text yet)
         if response.stop_reason != "tool_use":
-            print(f"    [debug] stop_reason={response.stop_reason}, content={assistant_content}")
+            print(f"    [debug] stop_reason={response.stop_reason}, content={assistant_content}, usage={response.usage}, model={response.model}")
             text_parts = [block_text(b) for b in assistant_content if block_type(b) == "text"]
             if text_parts:
                 return ("\n".join(t for t in text_parts if t).strip(), tool_call_count)
