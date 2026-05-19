@@ -128,7 +128,7 @@ Both the Claude and GPT benchmarks call their respective APIs with two tools:
 - **Web search** (server-side) — a built-in tool provided by each API (`web_search_20260209` for Claude, `web_search_preview` for GPT). The model can search the web for API documentation, examples, or any other information. Search execution and result retrieval are handled entirely by the provider; the benchmark script does not need to process these tool calls.
 - **`execute_python`** (client-side) — a custom function tool that runs model-generated Python code locally in a subprocess with a 120-second timeout. The script executes the code and returns stdout/stderr (truncated to 10K chars) as the tool result.
 
-The agentic loop sends the query, lets the model call tools (up to 15 turns), and collects the final integer response. This gives the model full autonomy to search for documentation, install packages (e.g. `pip install gget`), write multi-step scripts, and retry on errors.
+The agentic loop sends the query, lets the model call tools (up to 25 turns), and collects the final integer response. This gives the model full autonomy to search for documentation, install packages (e.g. `pip install gget`), write multi-step scripts, and retry on errors.
 
 #### Domain allowlist
 

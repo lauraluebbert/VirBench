@@ -336,7 +336,7 @@ async def run_claude_agent(
     query: str,
     model: str,
     system_prompt: str,
-    max_turns: int = 15,
+    max_turns: int = 25,
     use_web_search: bool = True,
 ) -> tuple[str, int]:
     """

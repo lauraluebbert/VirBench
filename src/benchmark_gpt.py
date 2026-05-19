@@ -224,7 +224,7 @@ async def run_gpt_agent(
     query: str,
     model: str,
     system_prompt: str,
-    max_turns: int = 15,
+    max_turns: int = 25,
 ) -> tuple[str, int]:
     """Run the GPT agent loop with tool execution via the Responses API.
 
