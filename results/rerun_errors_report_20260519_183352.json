@@ -1,0 +1,83 @@
+{
+  "timestamp": "20260519_183352",
+  "summary": {
+    "total_reports_processed": 2,
+    "total_errors_before": 3,
+    "total_errors_after": 0,
+    "total_errors_resolved": 3
+  },
+  "technologies": [
+    {
+      "report_path": "results/claude/claude-sonnet-4-20250514/claude_benchmark_report_20260226_211231_rerun_20260302_120413.json",
+      "technology": "claude",
+      "gget_virus": false,
+      "total_runs": 360,
+      "before": {
+        "correct": 61,
+        "incorrect": 298,
+        "errors": 1,
+        "accuracy": 0.1694
+      },
+      "after": {
+        "correct": 61,
+        "incorrect": 299,
+        "errors": 0,
+        "accuracy": 0.1694
+      },
+      "rerun_details": [
+        {
+          "query_id": 46,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 356,
+          "expected_count": 1105,
+          "error": null,
+          "duration_seconds": 384.08
+        }
+      ],
+      "output_csv": "results/claude/claude-sonnet-4-20250514/claude_benchmark_summary_20260226_211231_rerun_20260302_120413_rerun_20260519_184017.csv"
+    },
+    {
+      "report_path": "results/claude/claude-sonnet-4-20250514/claude_benchmark_report_gv_20260227_112923_rerun_20260302_123424.json",
+      "technology": "claude",
+      "gget_virus": true,
+      "total_runs": 360,
+      "before": {
+        "correct": 333,
+        "incorrect": 25,
+        "errors": 2,
+        "accuracy": 0.925
+      },
+      "after": {
+        "correct": 334,
+        "incorrect": 26,
+        "errors": 0,
+        "accuracy": 0.9278
+      },
+      "rerun_details": [
+        {
+          "query_id": 61,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 0,
+          "expected_count": 217,
+          "error": null,
+          "duration_seconds": 234.86
+        },
+        {
+          "query_id": 103,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 4,
+          "expected_count": 4,
+          "error": null,
+          "duration_seconds": 699.5
+        }
+      ],
+      "output_csv": "results/claude/claude-sonnet-4-20250514/claude_benchmark_summary_gv_20260227_112923_rerun_20260302_123424_rerun_20260519_185551.csv"
+    }
+  ]
+}
