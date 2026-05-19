@@ -1,0 +1,27 @@
+{
+  "timestamp": "20260518_194617",
+  "model": "claude-opus-4-7",
+  "total_queries": 1,
+  "total_runs": 1,
+  "results": [
+    {
+      "query_id": 1,
+      "run_number": 1,
+      "expected_count": 14,
+      "retrieved_count": null,
+      "is_correct": false,
+      "error": null,
+      "raw_response": "Max turns reached without final answer.",
+      "duration_seconds": 28.185299,
+      "tool_call_count": 0,
+      "methods": null,
+      "reasoning": null
+    }
+  ],
+  "summary": {
+    "correct_runs": 0,
+    "incorrect_runs": 1,
+    "error_runs": 0,
+    "accuracy": 0.0
+  }
+}

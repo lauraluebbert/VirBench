@@ -1,0 +1,40 @@
+{
+  "timestamp": "20260519_153856",
+  "model": "claude-opus-4-7",
+  "total_queries": 1,
+  "total_runs": 2,
+  "results": [
+    {
+      "query_id": 1,
+      "run_number": 1,
+      "expected_count": 14,
+      "retrieved_count": null,
+      "is_correct": false,
+      "error": null,
+      "raw_response": "Max turns reached without final answer.",
+      "duration_seconds": 42.027525,
+      "tool_call_count": 0,
+      "methods": null,
+      "reasoning": null
+    },
+    {
+      "query_id": 1,
+      "run_number": 2,
+      "expected_count": 14,
+      "retrieved_count": null,
+      "is_correct": false,
+      "error": null,
+      "raw_response": "Max turns reached without final answer.",
+      "duration_seconds": 36.527122,
+      "tool_call_count": 0,
+      "methods": null,
+      "reasoning": null
+    }
+  ],
+  "summary": {
+    "correct_runs": 0,
+    "incorrect_runs": 2,
+    "error_runs": 0,
+    "accuracy": 0.0
+  }
+}

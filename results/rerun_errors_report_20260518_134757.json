@@ -1,0 +1,1393 @@
+{
+  "timestamp": "20260518_134757",
+  "summary": {
+    "total_reports_processed": 2,
+    "total_errors_before": 134,
+    "total_errors_after": 70,
+    "total_errors_resolved": 64
+  },
+  "technologies": [
+    {
+      "report_path": "results/gpt/gpt-5.5/gpt_benchmark_report_20260512_230151.json",
+      "technology": "gpt",
+      "gget_virus": false,
+      "total_runs": 360,
+      "before": {
+        "correct": 224,
+        "incorrect": 26,
+        "errors": 110,
+        "accuracy": 0.6222
+      },
+      "after": {
+        "correct": 272,
+        "incorrect": 34,
+        "errors": 54,
+        "accuracy": 0.7556
+      },
+      "rerun_details": [
+        {
+          "query_id": 3,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 22,
+          "expected_count": 23,
+          "error": null,
+          "duration_seconds": 236.73
+        },
+        {
+          "query_id": 5,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 6,
+          "error": null,
+          "duration_seconds": 180.92
+        },
+        {
+          "query_id": 13,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 21,
+          "expected_count": 21,
+          "error": null,
+          "duration_seconds": 222.29
+        },
+        {
+          "query_id": 16,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 53,
+          "expected_count": 53,
+          "error": null,
+          "duration_seconds": 401.28
+        },
+        {
+          "query_id": 18,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 16,
+          "error": null,
+          "duration_seconds": 428.34
+        },
+        {
+          "query_id": 18,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 16,
+          "error": null,
+          "duration_seconds": 355.35
+        },
+        {
+          "query_id": 20,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 416,
+          "error": null,
+          "duration_seconds": 286.37
+        },
+        {
+          "query_id": 20,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 416,
+          "error": null,
+          "duration_seconds": 427.58
+        },
+        {
+          "query_id": 21,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 92,
+          "expected_count": 92,
+          "error": null,
+          "duration_seconds": 246.35
+        },
+        {
+          "query_id": 22,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 40,
+          "expected_count": 40,
+          "error": null,
+          "duration_seconds": 197.4
+        },
+        {
+          "query_id": 27,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 223,
+          "expected_count": 223,
+          "error": null,
+          "duration_seconds": 91.16
+        },
+        {
+          "query_id": 28,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 231,
+          "error": null,
+          "duration_seconds": 131.83
+        },
+        {
+          "query_id": 28,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 231,
+          "error": null,
+          "duration_seconds": 242.17
+        },
+        {
+          "query_id": 29,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 33,
+          "expected_count": 33,
+          "error": null,
+          "duration_seconds": 137.32
+        },
+        {
+          "query_id": 29,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 33,
+          "expected_count": 33,
+          "error": null,
+          "duration_seconds": 567.19
+        },
+        {
+          "query_id": 30,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 119,
+          "expected_count": 119,
+          "error": null,
+          "duration_seconds": 719.62
+        },
+        {
+          "query_id": 30,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 119,
+          "expected_count": 119,
+          "error": null,
+          "duration_seconds": 155.57
+        },
+        {
+          "query_id": 31,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 241,
+          "error": null,
+          "duration_seconds": 426.83
+        },
+        {
+          "query_id": 31,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 241,
+          "error": null,
+          "duration_seconds": 346.75
+        },
+        {
+          "query_id": 32,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 162,
+          "expected_count": 162,
+          "error": null,
+          "duration_seconds": 293.73
+        },
+        {
+          "query_id": 34,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 68,
+          "expected_count": 68,
+          "error": null,
+          "duration_seconds": 146.25
+        },
+        {
+          "query_id": 34,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 68,
+          "expected_count": 68,
+          "error": null,
+          "duration_seconds": 152.21
+        },
+        {
+          "query_id": 40,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 22,
+          "expected_count": 22,
+          "error": null,
+          "duration_seconds": 144.85
+        },
+        {
+          "query_id": 41,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 71,
+          "expected_count": 71,
+          "error": null,
+          "duration_seconds": 140.23
+        },
+        {
+          "query_id": 41,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 71,
+          "expected_count": 71,
+          "error": null,
+          "duration_seconds": 161.51
+        },
+        {
+          "query_id": 43,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 928,
+          "expected_count": 928,
+          "error": null,
+          "duration_seconds": 410.71
+        },
+        {
+          "query_id": 43,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 928,
+          "error": null,
+          "duration_seconds": 552.41
+        },
+        {
+          "query_id": 44,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 0,
+          "expected_count": 0,
+          "error": null,
+          "duration_seconds": 173.2
+        },
+        {
+          "query_id": 45,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 1535,
+          "expected_count": 1535,
+          "error": null,
+          "duration_seconds": 314.2
+        },
+        {
+          "query_id": 47,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 903,
+          "expected_count": 903,
+          "error": null,
+          "duration_seconds": 244.43
+        },
+        {
+          "query_id": 48,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 193,
+          "expected_count": 193,
+          "error": null,
+          "duration_seconds": 213.45
+        },
+        {
+          "query_id": 49,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 47,
+          "expected_count": 47,
+          "error": null,
+          "duration_seconds": 378.83
+        },
+        {
+          "query_id": 50,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 120,
+          "expected_count": 120,
+          "error": null,
+          "duration_seconds": 232.31
+        },
+        {
+          "query_id": 51,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 750,
+          "expected_count": 764,
+          "error": null,
+          "duration_seconds": 188.74
+        },
+        {
+          "query_id": 51,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 764,
+          "expected_count": 764,
+          "error": null,
+          "duration_seconds": 247.12
+        },
+        {
+          "query_id": 52,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 121.2
+        },
+        {
+          "query_id": 53,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 1307,
+          "expected_count": 1307,
+          "error": null,
+          "duration_seconds": 262.8
+        },
+        {
+          "query_id": 54,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1475,
+          "error": null,
+          "duration_seconds": 196.93
+        },
+        {
+          "query_id": 55,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 395,
+          "expected_count": 395,
+          "error": null,
+          "duration_seconds": 294.69
+        },
+        {
+          "query_id": 55,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 395,
+          "error": null,
+          "duration_seconds": 387.33
+        },
+        {
+          "query_id": 56,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 738,
+          "expected_count": 738,
+          "error": null,
+          "duration_seconds": 240.79
+        },
+        {
+          "query_id": 56,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 738,
+          "expected_count": 738,
+          "error": null,
+          "duration_seconds": 266.1
+        },
+        {
+          "query_id": 57,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1782,
+          "error": null,
+          "duration_seconds": 285.55
+        },
+        {
+          "query_id": 57,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1782,
+          "error": null,
+          "duration_seconds": 161.94
+        },
+        {
+          "query_id": 57,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1782,
+          "error": null,
+          "duration_seconds": 217.28
+        },
+        {
+          "query_id": 58,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 1367,
+          "expected_count": 1367,
+          "error": null,
+          "duration_seconds": 188.8
+        },
+        {
+          "query_id": 59,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 304,
+          "error": null,
+          "duration_seconds": 285.11
+        },
+        {
+          "query_id": 59,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 304,
+          "error": null,
+          "duration_seconds": 277.74
+        },
+        {
+          "query_id": 59,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 304,
+          "error": null,
+          "duration_seconds": 482.53
+        },
+        {
+          "query_id": 60,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 24,
+          "error": null,
+          "duration_seconds": 126.55
+        },
+        {
+          "query_id": 61,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 217,
+          "error": null,
+          "duration_seconds": 365.38
+        },
+        {
+          "query_id": 61,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 217,
+          "error": null,
+          "duration_seconds": 243.18
+        },
+        {
+          "query_id": 62,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 336.79
+        },
+        {
+          "query_id": 62,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 130.02
+        },
+        {
+          "query_id": 62,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 253.96
+        },
+        {
+          "query_id": 63,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 708,
+          "error": null,
+          "duration_seconds": 366.63
+        },
+        {
+          "query_id": 63,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 708,
+          "error": null,
+          "duration_seconds": 303.04
+        },
+        {
+          "query_id": 64,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 98,
+          "error": null,
+          "duration_seconds": 483.16
+        },
+        {
+          "query_id": 64,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 98,
+          "error": null,
+          "duration_seconds": 336.08
+        },
+        {
+          "query_id": 65,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 216,
+          "expected_count": 216,
+          "error": null,
+          "duration_seconds": 366.63
+        },
+        {
+          "query_id": 65,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 216,
+          "error": null,
+          "duration_seconds": 274.61
+        },
+        {
+          "query_id": 65,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 216,
+          "error": null,
+          "duration_seconds": 212.84
+        },
+        {
+          "query_id": 66,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 3,
+          "error": null,
+          "duration_seconds": 167.79
+        },
+        {
+          "query_id": 66,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 3,
+          "error": null,
+          "duration_seconds": 119.2
+        },
+        {
+          "query_id": 66,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 3,
+          "error": null,
+          "duration_seconds": 386.09
+        },
+        {
+          "query_id": 67,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 43,
+          "error": null,
+          "duration_seconds": 86.76
+        },
+        {
+          "query_id": 67,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 43,
+          "error": null,
+          "duration_seconds": 118.05
+        },
+        {
+          "query_id": 67,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 42,
+          "expected_count": 43,
+          "error": null,
+          "duration_seconds": 123.34
+        },
+        {
+          "query_id": 69,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 2907,
+          "expected_count": 2694,
+          "error": null,
+          "duration_seconds": 117.08
+        },
+        {
+          "query_id": 70,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 83,
+          "error": null,
+          "duration_seconds": 106.37
+        },
+        {
+          "query_id": 71,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 25,
+          "expected_count": 25,
+          "error": null,
+          "duration_seconds": 100.0
+        },
+        {
+          "query_id": 73,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 6,
+          "expected_count": 6,
+          "error": null,
+          "duration_seconds": 100.06
+        },
+        {
+          "query_id": 76,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 551,
+          "error": null,
+          "duration_seconds": 133.06
+        },
+        {
+          "query_id": 78,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 3,
+          "error": null,
+          "duration_seconds": 135.39
+        },
+        {
+          "query_id": 78,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 3,
+          "error": null,
+          "duration_seconds": 522.79
+        },
+        {
+          "query_id": 79,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 65,
+          "expected_count": 65,
+          "error": null,
+          "duration_seconds": 78.3
+        },
+        {
+          "query_id": 82,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 8,
+          "expected_count": 7,
+          "error": null,
+          "duration_seconds": 111.03
+        },
+        {
+          "query_id": 82,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 6,
+          "expected_count": 7,
+          "error": null,
+          "duration_seconds": 104.18
+        },
+        {
+          "query_id": 83,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 6,
+          "error": null,
+          "duration_seconds": 148.33
+        },
+        {
+          "query_id": 83,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 6,
+          "error": null,
+          "duration_seconds": 153.78
+        },
+        {
+          "query_id": 84,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 43,
+          "expected_count": 43,
+          "error": null,
+          "duration_seconds": 65.12
+        },
+        {
+          "query_id": 85,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 1,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 84.62
+        },
+        {
+          "query_id": 85,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 154.09
+        },
+        {
+          "query_id": 86,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 381,
+          "expected_count": 381,
+          "error": null,
+          "duration_seconds": 156.29
+        },
+        {
+          "query_id": 86,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 381,
+          "error": null,
+          "duration_seconds": 106.8
+        },
+        {
+          "query_id": 87,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 35,
+          "error": null,
+          "duration_seconds": 134.56
+        },
+        {
+          "query_id": 88,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 2,
+          "expected_count": 2,
+          "error": null,
+          "duration_seconds": 233.44
+        },
+        {
+          "query_id": 90,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 88.15
+        },
+        {
+          "query_id": 92,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 4,
+          "error": null,
+          "duration_seconds": 108.67
+        },
+        {
+          "query_id": 96,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 11,
+          "expected_count": 12,
+          "error": null,
+          "duration_seconds": 66.35
+        },
+        {
+          "query_id": 96,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 11,
+          "expected_count": 12,
+          "error": null,
+          "duration_seconds": 115.25
+        },
+        {
+          "query_id": 97,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 1,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 76.27
+        },
+        {
+          "query_id": 101,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 3,
+          "expected_count": 3,
+          "error": null,
+          "duration_seconds": 64.25
+        },
+        {
+          "query_id": 102,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 5,
+          "expected_count": 5,
+          "error": null,
+          "duration_seconds": 26.98
+        },
+        {
+          "query_id": 103,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 4,
+          "error": null,
+          "duration_seconds": 447.98
+        },
+        {
+          "query_id": 103,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 4,
+          "error": null,
+          "duration_seconds": 251.05
+        },
+        {
+          "query_id": 103,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 4,
+          "expected_count": 4,
+          "error": null,
+          "duration_seconds": 68.28
+        },
+        {
+          "query_id": 105,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 8,
+          "expected_count": 8,
+          "error": null,
+          "duration_seconds": 92.98
+        },
+        {
+          "query_id": 106,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 3,
+          "expected_count": 3,
+          "error": null,
+          "duration_seconds": 115.4
+        },
+        {
+          "query_id": 113,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 8,
+          "expected_count": 8,
+          "error": null,
+          "duration_seconds": 165.32
+        },
+        {
+          "query_id": 114,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 3226,
+          "error": null,
+          "duration_seconds": 249.93
+        },
+        {
+          "query_id": 114,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 3226,
+          "expected_count": 3226,
+          "error": null,
+          "duration_seconds": 207.85
+        },
+        {
+          "query_id": 115,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 43,
+          "error": null,
+          "duration_seconds": 111.77
+        },
+        {
+          "query_id": 115,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 43,
+          "expected_count": 43,
+          "error": null,
+          "duration_seconds": 105.29
+        },
+        {
+          "query_id": 117,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 3,
+          "expected_count": 3,
+          "error": null,
+          "duration_seconds": 76.46
+        },
+        {
+          "query_id": 118,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 5,
+          "error": null,
+          "duration_seconds": 179.56
+        },
+        {
+          "query_id": 118,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 5,
+          "error": null,
+          "duration_seconds": 313.62
+        },
+        {
+          "query_id": 118,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 5,
+          "error": null,
+          "duration_seconds": 377.59
+        },
+        {
+          "query_id": 119,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 191,
+          "expected_count": 191,
+          "error": null,
+          "duration_seconds": 100.58
+        },
+        {
+          "query_id": 119,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 191,
+          "expected_count": 191,
+          "error": null,
+          "duration_seconds": 107.78
+        }
+      ],
+      "output_csv": "results/gpt/gpt-5.5/gpt_benchmark_summary_20260512_230151_rerun_20260518_203644.csv"
+    },
+    {
+      "report_path": "results/gpt/gpt-5.5/gpt_benchmark_report_gv_20260512_230230.json",
+      "technology": "gpt",
+      "gget_virus": true,
+      "total_runs": 360,
+      "before": {
+        "correct": 323,
+        "incorrect": 13,
+        "errors": 24,
+        "accuracy": 0.8972
+      },
+      "after": {
+        "correct": 330,
+        "incorrect": 14,
+        "errors": 16,
+        "accuracy": 0.9167
+      },
+      "rerun_details": [
+        {
+          "query_id": 18,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 16,
+          "error": null,
+          "duration_seconds": 449.46
+        },
+        {
+          "query_id": 18,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 16,
+          "expected_count": 16,
+          "error": null,
+          "duration_seconds": 266.74
+        },
+        {
+          "query_id": 18,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 16,
+          "expected_count": 16,
+          "error": null,
+          "duration_seconds": 146.79
+        },
+        {
+          "query_id": 31,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 241,
+          "error": null,
+          "duration_seconds": 259.19
+        },
+        {
+          "query_id": 36,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": false,
+          "retrieved_count": 125,
+          "expected_count": 126,
+          "error": null,
+          "duration_seconds": 62.8
+        },
+        {
+          "query_id": 43,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 928,
+          "error": null,
+          "duration_seconds": 378.25
+        },
+        {
+          "query_id": 43,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 928,
+          "error": null,
+          "duration_seconds": 358.82
+        },
+        {
+          "query_id": 43,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 928,
+          "error": null,
+          "duration_seconds": 234.77
+        },
+        {
+          "query_id": 57,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1782,
+          "error": null,
+          "duration_seconds": 548.82
+        },
+        {
+          "query_id": 57,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1782,
+          "error": null,
+          "duration_seconds": 334.14
+        },
+        {
+          "query_id": 57,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1782,
+          "error": null,
+          "duration_seconds": 262.68
+        },
+        {
+          "query_id": 59,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 304,
+          "expected_count": 304,
+          "error": null,
+          "duration_seconds": 37.34
+        },
+        {
+          "query_id": 59,
+          "run_number": 3,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 304,
+          "expected_count": 304,
+          "error": null,
+          "duration_seconds": 59.81
+        },
+        {
+          "query_id": 68,
+          "run_number": 2,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 130,
+          "expected_count": 130,
+          "error": null,
+          "duration_seconds": 40.55
+        },
+        {
+          "query_id": 85,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 422.18
+        },
+        {
+          "query_id": 85,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 213.77
+        },
+        {
+          "query_id": 85,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 1,
+          "error": null,
+          "duration_seconds": 379.84
+        },
+        {
+          "query_id": 94,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 11,
+          "expected_count": 11,
+          "error": null,
+          "duration_seconds": 121.04
+        },
+        {
+          "query_id": 103,
+          "run_number": 1,
+          "status": "PASS",
+          "still_error": false,
+          "retrieved_count": 4,
+          "expected_count": 4,
+          "error": null,
+          "duration_seconds": 257.47
+        },
+        {
+          "query_id": 103,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 4,
+          "error": null,
+          "duration_seconds": 346.09
+        },
+        {
+          "query_id": 103,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 4,
+          "error": null,
+          "duration_seconds": 231.86
+        },
+        {
+          "query_id": 118,
+          "run_number": 1,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 5,
+          "error": null,
+          "duration_seconds": 358.87
+        },
+        {
+          "query_id": 118,
+          "run_number": 2,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 5,
+          "error": null,
+          "duration_seconds": 259.28
+        },
+        {
+          "query_id": 118,
+          "run_number": 3,
+          "status": "FAIL",
+          "still_error": true,
+          "retrieved_count": null,
+          "expected_count": 5,
+          "error": null,
+          "duration_seconds": 183.43
+        }
+      ],
+      "output_csv": "results/gpt/gpt-5.5/gpt_benchmark_summary_gv_20260512_230230_rerun_20260518_222018.csv"
+    }
+  ]
+}
