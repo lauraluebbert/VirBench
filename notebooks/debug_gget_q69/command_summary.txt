@@ -1,0 +1,68 @@
+================================================================================
+GGET VIRUS COMMAND SUMMARY
+================================================================================
+
+Execution Date: 2026-05-20 14:11:51
+Output Folder: debug_gget_q69
+
+--------------------------------------------------------------------------------
+SOFTWARE VERSIONS
+--------------------------------------------------------------------------------
+gget version: 0.30.3
+
+--------------------------------------------------------------------------------
+COMMAND LINE
+--------------------------------------------------------------------------------
+/ewsc/lluebber/projects/VirBench/.venv_08/lib/python3.13/site-packages/ipykernel_launcher.py --f=/home/unix/lluebber/.local/share/jupyter/runtime/kernel-v3c1e9a8e13020fb9a130e0250354bca236d1114f0.json
+
+--------------------------------------------------------------------------------
+EXECUTION STATUS
+--------------------------------------------------------------------------------
+✅ Command completed successfully
+
+--------------------------------------------------------------------------------
+SEQUENCE STATISTICS
+--------------------------------------------------------------------------------
+Total records from API: 17808
+After metadata filtering: 2907
+Final sequences (after all filters): 2907
+
+--------------------------------------------------------------------------------
+DETAILED STATISTICS
+--------------------------------------------------------------------------------
+Unique hosts: 11
+  - Aedes aegypti
+  - Aedes africanus
+  - Aedes albopictus
+  - Aedes luteocephalus
+  - Aedes taylori
+  - Culicidae
+  - Homo sapiens
+  - Macaca nemestrina
+  - Mus
+  - Mus musculus
+  - Simiiformes
+
+Unique geographic locations: 0
+
+Sequence length range: 10418 - 10940 bp
+Average sequence length: 10580 bp
+
+Completeness breakdown:
+  - partial: 2907
+
+Source database breakdown:
+  - GenBank: 2907
+
+Unique submitter countries: 0
+
+--------------------------------------------------------------------------------
+OUTPUT FILES
+--------------------------------------------------------------------------------
+FASTA Sequences: 11060_sequences.fasta (30.13 MB)
+JSONL Metadata: 11060_metadata.jsonl (6.09 MB)
+CSV Metadata: 11060_metadata.csv (3.86 MB)
+
+================================================================================
+END OF SUMMARY
+================================================================================

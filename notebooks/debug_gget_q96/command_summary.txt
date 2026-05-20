@@ -1,0 +1,58 @@
+================================================================================
+GGET VIRUS COMMAND SUMMARY
+================================================================================
+
+Execution Date: 2026-05-20 14:11:53
+Output Folder: debug_gget_q96
+
+--------------------------------------------------------------------------------
+SOFTWARE VERSIONS
+--------------------------------------------------------------------------------
+gget version: 0.30.3
+
+--------------------------------------------------------------------------------
+COMMAND LINE
+--------------------------------------------------------------------------------
+/ewsc/lluebber/projects/VirBench/.venv_08/lib/python3.13/site-packages/ipykernel_launcher.py --f=/home/unix/lluebber/.local/share/jupyter/runtime/kernel-v3c1e9a8e13020fb9a130e0250354bca236d1114f0.json
+
+--------------------------------------------------------------------------------
+EXECUTION STATUS
+--------------------------------------------------------------------------------
+✅ Command completed successfully
+
+--------------------------------------------------------------------------------
+SEQUENCE STATISTICS
+--------------------------------------------------------------------------------
+Total records from API: 33
+After metadata filtering: 11
+Final sequences (after all filters): 11
+
+--------------------------------------------------------------------------------
+DETAILED STATISTICS
+--------------------------------------------------------------------------------
+Unique hosts: 1
+  - Mus musculus
+
+Unique geographic locations: 0
+
+Sequence length range: 639 - 11845 bp
+Average sequence length: 2130 bp
+
+Completeness breakdown:
+  - partial: 11
+
+Source database breakdown:
+  - GenBank: 11
+
+Unique submitter countries: 0
+
+--------------------------------------------------------------------------------
+OUTPUT FILES
+--------------------------------------------------------------------------------
+FASTA Sequences: 11292_sequences.fasta (0.02 MB)
+JSONL Metadata: 11292_metadata.jsonl (0.02 MB)
+CSV Metadata: 11292_metadata.csv (0.02 MB)
+
+================================================================================
+END OF SUMMARY
+================================================================================
