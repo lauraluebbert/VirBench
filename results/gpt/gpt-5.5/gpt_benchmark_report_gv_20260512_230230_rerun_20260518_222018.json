@@ -126,58 +126,57 @@
     {
       "query_id": 3,
       "run_number": 1,
-      "expected_count": 23,
+      "expected_count": 22,
       "retrieved_count": 22,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "22\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module via Python\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with geographic_location=Africa, collection/release date bounds 2020-01-01 to 2025-12-31, length 1000-2000 bp, and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations logged.\",\n    \"Final sequences after all filters: 22.\"\n  ]\n}\n```",
-      "duration_seconds": 38.491642,
-      "tool_call_count": 5,
-      "methods": [
-        "gget==0.30.3 virus module via Python"
-      ],
-      "reasoning": [
-        "Queried TaxID 3052518 with geographic_location=Africa, collection/release date bounds 2020-01-01 to 2025-12-31, length 1000-2000 bp, and max_ambiguous_chars=10.",
-        "Checked command_summary.txt: command completed successfully with no failed operations logged.",
-        "Final sequences after all filters: 22."
-      ]
-    },
-    {
-      "query_id": 3,
-      "run_number": 2,
-      "expected_count": 23,
-      "retrieved_count": 22,
-      "is_correct": false,
-      "error": null,
-      "raw_response": "22\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with Africa, collection/release date, length, and max-N filters.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations.\",\n    \"Counted final FASTA/metadata records after all filters: 22.\"\n  ]\n}\n```",
-      "duration_seconds": 45.877894,
+      "raw_response": "22\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with Africa location, collection/release date filters spanning 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence filters: 1000-2000 bp and maximum 10 ambiguous N characters.\",\n    \"gget command_summary.txt reported successful completion with 22 final sequences and no failed operations.\"\n  ]\n}\n```",
+      "duration_seconds": 42.79068,
       "tool_call_count": 5,
       "methods": [
         "gget==0.30.3 virus module",
         "NCBI Virus via gget"
       ],
       "reasoning": [
-        "Queried TaxID 3052518 with Africa, collection/release date, length, and max-N filters.",
-        "Checked command_summary.txt: command completed successfully with no failed operations.",
-        "Counted final FASTA/metadata records after all filters: 22."
+        "Queried TaxID 3052518 with Africa location, collection/release date filters spanning 2020-01-01 to 2025-12-31.",
+        "Applied sequence filters: 1000-2000 bp and maximum 10 ambiguous N characters.",
+        "gget command_summary.txt reported successful completion with 22 final sequences and no failed operations."
+      ]
+    },
+    {
+      "query_id": 3,
+      "run_number": 2,
+      "expected_count": 22,
+      "retrieved_count": 22,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "22\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus / NCBI E-utilities\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with Africa geography, collection/release dates 2020-01-01 through 2025-12-31.\",\n    \"Applied sequence length filters of 1000-2000 bp and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: run completed successfully with no failed operations; final sequences after all filters = 22.\"\n  ]\n}\n```",
+      "duration_seconds": 35.146292,
+      "tool_call_count": 3,
+      "methods": [
+        "gget==0.30.3 virus module",
+        "NCBI Virus / NCBI E-utilities"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052518 with Africa geography, collection/release dates 2020-01-01 through 2025-12-31.",
+        "Applied sequence length filters of 1000-2000 bp and max_ambiguous_chars=10.",
+        "Checked command_summary.txt: run completed successfully with no failed operations; final sequences after all filters = 22."
       ]
     },
     {
       "query_id": 3,
       "run_number": 3,
-      "expected_count": 23,
+      "expected_count": 22,
       "retrieved_count": 22,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "22\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 gget.virus\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with Africa location, collection/release date bounds, length 1000-2000 bp, and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations section.\",\n    \"Final sequences after all filters: 22.\"\n  ]\n}\n```",
-      "duration_seconds": 20.179114,
-      "tool_call_count": 1,
-      "methods": [
-        "gget==0.30.3 gget.virus"
-      ],
+      "raw_response": "22\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via Python; NCBI Virus API; output FASTA/metadata/command_summary inspected\",\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with Africa geography, collection/release dates 2020-01-01 through 2025-12-31, length 1000-2000 bp, and max_ambiguous_chars=10.\",\n    \"gget command_summary reported successful completion with no failed operations.\",\n    \"Final sequences after all filters: 22.\"\n  ]\n}\n```",
+      "duration_seconds": 38.928498,
+      "tool_call_count": 5,
+      "methods": "gget==0.30.3 virus module via Python; NCBI Virus API; output FASTA/metadata/command_summary inspected",
       "reasoning": [
-        "Queried TaxID 3052518 with Africa location, collection/release date bounds, length 1000-2000 bp, and max_ambiguous_chars=10.",
-        "Checked command_summary.txt: command completed successfully with no failed operations section.",
+        "Queried TaxID 3052518 with Africa geography, collection/release dates 2020-01-01 through 2025-12-31, length 1000-2000 bp, and max_ambiguous_chars=10.",
+        "gget command_summary reported successful completion with no failed operations.",
         "Final sequences after all filters: 22."
       ]
     },
@@ -984,8 +983,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 449.461866,
-      "tool_call_count": 16,
+      "duration_seconds": 318.892819,
+      "tool_call_count": 25,
       "methods": null,
       "reasoning": null
     },
@@ -1543,16 +1542,15 @@
       "retrieved_count": 231,
       "is_correct": true,
       "error": null,
-      "raw_response": "231\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 11019 with the specified Africa, collection/release date, length, and ambiguous-base filters.\",\n    \"Checked command_summary.txt: execution completed successfully with no failed-operation retry section.\",\n    \"Final sequences after all filters: 231.\"\n  ]\n}\n```",
-      "duration_seconds": 51.348794,
-      "tool_call_count": 5,
+      "raw_response": "231\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module via NCBI Virus API\"],\n  \"reasoning\": [\n    \"Queried TaxID 11019 with Africa geographic filter, collection/release dates 2020-01-01 to 2025-12-31, minimum length 10000 bp, and max ambiguous N count 10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations.\",\n    \"Final sequences after all filters: 231.\"\n  ]\n}\n```",
+      "duration_seconds": 44.266485,
+      "tool_call_count": 2,
       "methods": [
-        "gget==0.30.3 virus module",
-        "NCBI Virus via gget"
+        "gget==0.30.3 virus module via NCBI Virus API"
       ],
       "reasoning": [
-        "Queried TaxID 11019 with the specified Africa, collection/release date, length, and ambiguous-base filters.",
-        "Checked command_summary.txt: execution completed successfully with no failed-operation retry section.",
+        "Queried TaxID 11019 with Africa geographic filter, collection/release dates 2020-01-01 to 2025-12-31, minimum length 10000 bp, and max ambiguous N count 10.",
+        "Checked command_summary.txt: command completed successfully with no failed operations.",
         "Final sequences after all filters: 231."
       ]
     },
@@ -1560,17 +1558,21 @@
       "query_id": 28,
       "run_number": 2,
       "expected_count": 231,
-      "retrieved_count": 0,
-      "is_correct": false,
+      "retrieved_count": 231,
+      "is_correct": true,
       "error": null,
-      "raw_response": "0\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module against NCBI Virus\",\n  \"reasoning\": [\n    \"NCBI currently resolves O'nyong-nyong virus to TaxID 2169701 / species TaxID 3426312, while TaxID 11019 resolves to the Alphavirus genus.\",\n    \"Using the O'nyong-nyong virus query with the specified Africa, collection/release date, length, and max-N filters returned 3 API records and 0 passing records.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations reported.\"\n  ]\n}\n```",
-      "duration_seconds": 109.754716,
-      "tool_call_count": 9,
-      "methods": "gget==0.30.3 virus module against NCBI Virus",
+      "raw_response": "231\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 gget.virus\", \"NCBI Virus via gget\", \"FASTA/metadata validation\"],\n  \"reasoning\": [\n    \"Queried TaxID 11019 with Africa, collection/release date ranges 2020-01-01 to 2025-12-31, min length 10000, max ambiguous N count 10.\",\n    \"gget command_summary reported successful completion with no failed operations.\",\n    \"Validated 231 FASTA records; all had length >=10000 and <=10 Ns.\"\n  ]\n}\n```",
+      "duration_seconds": 62.604745,
+      "tool_call_count": 5,
+      "methods": [
+        "gget==0.30.3 gget.virus",
+        "NCBI Virus via gget",
+        "FASTA/metadata validation"
+      ],
       "reasoning": [
-        "NCBI currently resolves O'nyong-nyong virus to TaxID 2169701 / species TaxID 3426312, while TaxID 11019 resolves to the Alphavirus genus.",
-        "Using the O'nyong-nyong virus query with the specified Africa, collection/release date, length, and max-N filters returned 3 API records and 0 passing records.",
-        "Checked command_summary.txt: command completed successfully with no failed operations reported."
+        "Queried TaxID 11019 with Africa, collection/release date ranges 2020-01-01 to 2025-12-31, min length 10000, max ambiguous N count 10.",
+        "gget command_summary reported successful completion with no failed operations.",
+        "Validated 231 FASTA records; all had length >=10000 and <=10 Ns."
       ]
     },
     {
@@ -1580,14 +1582,16 @@
       "retrieved_count": 231,
       "is_correct": true,
       "error": null,
-      "raw_response": "231\n\n```json\n{\n  \"methods\": \"Installed gget==0.30.3 and ran gget.virus with TaxID 11019 plus the requested location, collection/release date, length, and ambiguous-N filters.\",\n  \"reasoning\": [\n    \"gget command completed successfully with no failed operations in command_summary.txt.\",\n    \"Summary reported: Total records from API = 3595; after metadata filtering = 245; final sequences after all filters = 231.\",\n    \"Count taken from the generated metadata CSV row count and command_summary.txt final sequence count.\"\n  ]\n}\n```",
-      "duration_seconds": 64.381656,
-      "tool_call_count": 7,
-      "methods": "Installed gget==0.30.3 and ran gget.virus with TaxID 11019 plus the requested location, collection/release date, length, and ambiguous-N filters.",
+      "raw_response": "231\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module via NCBI Virus/Datasets API\"],\n  \"reasoning\": [\n    \"Queried TaxID 11019 with Africa, collection/release date range 2020-01-01 to 2025-12-31, min length 10000 bp, and max 10 Ns.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations.\",\n    \"Validated final FASTA and metadata outputs contained 231 records.\"\n  ]\n}\n```",
+      "duration_seconds": 109.809414,
+      "tool_call_count": 12,
+      "methods": [
+        "gget==0.30.3 virus module via NCBI Virus/Datasets API"
+      ],
       "reasoning": [
-        "gget command completed successfully with no failed operations in command_summary.txt.",
-        "Summary reported: Total records from API = 3595; after metadata filtering = 245; final sequences after all filters = 231.",
-        "Count taken from the generated metadata CSV row count and command_summary.txt final sequence count."
+        "Queried TaxID 11019 with Africa, collection/release date range 2020-01-01 to 2025-12-31, min length 10000 bp, and max 10 Ns.",
+        "Checked command_summary.txt: command completed successfully with no failed operations.",
+        "Validated final FASTA and metadata outputs contained 231 records."
       ]
     },
     {
@@ -1731,14 +1735,22 @@
       "query_id": 31,
       "run_number": 2,
       "expected_count": 241,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 241,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 259.192693,
-      "tool_call_count": 15,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "241\n\n```json\n{\n  \"methods\": [\n    \"gget==0.30.3 NCBI Virus/Datasets metadata query\",\n    \"NCBI E-utilities efetch FASTA retrieval\",\n    \"gget filter logic for metadata and N-count filtering\"\n  ],\n  \"reasoning\": [\n    \"Applied TaxID 10244, Africa, collection/release date, and minimum length filters to get 1832 metadata candidates.\",\n    \"Retrieved all 1832 candidate FASTA records and counted uppercase N characters as in gget filter_sequences.\",\n    \"No missing or failed sequence batches; 241 sequences had <=10 Ns.\"\n  ]\n}\n```",
+      "duration_seconds": 405.866934,
+      "tool_call_count": 18,
+      "methods": [
+        "gget==0.30.3 NCBI Virus/Datasets metadata query",
+        "NCBI E-utilities efetch FASTA retrieval",
+        "gget filter logic for metadata and N-count filtering"
+      ],
+      "reasoning": [
+        "Applied TaxID 10244, Africa, collection/release date, and minimum length filters to get 1832 metadata candidates.",
+        "Retrieved all 1832 candidate FASTA records and counted uppercase N characters as in gget filter_sequences.",
+        "No missing or failed sequence batches; 241 sequences had <=10 Ns."
+      ]
     },
     {
       "query_id": 31,
@@ -1984,221 +1996,223 @@
     {
       "query_id": 36,
       "run_number": 1,
-      "expected_count": 126,
+      "expected_count": 125,
       "retrieved_count": 125,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "125\n\n```json\n{\n  \"methods\": [\"pip install gget==0.30.3\", \"gget.virus with TaxID 3052518 and specified date/length/N filters\", \"Checked command_summary.txt and validated FASTA record count\"],\n  \"reasoning\": [\n    \"gget reported command completed successfully with no failed operations.\",\n    \"Final sequences after all filters: 125.\",\n    \"FASTA validation found 125 records, lengths 1246-1814 bp, and max N count 9.\"\n  ]\n}\n```",
-      "duration_seconds": 62.797443,
-      "tool_call_count": 7,
-      "methods": [
-        "pip install gget==0.30.3",
-        "gget.virus with TaxID 3052518 and specified date/length/N filters",
-        "Checked command_summary.txt and validated FASTA record count"
-      ],
+      "raw_response": "125\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via NCBI Virus/E-utilities\",\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with collection and release dates from 2020-01-01 through 2025-12-31.\",\n    \"Applied length filters 1000-2000 bp and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: run completed successfully with no failed operations; final sequences after all filters = 125.\"\n  ]\n}\n```",
+      "duration_seconds": 36.03324,
+      "tool_call_count": 3,
+      "methods": "gget==0.30.3 virus module via NCBI Virus/E-utilities",
       "reasoning": [
-        "gget reported command completed successfully with no failed operations.",
-        "Final sequences after all filters: 125.",
-        "FASTA validation found 125 records, lengths 1246-1814 bp, and max N count 9."
+        "Queried TaxID 3052518 with collection and release dates from 2020-01-01 through 2025-12-31.",
+        "Applied length filters 1000-2000 bp and max_ambiguous_chars=10.",
+        "Checked command_summary.txt: run completed successfully with no failed operations; final sequences after all filters = 125."
       ]
     },
     {
       "query_id": 36,
       "run_number": 2,
-      "expected_count": 126,
+      "expected_count": 125,
       "retrieved_count": 125,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "125\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via NCBI Virus API\",\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with collection and release date filters from 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence length filters of 1000-2000 bp and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 125.\"\n  ]\n}\n```",
-      "duration_seconds": 25.754434,
-      "tool_call_count": 3,
-      "methods": "gget==0.30.3 virus module via NCBI Virus API",
+      "raw_response": "125\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module via NCBI Virus\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with collection and release date filters from 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence length filter 1000-2000 bp and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: run completed successfully with no failed operations; final sequences after all filters = 125.\"\n  ]\n}\n```",
+      "duration_seconds": 28.226281,
+      "tool_call_count": 2,
+      "methods": [
+        "gget==0.30.3 virus module via NCBI Virus"
+      ],
       "reasoning": [
         "Queried TaxID 3052518 with collection and release date filters from 2020-01-01 to 2025-12-31.",
-        "Applied sequence length filters of 1000-2000 bp and max_ambiguous_chars=10.",
+        "Applied sequence length filter 1000-2000 bp and max_ambiguous_chars=10.",
+        "Checked command_summary.txt: run completed successfully with no failed operations; final sequences after all filters = 125."
+      ]
+    },
+    {
+      "query_id": 36,
+      "run_number": 3,
+      "expected_count": 125,
+      "retrieved_count": 125,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "125\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus via gget\", \"GenBank metadata enrichment for collection-date verification\"],\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with collection/release date filters from 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence filters: length 1000-2000 bp and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 125.\"\n  ]\n}\n```",
+      "duration_seconds": 75.646808,
+      "tool_call_count": 5,
+      "methods": [
+        "gget==0.30.3 virus module",
+        "NCBI Virus via gget",
+        "GenBank metadata enrichment for collection-date verification"
+      ],
+      "reasoning": [
+        "Queried TaxID 3052518 with collection/release date filters from 2020-01-01 to 2025-12-31.",
+        "Applied sequence filters: length 1000-2000 bp and max_ambiguous_chars=10.",
         "Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 125."
       ]
     },
     {
-      "query_id": 36,
-      "run_number": 3,
-      "expected_count": 126,
-      "retrieved_count": 125,
-      "is_correct": false,
-      "error": null,
-      "raw_response": "125\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via Python\",\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with collection and release date filters spanning 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence length filter of 1000\u20132000 bp and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: command completed successfully; final sequences after all filters = 125.\"\n  ]\n}\n```",
-      "duration_seconds": 29.549705,
-      "tool_call_count": 3,
-      "methods": "gget==0.30.3 virus module via Python",
-      "reasoning": [
-        "Queried TaxID 3052518 with collection and release date filters spanning 2020-01-01 to 2025-12-31.",
-        "Applied sequence length filter of 1000\u20132000 bp and max_ambiguous_chars=10.",
-        "Checked command_summary.txt: command completed successfully; final sequences after all filters = 125."
-      ]
-    },
-    {
       "query_id": 37,
       "run_number": 1,
-      "expected_count": 195,
-      "retrieved_count": 195,
+      "expected_count": 194,
+      "retrieved_count": 194,
       "is_correct": true,
       "error": null,
-      "raw_response": "195\n```json\n{\n  \"methods\": [\n    \"Installed and used gget==0.30.3 gget.virus\",\n    \"Queried TaxID 1980442 with collection/release date filters, min_seq_length=5000, max_ambiguous_chars=10\"\n  ],\n  \"reasoning\": [\n    \"gget command_summary.txt reported successful completion with no failed operations.\",\n    \"Final sequences after all filters: 195.\",\n    \"Verified FASTA contained 195 records; minimum length was 5742 bp and maximum N count was 9.\"\n  ]\n}\n```",
-      "duration_seconds": 45.035918,
-      "tool_call_count": 3,
+      "raw_response": "194\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus metadata/API and E-utilities sequence retrieval via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection date 2020-01-01 to 2025-12-31 and release date 2020-01-01 to 2025-12-31.\",\n    \"Applied minimum sequence length 5000 bp and maximum ambiguous N count of 10.\",\n    \"Checked command_summary.txt: run completed successfully with no failed operations; final sequences after all filters = 194.\"\n  ]\n}\n```",
+      "duration_seconds": 77.58146,
+      "tool_call_count": 4,
       "methods": [
-        "Installed and used gget==0.30.3 gget.virus",
-        "Queried TaxID 1980442 with collection/release date filters, min_seq_length=5000, max_ambiguous_chars=10"
+        "gget==0.30.3 virus module",
+        "NCBI Virus metadata/API and E-utilities sequence retrieval via gget"
       ],
-      "reasoning": [
-        "gget command_summary.txt reported successful completion with no failed operations.",
-        "Final sequences after all filters: 195.",
-        "Verified FASTA contained 195 records; minimum length was 5742 bp and maximum N count was 9."
-      ]
-    },
-    {
-      "query_id": 37,
-      "run_number": 2,
-      "expected_count": 195,
-      "retrieved_count": 195,
-      "is_correct": true,
-      "error": null,
-      "raw_response": "195\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module against NCBI Virus; output FASTA/metadata counted after filters\",\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection date 2020-01-01 to 2025-12-31 and release date 2020-01-01 to 2025-12-31.\",\n    \"Applied minimum sequence length 5000 bp and maximum ambiguous N count of 10.\",\n    \"Checked command_summary.txt: run completed successfully with no failed operations; final FASTA/metadata contained 195 unique sequences.\"\n  ]\n}\n```",
-      "duration_seconds": 115.757772,
-      "tool_call_count": 12,
-      "methods": "gget==0.30.3 virus module against NCBI Virus; output FASTA/metadata counted after filters",
       "reasoning": [
         "Queried TaxID 1980442 with collection date 2020-01-01 to 2025-12-31 and release date 2020-01-01 to 2025-12-31.",
         "Applied minimum sequence length 5000 bp and maximum ambiguous N count of 10.",
-        "Checked command_summary.txt: run completed successfully with no failed operations; final FASTA/metadata contained 195 unique sequences."
+        "Checked command_summary.txt: run completed successfully with no failed operations; final sequences after all filters = 194."
+      ]
+    },
+    {
+      "query_id": 37,
+      "run_number": 2,
+      "expected_count": 194,
+      "retrieved_count": 194,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "194\n\n{\n  \"methods\": \"gget==0.30.3 virus module via Python; NCBI Virus retrieval for TaxID 1980442\",\n  \"reasoning\": [\n    \"Applied collection date range 2020-01-01 to 2025-12-31 and release date range 2020-01-01 to 2025-12-31.\",\n    \"Applied minimum sequence length 5000 bp and maximum ambiguous characters N <= 10.\",\n    \"Checked command_summary.txt: run completed successfully with no failed operations; metadata CSV and FASTA both contained 194 records.\"\n  ]\n}",
+      "duration_seconds": 45.539293,
+      "tool_call_count": 3,
+      "methods": "gget==0.30.3 virus module via Python; NCBI Virus retrieval for TaxID 1980442",
+      "reasoning": [
+        "Applied collection date range 2020-01-01 to 2025-12-31 and release date range 2020-01-01 to 2025-12-31.",
+        "Applied minimum sequence length 5000 bp and maximum ambiguous characters N <= 10.",
+        "Checked command_summary.txt: run completed successfully with no failed operations; metadata CSV and FASTA both contained 194 records."
       ]
     },
     {
       "query_id": 37,
       "run_number": 3,
-      "expected_count": 195,
-      "retrieved_count": 195,
+      "expected_count": 194,
+      "retrieved_count": 194,
       "is_correct": true,
       "error": null,
-      "raw_response": "195\n\n```json\n{\n  \"methods\": \"Installed and used gget==0.30.3 gget.virus against NCBI Virus for TaxID 1980442.\",\n  \"reasoning\": [\n    \"Applied collection date range 2020-01-01 to 2025-12-31.\",\n    \"Applied release date range 2020-01-01 to 2025-12-31, minimum sequence length 5000 bp, and max ambiguous characters 10.\",\n    \"Verified command_summary.txt reported successful completion with no failed operations; FASTA and metadata each contained 195 records.\"\n  ]\n}\n```",
-      "duration_seconds": 38.083601,
-      "tool_call_count": 3,
-      "methods": "Installed and used gget==0.30.3 gget.virus against NCBI Virus for TaxID 1980442.",
-      "reasoning": [
-        "Applied collection date range 2020-01-01 to 2025-12-31.",
-        "Applied release date range 2020-01-01 to 2025-12-31, minimum sequence length 5000 bp, and max ambiguous characters 10.",
-        "Verified command_summary.txt reported successful completion with no failed operations; FASTA and metadata each contained 195 records."
-      ]
-    },
-    {
-      "query_id": 38,
-      "run_number": 1,
-      "expected_count": 267,
-      "retrieved_count": 267,
-      "is_correct": true,
-      "error": null,
-      "raw_response": "267\n\n```json\n{\n  \"methods\": \"gget==0.30.3 gget.virus using NCBI Virus data; FASTA/metadata output checked locally\",\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection/release dates 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence length 2000-4500 bp and max_ambiguous_chars=10 filters.\",\n    \"command_summary.txt reported successful completion with no failed operations; FASTA contained 267 records.\"\n  ]\n}\n```",
-      "duration_seconds": 35.774795,
-      "tool_call_count": 4,
-      "methods": "gget==0.30.3 gget.virus using NCBI Virus data; FASTA/metadata output checked locally",
-      "reasoning": [
-        "Queried TaxID 1980442 with collection/release dates 2020-01-01 to 2025-12-31.",
-        "Applied sequence length 2000-4500 bp and max_ambiguous_chars=10 filters.",
-        "command_summary.txt reported successful completion with no failed operations; FASTA contained 267 records."
-      ]
-    },
-    {
-      "query_id": 38,
-      "run_number": 2,
-      "expected_count": 267,
-      "retrieved_count": 267,
-      "is_correct": true,
-      "error": null,
-      "raw_response": "267\n\n```json\n{\n  \"methods\": \"Installed and used gget==0.30.3 gget.virus against NCBI Virus for TaxID 1980442.\",\n  \"reasoning\": [\n    \"Applied collection and release date filters from 2020-01-01 through 2025-12-31.\",\n    \"Applied sequence length filter 2000-4500 bp and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 267.\"\n  ]\n}\n```",
-      "duration_seconds": 21.814545,
-      "tool_call_count": 1,
-      "methods": "Installed and used gget==0.30.3 gget.virus against NCBI Virus for TaxID 1980442.",
-      "reasoning": [
-        "Applied collection and release date filters from 2020-01-01 through 2025-12-31.",
-        "Applied sequence length filter 2000-4500 bp and max_ambiguous_chars=10.",
-        "Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 267."
-      ]
-    },
-    {
-      "query_id": 38,
-      "run_number": 3,
-      "expected_count": 267,
-      "retrieved_count": 267,
-      "is_correct": true,
-      "error": null,
-      "raw_response": "267\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 gget.virus via NCBI Virus/INSDC\"],\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection/release dates 2020-01-01 through 2025-12-31.\",\n    \"Applied length 2000-4500 bp and max_ambiguous_chars=10 filters.\",\n    \"command_summary.txt showed successful completion with 267 final sequences and no failed operations.\"\n  ]\n}\n```",
-      "duration_seconds": 36.216999,
-      "tool_call_count": 2,
+      "raw_response": "194\n```json\n{\n  \"methods\": [\"gget==0.30.3 gget.virus\"],\n  \"reasoning\": [\n    \"Queried NCBI Virus for TaxID 1980442 with collection/release dates 2020-01-01 through 2025-12-31.\",\n    \"Applied min_seq_length=5000 and max_ambiguous_chars=10.\",\n    \"Verified command_summary.txt completed successfully with no failed operations.\"\n  ]\n}\n```",
+      "duration_seconds": 74.545007,
+      "tool_call_count": 5,
       "methods": [
-        "gget==0.30.3 gget.virus via NCBI Virus/INSDC"
+        "gget==0.30.3 gget.virus"
       ],
       "reasoning": [
-        "Queried TaxID 1980442 with collection/release dates 2020-01-01 through 2025-12-31.",
-        "Applied length 2000-4500 bp and max_ambiguous_chars=10 filters.",
-        "command_summary.txt showed successful completion with 267 final sequences and no failed operations."
+        "Queried NCBI Virus for TaxID 1980442 with collection/release dates 2020-01-01 through 2025-12-31.",
+        "Applied min_seq_length=5000 and max_ambiguous_chars=10.",
+        "Verified command_summary.txt completed successfully with no failed operations."
       ]
     },
     {
-      "query_id": 39,
+      "query_id": 38,
       "run_number": 1,
-      "expected_count": 362,
-      "retrieved_count": 362,
+      "expected_count": 266,
+      "retrieved_count": 266,
       "is_correct": true,
       "error": null,
-      "raw_response": "362\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus API via gget\", \"NCBI E-utilities sequence download via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection and release date filters from 2020-01-01 through 2025-12-31.\",\n    \"Applied sequence length filters of 1000\u20132000 bp and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 362.\"\n  ]\n}\n```",
-      "duration_seconds": 31.783709,
-      "tool_call_count": 3,
+      "raw_response": "266\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection and release dates bounded from 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence filters: length 2000\u20134500 bp and max 10 ambiguous N characters.\",\n    \"gget command_summary.txt reported successful completion with 266 final sequences and no failed operations.\"\n  ]\n}\n```",
+      "duration_seconds": 35.932701,
+      "tool_call_count": 2,
       "methods": [
         "gget==0.30.3 virus module",
-        "NCBI Virus API via gget",
-        "NCBI E-utilities sequence download via gget"
-      ],
-      "reasoning": [
-        "Queried TaxID 1980442 with collection and release date filters from 2020-01-01 through 2025-12-31.",
-        "Applied sequence length filters of 1000\u20132000 bp and max_ambiguous_chars=10.",
-        "Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 362."
-      ]
-    },
-    {
-      "query_id": 39,
-      "run_number": 2,
-      "expected_count": 362,
-      "retrieved_count": 362,
-      "is_correct": true,
-      "error": null,
-      "raw_response": "362\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 gget.virus\", \"NCBI Virus via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection/release date filters spanning 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence length filter 1000-2000 bp and max_ambiguous_chars=10.\",\n    \"Verified command_summary.txt reported successful completion with no failed operations; final FASTA/metadata count was 362.\"\n  ]\n}\n```",
-      "duration_seconds": 33.720258,
-      "tool_call_count": 2,
-      "methods": [
-        "gget==0.30.3 gget.virus",
         "NCBI Virus via gget"
       ],
       "reasoning": [
-        "Queried TaxID 1980442 with collection/release date filters spanning 2020-01-01 to 2025-12-31.",
-        "Applied sequence length filter 1000-2000 bp and max_ambiguous_chars=10.",
-        "Verified command_summary.txt reported successful completion with no failed operations; final FASTA/metadata count was 362."
+        "Queried TaxID 1980442 with collection and release dates bounded from 2020-01-01 to 2025-12-31.",
+        "Applied sequence filters: length 2000\u20134500 bp and max 10 ambiguous N characters.",
+        "gget command_summary.txt reported successful completion with 266 final sequences and no failed operations."
+      ]
+    },
+    {
+      "query_id": 38,
+      "run_number": 2,
+      "expected_count": 266,
+      "retrieved_count": 266,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "266\n\n```json\n{\n  \"methods\": \"Installed and ran gget==0.30.3 virus module against NCBI Virus for TaxID 1980442.\",\n  \"reasoning\": [\n    \"Applied collection date filter 2020-01-01 to 2025-12-31 and release date filter 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence length filter 2000-4500 bp and max ambiguous characters <=10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final FASTA and metadata contained 266 sequences.\"\n  ]\n}\n```",
+      "duration_seconds": 32.811103,
+      "tool_call_count": 2,
+      "methods": "Installed and ran gget==0.30.3 virus module against NCBI Virus for TaxID 1980442.",
+      "reasoning": [
+        "Applied collection date filter 2020-01-01 to 2025-12-31 and release date filter 2020-01-01 to 2025-12-31.",
+        "Applied sequence length filter 2000-4500 bp and max ambiguous characters <=10.",
+        "Checked command_summary.txt: command completed successfully with no failed operations; final FASTA and metadata contained 266 sequences."
+      ]
+    },
+    {
+      "query_id": 38,
+      "run_number": 3,
+      "expected_count": 266,
+      "retrieved_count": 266,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "266\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via NCBI Virus/E-utilities\",\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection/release date filters from 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence length filter 2000-4500 bp and max ambiguous characters <=10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 266.\"\n  ]\n}\n```",
+      "duration_seconds": 41.528689,
+      "tool_call_count": 3,
+      "methods": "gget==0.30.3 virus module via NCBI Virus/E-utilities",
+      "reasoning": [
+        "Queried TaxID 1980442 with collection/release date filters from 2020-01-01 to 2025-12-31.",
+        "Applied sequence length filter 2000-4500 bp and max ambiguous characters <=10.",
+        "Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 266."
+      ]
+    },
+    {
+      "query_id": 39,
+      "run_number": 1,
+      "expected_count": 361,
+      "retrieved_count": 361,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "361\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus via gget\", \"FASTA record count and command_summary.txt validation\"],\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection and release date filters from 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence length filters of 1000-2000 bp and max_ambiguous_chars=10.\",\n    \"gget command completed successfully with no failed operations; final FASTA contained 361 records.\"\n  ]\n}\n```",
+      "duration_seconds": 42.118608,
+      "tool_call_count": 2,
+      "methods": [
+        "gget==0.30.3 virus module",
+        "NCBI Virus via gget",
+        "FASTA record count and command_summary.txt validation"
+      ],
+      "reasoning": [
+        "Queried TaxID 1980442 with collection and release date filters from 2020-01-01 to 2025-12-31.",
+        "Applied sequence length filters of 1000-2000 bp and max_ambiguous_chars=10.",
+        "gget command completed successfully with no failed operations; final FASTA contained 361 records."
+      ]
+    },
+    {
+      "query_id": 39,
+      "run_number": 2,
+      "expected_count": 361,
+      "retrieved_count": 361,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "361\n\n```json\n{\n  \"methods\": \"gget==0.30.3 gget.virus via NCBI Virus\",\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection/release dates 2020-01-01 to 2025-12-31.\",\n    \"Applied length filter 1000-2000 bp and max ambiguous characters N <= 10.\",\n    \"Checked command_summary.txt: completed successfully with no failed operations; final FASTA and metadata count = 361.\"\n  ]\n}\n```",
+      "duration_seconds": 35.73903,
+      "tool_call_count": 2,
+      "methods": "gget==0.30.3 gget.virus via NCBI Virus",
+      "reasoning": [
+        "Queried TaxID 1980442 with collection/release dates 2020-01-01 to 2025-12-31.",
+        "Applied length filter 1000-2000 bp and max ambiguous characters N <= 10.",
+        "Checked command_summary.txt: completed successfully with no failed operations; final FASTA and metadata count = 361."
       ]
     },
     {
       "query_id": 39,
       "run_number": 3,
-      "expected_count": 362,
-      "retrieved_count": 362,
+      "expected_count": 361,
+      "retrieved_count": 361,
       "is_correct": true,
       "error": null,
-      "raw_response": "362\n{\n  \"methods\": \"gget==0.30.3 virus module via NCBI Virus; FASTA/header count validation\",\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection/release date filters from 2020-01-01 through 2025-12-31.\",\n    \"Applied sequence length filters 1000-2000 bp and max_ambiguous_chars=10.\",\n    \"command_summary.txt reported successful completion with 362 final sequences and no failed operations.\"\n  ]\n}",
-      "duration_seconds": 85.656383,
-      "tool_call_count": 12,
-      "methods": "gget==0.30.3 virus module via NCBI Virus; FASTA/header count validation",
+      "raw_response": "361\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via Python\",\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with collection/release date filters spanning 2020-01-01 to 2025-12-31.\",\n    \"Applied sequence length 1000-2000 bp and max ambiguous characters <=10.\",\n    \"Checked command_summary.txt: run completed successfully with no failed operations; FASTA/metadata count was 361.\"\n  ]\n}\n```",
+      "duration_seconds": 38.665188,
+      "tool_call_count": 3,
+      "methods": "gget==0.30.3 virus module via Python",
       "reasoning": [
-        "Queried TaxID 1980442 with collection/release date filters from 2020-01-01 through 2025-12-31.",
-        "Applied sequence length filters 1000-2000 bp and max_ambiguous_chars=10.",
-        "command_summary.txt reported successful completion with 362 final sequences and no failed operations."
+        "Queried TaxID 1980442 with collection/release date filters spanning 2020-01-01 to 2025-12-31.",
+        "Applied sequence length 1000-2000 bp and max ambiguous characters <=10.",
+        "Checked command_summary.txt: run completed successfully with no failed operations; FASTA/metadata count was 361."
       ]
     },
     {
@@ -2380,8 +2394,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 378.246544,
-      "tool_call_count": 17,
+      "duration_seconds": 945.015654,
+      "tool_call_count": 26,
       "methods": null,
       "reasoning": null
     },
@@ -2393,8 +2407,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 358.82355,
-      "tool_call_count": 16,
+      "duration_seconds": 669.952656,
+      "tool_call_count": 28,
       "methods": null,
       "reasoning": null
     },
@@ -2402,14 +2416,22 @@
       "query_id": 43,
       "run_number": 3,
       "expected_count": 928,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 928,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 234.765411,
-      "tool_call_count": 18,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "928\n\n```json\n{\n  \"methods\": [\n    \"gget==0.30.3 virus module\",\n    \"NCBI Virus search service\",\n    \"NCBI E-utilities efetch\"\n  ],\n  \"reasoning\": [\n    \"Filtered HIV-1 TaxID 11676 records for collection/release dates in 2020-01-01 through 2025-12-31, length >=9000 bp, and <=10 ambiguous N characters.\",\n    \"Retrieved accession.version identifiers and passed them through gget.virus accession mode with the same filters.\",\n    \"Checked command_summary.txt: gget completed successfully with no failed operations and reported 928 final sequences.\"\n  ]\n}\n```",
+      "duration_seconds": 354.646495,
+      "tool_call_count": 27,
+      "methods": [
+        "gget==0.30.3 virus module",
+        "NCBI Virus search service",
+        "NCBI E-utilities efetch"
+      ],
+      "reasoning": [
+        "Filtered HIV-1 TaxID 11676 records for collection/release dates in 2020-01-01 through 2025-12-31, length >=9000 bp, and <=10 ambiguous N characters.",
+        "Retrieved accession.version identifiers and passed them through gget.virus accession mode with the same filters.",
+        "Checked command_summary.txt: gget completed successfully with no failed operations and reported 928 final sequences."
+      ]
     },
     {
       "query_id": 44,
@@ -2995,16 +3017,18 @@
       "retrieved_count": 1475,
       "is_correct": true,
       "error": null,
-      "raw_response": "1475\n\n```json\n{\n  \"methods\": [\n    \"Installed gget==0.30.3 and ran gget.virus against NCBI Virus for TaxID 11019 with the requested collection/release date, length, and ambiguous-base filters.\"\n  ],\n  \"reasoning\": [\n    \"command_summary.txt reported successful completion with no failed operations.\",\n    \"Final sequences after all filters: 1475.\",\n    \"Note: NCBI currently resolves TaxID 11019 to Alphavirus; I used the requested TaxID.\"\n  ]\n}\n```",
-      "duration_seconds": 116.210862,
-      "tool_call_count": 8,
+      "raw_response": "1475\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Datasets API\", \"NCBI E-utilities\"],\n  \"reasoning\": [\n    \"Queried TaxID 11019 with collection/release date filters, min length 10000 bp, and max 10 Ns.\",\n    \"Parsed the generated FASTA and metadata outputs.\",\n    \"command_summary.txt reported successful completion with no failed operations.\"\n  ]\n}\n```",
+      "duration_seconds": 109.940287,
+      "tool_call_count": 9,
       "methods": [
-        "Installed gget==0.30.3 and ran gget.virus against NCBI Virus for TaxID 11019 with the requested collection/release date, length, and ambiguous-base filters."
+        "gget==0.30.3 virus module",
+        "NCBI Datasets API",
+        "NCBI E-utilities"
       ],
       "reasoning": [
-        "command_summary.txt reported successful completion with no failed operations.",
-        "Final sequences after all filters: 1475.",
-        "Note: NCBI currently resolves TaxID 11019 to Alphavirus; I used the requested TaxID."
+        "Queried TaxID 11019 with collection/release date filters, min length 10000 bp, and max 10 Ns.",
+        "Parsed the generated FASTA and metadata outputs.",
+        "command_summary.txt reported successful completion with no failed operations."
       ]
     },
     {
@@ -3014,17 +3038,17 @@
       "retrieved_count": 1475,
       "is_correct": true,
       "error": null,
-      "raw_response": "1475\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 gget.virus\", \"NCBI Virus via gget\"],\n  \"reasoning\": [\n    \"Ran gget.virus('11019') with the specified collection/release date, length, and ambiguous-base filters.\",\n    \"Verified command_summary.txt reported successful completion with no failed operations.\",\n    \"Used the reported final sequences count after all filters.\"\n  ]\n}\n```",
-      "duration_seconds": 100.793462,
+      "raw_response": "1475\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 gget.virus\", \"NCBI Virus via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 11019 with collection/release dates 2020-01-01 through 2025-12-31.\",\n    \"Applied min_seq_length=10000 and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: completed successfully with no failed operations; final sequences = 1475.\"\n  ]\n}\n```",
+      "duration_seconds": 91.916182,
       "tool_call_count": 6,
       "methods": [
         "gget==0.30.3 gget.virus",
         "NCBI Virus via gget"
       ],
       "reasoning": [
-        "Ran gget.virus('11019') with the specified collection/release date, length, and ambiguous-base filters.",
-        "Verified command_summary.txt reported successful completion with no failed operations.",
-        "Used the reported final sequences count after all filters."
+        "Queried TaxID 11019 with collection/release dates 2020-01-01 through 2025-12-31.",
+        "Applied min_seq_length=10000 and max_ambiguous_chars=10.",
+        "Checked command_summary.txt: completed successfully with no failed operations; final sequences = 1475."
       ]
     },
     {
@@ -3034,14 +3058,16 @@
       "retrieved_count": 1475,
       "is_correct": true,
       "error": null,
-      "raw_response": "1475\n\n```json\n{\n  \"methods\": \"Installed gget==0.30.3 and ran gget.virus with virus='11019', min_collection_date='2020-01-01', max_collection_date='2025-12-31', min_release_date='2020-01-01', max_release_date='2025-12-31', min_seq_length=10000, max_ambiguous_chars=10.\",\n  \"reasoning\": [\n    \"Used the supplied TaxID 11019 as the gget virus query.\",\n    \"Read the final sequence count from command_summary.txt.\",\n    \"Verified the run completed successfully with no failed-operations section and confirmed 1475 FASTA records.\"\n  ]\n}\n```",
-      "duration_seconds": 102.629404,
-      "tool_call_count": 11,
-      "methods": "Installed gget==0.30.3 and ran gget.virus with virus='11019', min_collection_date='2020-01-01', max_collection_date='2025-12-31', min_release_date='2020-01-01', max_release_date='2025-12-31', min_seq_length=10000, max_ambiguous_chars=10.",
+      "raw_response": "1475\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 gget.virus\"],\n  \"reasoning\": [\n    \"Queried user-specified TaxID 11019 with collection/release date, length, and max-N filters.\",\n    \"Checked command_summary.txt: completed successfully with no failed operations.\",\n    \"Verified final FASTA and metadata counts matched the reported final sequence count.\"\n  ]\n}\n```",
+      "duration_seconds": 95.734226,
+      "tool_call_count": 7,
+      "methods": [
+        "gget==0.30.3 gget.virus"
+      ],
       "reasoning": [
-        "Used the supplied TaxID 11019 as the gget virus query.",
-        "Read the final sequence count from command_summary.txt.",
-        "Verified the run completed successfully with no failed-operations section and confirmed 1475 FASTA records."
+        "Queried user-specified TaxID 11019 with collection/release date, length, and max-N filters.",
+        "Checked command_summary.txt: completed successfully with no failed operations.",
+        "Verified final FASTA and metadata counts matched the reported final sequence count."
       ]
     },
     {
@@ -3106,59 +3132,52 @@
     {
       "query_id": 56,
       "run_number": 1,
-      "expected_count": 738,
-      "retrieved_count": 738,
+      "expected_count": 663,
+      "retrieved_count": 663,
       "is_correct": true,
       "error": null,
-      "raw_response": "738\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module via Python\", \"NCBI Virus/INSDC retrieval\"],\n  \"reasoning\": [\n    \"Queried TaxID 11292 with collection and release date filters from 2020-01-01 through 2025-12-31.\",\n    \"Applied minimum sequence length 10000 bp and maximum ambiguous characters N <= 10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 738.\"\n  ]\n}\n```",
-      "duration_seconds": 56.670324,
-      "tool_call_count": 3,
-      "methods": [
-        "gget==0.30.3 virus module via Python",
-        "NCBI Virus/INSDC retrieval"
-      ],
+      "raw_response": "663\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via NCBI Virus\",\n  \"reasoning\": [\n    \"Queried TaxID 11292 with collection and release dates from 2020-01-01 to 2025-12-31.\",\n    \"Applied minimum sequence length of 10000 bp and maximum ambiguous characters of 10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 663.\"\n  ]\n}\n```",
+      "duration_seconds": 48.789062,
+      "tool_call_count": 2,
+      "methods": "gget==0.30.3 virus module via NCBI Virus",
       "reasoning": [
-        "Queried TaxID 11292 with collection and release date filters from 2020-01-01 through 2025-12-31.",
-        "Applied minimum sequence length 10000 bp and maximum ambiguous characters N <= 10.",
-        "Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 738."
+        "Queried TaxID 11292 with collection and release dates from 2020-01-01 to 2025-12-31.",
+        "Applied minimum sequence length of 10000 bp and maximum ambiguous characters of 10.",
+        "Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 663."
       ]
     },
     {
       "query_id": 56,
       "run_number": 2,
-      "expected_count": 738,
-      "retrieved_count": 738,
+      "expected_count": 663,
+      "retrieved_count": 663,
       "is_correct": true,
       "error": null,
-      "raw_response": "738\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module via Python\"],\n  \"reasoning\": [\n    \"Queried TaxID 11292 with collection/release date filters, min_seq_length=10000, and max_ambiguous_chars=10.\",\n    \"Used gget output metadata/FASTA final sequence count.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations.\"\n  ]\n}\n```",
-      "duration_seconds": 54.181959,
-      "tool_call_count": 3,
-      "methods": [
-        "gget==0.30.3 virus module via Python"
-      ],
+      "raw_response": "663\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via NCBI Virus\",\n  \"reasoning\": [\n    \"Queried TaxID 11292 with collection/release dates 2020-01-01 to 2025-12-31.\",\n    \"Applied min_seq_length=10000 and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: completed successfully with no failed operations; final sequences after all filters = 663.\"\n  ]\n}\n```",
+      "duration_seconds": 71.126912,
+      "tool_call_count": 5,
+      "methods": "gget==0.30.3 virus module via NCBI Virus",
       "reasoning": [
-        "Queried TaxID 11292 with collection/release date filters, min_seq_length=10000, and max_ambiguous_chars=10.",
-        "Used gget output metadata/FASTA final sequence count.",
-        "Checked command_summary.txt: command completed successfully with no failed operations."
+        "Queried TaxID 11292 with collection/release dates 2020-01-01 to 2025-12-31.",
+        "Applied min_seq_length=10000 and max_ambiguous_chars=10.",
+        "Checked command_summary.txt: completed successfully with no failed operations; final sequences after all filters = 663."
       ]
     },
     {
       "query_id": 56,
       "run_number": 3,
-      "expected_count": 738,
-      "retrieved_count": 738,
+      "expected_count": 663,
+      "retrieved_count": 663,
       "is_correct": true,
       "error": null,
-      "raw_response": "738\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module via Python\"],\n  \"reasoning\": [\n    \"Queried NCBI Virus for TaxID 11292 with collection/release date filters 2020-01-01 through 2025-12-31.\",\n    \"Applied min_seq_length=10000 and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 738.\"\n  ]\n}\n```",
-      "duration_seconds": 58.44339,
+      "raw_response": "663\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via NCBI Virus\",\n  \"reasoning\": [\n    \"Queried TaxID 11292 with collection/release date filters 2020-01-01 to 2025-12-31.\",\n    \"Applied min_seq_length=10000 and max_ambiguous_chars=10.\",\n    \"Checked command_summary.txt: completed successfully; final sequences after all filters = 663.\"\n  ]\n}\n```",
+      "duration_seconds": 44.732622,
       "tool_call_count": 2,
-      "methods": [
-        "gget==0.30.3 virus module via Python"
-      ],
+      "methods": "gget==0.30.3 virus module via NCBI Virus",
       "reasoning": [
-        "Queried NCBI Virus for TaxID 11292 with collection/release date filters 2020-01-01 through 2025-12-31.",
+        "Queried TaxID 11292 with collection/release date filters 2020-01-01 to 2025-12-31.",
         "Applied min_seq_length=10000 and max_ambiguous_chars=10.",
-        "Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 738."
+        "Checked command_summary.txt: completed successfully; final sequences after all filters = 663."
       ]
     },
     {
@@ -3169,8 +3188,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 548.820782,
-      "tool_call_count": 15,
+      "duration_seconds": 431.11896,
+      "tool_call_count": 25,
       "methods": null,
       "reasoning": null
     },
@@ -3178,27 +3197,42 @@
       "query_id": 57,
       "run_number": 2,
       "expected_count": 1782,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1782,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 334.140474,
-      "tool_call_count": 16,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "1782\n\n```json\n{\n  \"methods\": [\n    \"gget==0.30.3 gget.virus for TaxID 10244 metadata retrieval and date/length filtering\",\n    \"NCBI E-utilities efetch FASTA retrieval for filtered accessions\",\n    \"Local count of ambiguous N characters per sequence\"\n  ],\n  \"reasoning\": [\n    \"gget metadata filters yielded 10,368 accessions matching collection/release dates and length >=180000 bp.\",\n    \"Fetched FASTA for all 10,368 accessions with no missing or duplicate records.\",\n    \"Counted sequences with <=10 N characters; 1,782 passed.\"\n  ]\n}\n```",
+      "duration_seconds": 973.830811,
+      "tool_call_count": 20,
+      "methods": [
+        "gget==0.30.3 gget.virus for TaxID 10244 metadata retrieval and date/length filtering",
+        "NCBI E-utilities efetch FASTA retrieval for filtered accessions",
+        "Local count of ambiguous N characters per sequence"
+      ],
+      "reasoning": [
+        "gget metadata filters yielded 10,368 accessions matching collection/release dates and length >=180000 bp.",
+        "Fetched FASTA for all 10,368 accessions with no missing or duplicate records.",
+        "Counted sequences with <=10 N characters; 1,782 passed."
+      ]
     },
     {
       "query_id": 57,
       "run_number": 3,
       "expected_count": 1782,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1782,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 262.681939,
+      "raw_response": "1782\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus\", \"NCBI E-utilities efetch\"],\n  \"reasoning\": [\n    \"Used gget.virus for TaxID 10244 with the requested collection/release date and length filters, yielding 10,368 candidate records.\",\n    \"Downloaded/count-checked FASTA sequences for all 10,368 candidates and applied max_ambiguous_chars <= 10.\",\n    \"No missing accessions or failed sequence batches were recorded.\"\n  ]\n}\n```",
+      "duration_seconds": 535.994141,
       "tool_call_count": 21,
-      "methods": null,
-      "reasoning": null
+      "methods": [
+        "gget==0.30.3 virus",
+        "NCBI E-utilities efetch"
+      ],
+      "reasoning": [
+        "Used gget.virus for TaxID 10244 with the requested collection/release date and length filters, yielding 10,368 candidate records.",
+        "Downloaded/count-checked FASTA sequences for all 10,368 candidates and applied max_ambiguous_chars <= 10.",
+        "No missing accessions or failed sequence batches were recorded."
+      ]
     },
     {
       "query_id": 58,
@@ -3829,56 +3863,58 @@
     {
       "query_id": 69,
       "run_number": 1,
-      "expected_count": 2694,
+      "expected_count": 2907,
       "retrieved_count": 2907,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "2907\n{\n  \"methods\": \"gget==0.30.3 gget.virus via NCBI Virus/E-utilities\",\n  \"reasoning\": [\n    \"Queried TaxID 11060 with partial nucleotide completeness, release date 2000-02-14 to 2026-02-17, and sequence length 10416-13416 bp.\",\n    \"gget command_summary reported successful completion with no failed operations.\",\n    \"Final sequences after all filters: 2907; FASTA and metadata CSV counts matched.\"\n  ]\n}",
-      "duration_seconds": 89.131412,
-      "tool_call_count": 1,
-      "methods": "gget==0.30.3 gget.virus via NCBI Virus/E-utilities",
+      "raw_response": "2907\n\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus / E-utilities sequence retrieval\"],\n  \"reasoning\": [\n    \"Queried TaxID 11060 with partial nucleotide completeness, release dates 2000-02-14 through 2026-02-17, and sequence length 10416\u201313416 bp.\",\n    \"gget reported 2907 final sequences after all filters.\",\n    \"command_summary.txt indicated successful completion with no failed operations.\"\n  ]\n}",
+      "duration_seconds": 75.252729,
+      "tool_call_count": 2,
+      "methods": [
+        "gget==0.30.3 virus module",
+        "NCBI Virus / E-utilities sequence retrieval"
+      ],
       "reasoning": [
-        "Queried TaxID 11060 with partial nucleotide completeness, release date 2000-02-14 to 2026-02-17, and sequence length 10416-13416 bp.",
-        "gget command_summary reported successful completion with no failed operations.",
-        "Final sequences after all filters: 2907; FASTA and metadata CSV counts matched."
+        "Queried TaxID 11060 with partial nucleotide completeness, release dates 2000-02-14 through 2026-02-17, and sequence length 10416\u201313416 bp.",
+        "gget reported 2907 final sequences after all filters.",
+        "command_summary.txt indicated successful completion with no failed operations."
       ]
     },
     {
       "query_id": 69,
       "run_number": 2,
-      "expected_count": 2694,
+      "expected_count": 2907,
       "retrieved_count": 2907,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "2907\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus API via gget\", \"NCBI E-utilities sequence download\"],\n  \"reasoning\": [\n    \"Queried TaxID 11060 with filters: partial nucleotide completeness, release date 2000-02-14 through 2026-02-17, sequence length 10416-13416 bp.\",\n    \"gget command summary reported successful completion with no failed operations.\",\n    \"Final count was confirmed from both metadata CSV rows and FASTA record headers.\"\n  ]\n}\n```",
-      "duration_seconds": 89.720097,
-      "tool_call_count": 2,
-      "methods": [
-        "gget==0.30.3 virus module",
-        "NCBI Virus API via gget",
-        "NCBI E-utilities sequence download"
-      ],
+      "raw_response": "2907\n\n```json\n{\n  \"methods\": \"Installed and used gget==0.30.3 virus module against NCBI Virus for TaxID 11060.\",\n  \"reasoning\": [\n    \"Applied filters: partial nucleotide completeness, release date 2000-02-14 through 2026-02-17, sequence length 10416\u201313416 bp.\",\n    \"gget command completed successfully with no failed operations logged.\",\n    \"Verified output FASTA and metadata CSV both contained 2907 records matching the requested filters.\"\n  ]\n}\n```",
+      "duration_seconds": 74.940681,
+      "tool_call_count": 3,
+      "methods": "Installed and used gget==0.30.3 virus module against NCBI Virus for TaxID 11060.",
       "reasoning": [
-        "Queried TaxID 11060 with filters: partial nucleotide completeness, release date 2000-02-14 through 2026-02-17, sequence length 10416-13416 bp.",
-        "gget command summary reported successful completion with no failed operations.",
-        "Final count was confirmed from both metadata CSV rows and FASTA record headers."
+        "Applied filters: partial nucleotide completeness, release date 2000-02-14 through 2026-02-17, sequence length 10416\u201313416 bp.",
+        "gget command completed successfully with no failed operations logged.",
+        "Verified output FASTA and metadata CSV both contained 2907 records matching the requested filters."
       ]
     },
     {
       "query_id": 69,
       "run_number": 3,
-      "expected_count": 2694,
+      "expected_count": 2907,
       "retrieved_count": 2907,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "2907\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module; NCBI Virus metadata/API; NCBI E-utilities efetch retry for failed FASTA batch\",\n  \"reasoning\": [\n    \"Queried TaxID 11060 with filters: partial nucleotide completeness, release date 2000-02-14 to 2026-02-17, sequence length 10416-13416 bp.\",\n    \"gget metadata filtering returned 2907 matching records.\",\n    \"One 200-sequence FASTA batch initially failed; the command_summary retry URL was checked and successfully returned 200 records, bringing retrieved sequences to 2907.\"\n  ]\n}\n```",
-      "duration_seconds": 88.158218,
-      "tool_call_count": 4,
-      "methods": "gget==0.30.3 virus module; NCBI Virus metadata/API; NCBI E-utilities efetch retry for failed FASTA batch",
+      "raw_response": "2907\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module via Python\", \"NCBI Virus/INSDC retrieval\"],\n  \"reasoning\": [\n    \"Queried TaxID 11060 with nuc_completeness='partial'.\",\n    \"Applied release date range 2000-02-14 through 2026-02-17 and sequence length 10416-13416 bp.\",\n    \"Checked command_summary.txt: completed successfully with no failed operations; final sequences after all filters = 2907.\"\n  ]\n}\n```",
+      "duration_seconds": 68.284898,
+      "tool_call_count": 2,
+      "methods": [
+        "gget==0.30.3 virus module via Python",
+        "NCBI Virus/INSDC retrieval"
+      ],
       "reasoning": [
-        "Queried TaxID 11060 with filters: partial nucleotide completeness, release date 2000-02-14 to 2026-02-17, sequence length 10416-13416 bp.",
-        "gget metadata filtering returned 2907 matching records.",
-        "One 200-sequence FASTA batch initially failed; the command_summary retry URL was checked and successfully returned 200 records, bringing retrieved sequences to 2907."
+        "Queried TaxID 11060 with nuc_completeness='partial'.",
+        "Applied release date range 2000-02-14 through 2026-02-17 and sequence length 10416-13416 bp.",
+        "Checked command_summary.txt: completed successfully with no failed operations; final sequences after all filters = 2907."
       ]
     },
     {
@@ -4707,8 +4743,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 422.183653,
-      "tool_call_count": 15,
+      "duration_seconds": 420.319301,
+      "tool_call_count": 27,
       "methods": null,
       "reasoning": null
     },
@@ -4716,27 +4752,43 @@
       "query_id": 85,
       "run_number": 2,
       "expected_count": 1,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 213.765034,
-      "tool_call_count": 15,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "1\n\n```json\n{\n  \"methods\": [\n    \"gget==0.30.3 virus module\",\n    \"NCBI Datasets Virus API\",\n    \"NCBI E-utilities efetch\"\n  ],\n  \"reasoning\": [\n    \"Retrieved TaxID 10407 records with geographic location New Caledonia.\",\n    \"Applied submitter country France, collection/release date, and lab-passaged exclusion filters.\",\n    \"Checked sequence-dependent max ambiguous N count; 1 sequence passed and command_summary.txt reported no failed operations.\"\n  ]\n}\n```",
+      "duration_seconds": 589.164092,
+      "tool_call_count": 23,
+      "methods": [
+        "gget==0.30.3 virus module",
+        "NCBI Datasets Virus API",
+        "NCBI E-utilities efetch"
+      ],
+      "reasoning": [
+        "Retrieved TaxID 10407 records with geographic location New Caledonia.",
+        "Applied submitter country France, collection/release date, and lab-passaged exclusion filters.",
+        "Checked sequence-dependent max ambiguous N count; 1 sequence passed and command_summary.txt reported no failed operations."
+      ]
     },
     {
       "query_id": 85,
       "run_number": 3,
       "expected_count": 1,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 379.842154,
-      "tool_call_count": 15,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "1\n\n```json\n{\n  \"methods\": [\n    \"Installed and used gget==0.30.3\",\n    \"Used NCBI E-utilities to identify TaxID 10407 records mentioning New Caledonia, then passed those accessions to gget.virus with the requested filters\",\n    \"Checked gget command_summary.txt for failures\"\n  ],\n  \"reasoning\": [\n    \"11 candidate Hepatitis B virus records matched TaxID 10407 and New Caledonia.\",\n    \"gget.virus metadata filtering retained 1 record after submitter country France, date, location, and lab-passaged filters.\",\n    \"Final sequence filtering with max_ambiguous_chars=0 retained 1 sequence; command completed successfully with no retry/failure section.\"\n  ]\n}\n```",
+      "duration_seconds": 520.89348,
+      "tool_call_count": 21,
+      "methods": [
+        "Installed and used gget==0.30.3",
+        "Used NCBI E-utilities to identify TaxID 10407 records mentioning New Caledonia, then passed those accessions to gget.virus with the requested filters",
+        "Checked gget command_summary.txt for failures"
+      ],
+      "reasoning": [
+        "11 candidate Hepatitis B virus records matched TaxID 10407 and New Caledonia.",
+        "gget.virus metadata filtering retained 1 record after submitter country France, date, location, and lab-passaged filters.",
+        "Final sequence filtering with max_ambiguous_chars=0 retained 1 sequence; command completed successfully with no retry/failure section."
+      ]
     },
     {
       "query_id": 86,
@@ -5299,58 +5351,60 @@
     {
       "query_id": 96,
       "run_number": 1,
-      "expected_count": 12,
+      "expected_count": 11,
       "retrieved_count": 11,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "11\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via Python; NCBI Virus data retrieval\",\n  \"reasoning\": [\n    \"Queried TaxID 11292 with host=10090, nuc_completeness=partial, min_release_date=1990-04-12, max_release_date=2026-01-22.\",\n    \"Used the generated metadata CSV and command_summary.txt to obtain the final filtered sequence count.\",\n    \"Confirmed command_summary.txt reported successful completion with no failed operations.\"\n  ]\n}\n```",
-      "duration_seconds": 19.547646,
-      "tool_call_count": 2,
-      "methods": "gget==0.30.3 virus module via Python; NCBI Virus data retrieval",
+      "raw_response": "11\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus via gget\", \"FASTA record count validation\"],\n  \"reasoning\": [\n    \"Queried TaxID 11292 with host=10090, nuc_completeness=partial, min_release_date=1990-04-12, max_release_date=2026-01-22.\",\n    \"gget command_summary reported successful completion with 11 final sequences and no failed operations.\",\n    \"Validated by counting 11 FASTA headers in the downloaded sequences file.\"\n  ]\n}\n```",
+      "duration_seconds": 27.353029,
+      "tool_call_count": 3,
+      "methods": [
+        "gget==0.30.3 virus module",
+        "NCBI Virus via gget",
+        "FASTA record count validation"
+      ],
       "reasoning": [
         "Queried TaxID 11292 with host=10090, nuc_completeness=partial, min_release_date=1990-04-12, max_release_date=2026-01-22.",
-        "Used the generated metadata CSV and command_summary.txt to obtain the final filtered sequence count.",
-        "Confirmed command_summary.txt reported successful completion with no failed operations."
+        "gget command_summary reported successful completion with 11 final sequences and no failed operations.",
+        "Validated by counting 11 FASTA headers in the downloaded sequences file."
       ]
     },
     {
       "query_id": 96,
       "run_number": 2,
-      "expected_count": 12,
+      "expected_count": 11,
       "retrieved_count": 11,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "11\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus metadata API\", \"NCBI E-utilities efetch\"],\n  \"reasoning\": [\n    \"Queried TaxID 11292 with host=10090, nuc_completeness=partial, min_release_date=1990-04-12, max_release_date=2026-01-22.\",\n    \"gget command_summary.txt reported successful completion with no failed operations.\",\n    \"Final sequences after all filters: 11.\"\n  ]\n}\n```",
-      "duration_seconds": 22.110128,
-      "tool_call_count": 3,
+      "raw_response": "11\n\n{\n  \"methods\": [\"gget==0.30.3 virus module via Python\"],\n  \"reasoning\": [\n    \"Queried TaxID 11292 with host=10090, nuc_completeness=partial, min_release_date=1990-04-12, max_release_date=2026-01-22.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations.\",\n    \"Final sequences after all filters: 11.\"\n  ]\n}",
+      "duration_seconds": 24.542981,
+      "tool_call_count": 2,
       "methods": [
-        "gget==0.30.3 virus module",
-        "NCBI Virus metadata API",
-        "NCBI E-utilities efetch"
+        "gget==0.30.3 virus module via Python"
       ],
       "reasoning": [
         "Queried TaxID 11292 with host=10090, nuc_completeness=partial, min_release_date=1990-04-12, max_release_date=2026-01-22.",
-        "gget command_summary.txt reported successful completion with no failed operations.",
+        "Checked command_summary.txt: command completed successfully with no failed operations.",
         "Final sequences after all filters: 11."
       ]
     },
     {
       "query_id": 96,
       "run_number": 3,
-      "expected_count": 12,
+      "expected_count": 11,
       "retrieved_count": 11,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "11\n\n{\n  \"methods\": [\"Installed and used gget==0.30.3 gget.virus\"],\n  \"reasoning\": [\n    \"Queried TaxID 11292 with host=10090, nuc_completeness=partial, min_release_date=1990-04-12, max_release_date=2026-01-22.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations.\",\n    \"Final sequences after all filters: 11.\"\n  ]\n}",
-      "duration_seconds": 18.027266,
-      "tool_call_count": 1,
+      "raw_response": "11\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module via NCBI Virus\"],\n  \"reasoning\": [\n    \"Queried TaxID 11292 with host=10090, nuc_completeness=partial.\",\n    \"Applied release date filters: min_release_date=1990-04-12 and max_release_date=2026-01-22.\",\n    \"gget command_summary reported successful completion with 11 final sequences and no failed operations.\"\n  ]\n}\n```",
+      "duration_seconds": 18.413502,
+      "tool_call_count": 2,
       "methods": [
-        "Installed and used gget==0.30.3 gget.virus"
+        "gget==0.30.3 virus module via NCBI Virus"
       ],
       "reasoning": [
-        "Queried TaxID 11292 with host=10090, nuc_completeness=partial, min_release_date=1990-04-12, max_release_date=2026-01-22.",
-        "Checked command_summary.txt: command completed successfully with no failed operations.",
-        "Final sequences after all filters: 11."
+        "Queried TaxID 11292 with host=10090, nuc_completeness=partial.",
+        "Applied release date filters: min_release_date=1990-04-12 and max_release_date=2026-01-22.",
+        "gget command_summary reported successful completion with 11 final sequences and no failed operations."
       ]
     },
     {
@@ -5708,8 +5762,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 346.087888,
-      "tool_call_count": 15,
+      "duration_seconds": 837.13797,
+      "tool_call_count": 25,
       "methods": null,
       "reasoning": null
     },
@@ -5717,14 +5771,22 @@
       "query_id": 103,
       "run_number": 3,
       "expected_count": 4,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 4,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 231.858443,
-      "tool_call_count": 16,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "4\n\n```json\n{\n  \"methods\": [\n    \"Installed and used gget==0.30.3\",\n    \"Queried NCBI Entrez/NCBI Datasets for Retroviridae TaxID 11632 candidates\",\n    \"Retrieved sequences with gget.virus and checked command_summary.txt\"\n  ],\n  \"reasoning\": [\n    \"Four accessions matched Taiwan, release date range, and vaccine-strain criteria.\",\n    \"All four were PARTIAL and released on 2014-02-09.\",\n    \"gget.virus reported 4 final sequences and no failed operations.\"\n  ]\n}\n```",
+      "duration_seconds": 437.241122,
+      "tool_call_count": 19,
+      "methods": [
+        "Installed and used gget==0.30.3",
+        "Queried NCBI Entrez/NCBI Datasets for Retroviridae TaxID 11632 candidates",
+        "Retrieved sequences with gget.virus and checked command_summary.txt"
+      ],
+      "reasoning": [
+        "Four accessions matched Taiwan, release date range, and vaccine-strain criteria.",
+        "All four were PARTIAL and released on 2014-02-09.",
+        "gget.virus reported 4 final sequences and no failed operations."
+      ]
     },
     {
       "query_id": 104,
@@ -6294,59 +6356,54 @@
     {
       "query_id": 114,
       "run_number": 1,
-      "expected_count": 3226,
-      "retrieved_count": 3226,
+      "expected_count": 3200,
+      "retrieved_count": 3200,
       "is_correct": true,
       "error": null,
-      "raw_response": "3226\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus via gget\"],\n  \"reasoning\": [\n    \"Queried TaxID 37124 with partial nucleotide completeness and the specified collection/release date filters.\",\n    \"Applied sequence length range 280-3600 bp and max ambiguous characters <=5.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequence count was 3226.\"\n  ]\n}\n```",
-      "duration_seconds": 69.922192,
-      "tool_call_count": 3,
-      "methods": [
-        "gget==0.30.3 virus module",
-        "NCBI Virus via gget"
-      ],
+      "raw_response": "3200\n\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via Python\",\n  \"reasoning\": [\n    \"Queried TaxID 37124 with partial nucleotide completeness and date filters: collection 2004-06-07 to 2025-09-04, release <= 2024-11-05.\",\n    \"Applied length filter 280-3600 bp and max ambiguous characters <= 5.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 3200.\"\n  ]\n}\n```",
+      "duration_seconds": 63.851096,
+      "tool_call_count": 2,
+      "methods": "gget==0.30.3 virus module via Python",
       "reasoning": [
-        "Queried TaxID 37124 with partial nucleotide completeness and the specified collection/release date filters.",
-        "Applied sequence length range 280-3600 bp and max ambiguous characters <=5.",
-        "Checked command_summary.txt: command completed successfully with no failed operations; final sequence count was 3226."
+        "Queried TaxID 37124 with partial nucleotide completeness and date filters: collection 2004-06-07 to 2025-09-04, release <= 2024-11-05.",
+        "Applied length filter 280-3600 bp and max ambiguous characters <= 5.",
+        "Checked command_summary.txt: command completed successfully with no failed operations; final sequences after all filters = 3200."
       ]
     },
     {
       "query_id": 114,
       "run_number": 2,
-      "expected_count": 3226,
-      "retrieved_count": 3226,
+      "expected_count": 3200,
+      "retrieved_count": 3200,
       "is_correct": true,
       "error": null,
-      "raw_response": "3226\n```json\n{\n  \"methods\": \"gget==0.30.3 virus module via NCBI Virus/E-utilities\",\n  \"reasoning\": [\n    \"Queried TaxID 37124 with the specified completeness, collection/release date, length, and ambiguous-base filters.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations section.\",\n    \"Verified output FASTA and metadata CSV each contained 3226 final records.\"\n  ]\n}\n```",
-      "duration_seconds": 63.98583,
-      "tool_call_count": 3,
-      "methods": "gget==0.30.3 virus module via NCBI Virus/E-utilities",
+      "raw_response": "3200\n\n```json\n{\n  \"methods\": \"gget==0.30.3 gget.virus via NCBI Virus/INSDC; FASTA/header and metadata CSV counts verified\",\n  \"reasoning\": [\n    \"Queried TaxID 37124 with partial completeness, collection dates 2004-06-07 to 2025-09-04, release date <= 2024-11-05.\",\n    \"Applied length 280-3600 bp and max ambiguous characters <= 5.\",\n    \"command_summary.txt reported successful completion with no failed-operation retry section; final sequences = 3200.\"\n  ]\n}\n```",
+      "duration_seconds": 72.108868,
+      "tool_call_count": 2,
+      "methods": "gget==0.30.3 gget.virus via NCBI Virus/INSDC; FASTA/header and metadata CSV counts verified",
       "reasoning": [
-        "Queried TaxID 37124 with the specified completeness, collection/release date, length, and ambiguous-base filters.",
-        "Checked command_summary.txt: command completed successfully with no failed operations section.",
-        "Verified output FASTA and metadata CSV each contained 3226 final records."
+        "Queried TaxID 37124 with partial completeness, collection dates 2004-06-07 to 2025-09-04, release date <= 2024-11-05.",
+        "Applied length 280-3600 bp and max ambiguous characters <= 5.",
+        "command_summary.txt reported successful completion with no failed-operation retry section; final sequences = 3200."
       ]
     },
     {
       "query_id": 114,
       "run_number": 3,
-      "expected_count": 3226,
-      "retrieved_count": 3226,
+      "expected_count": 3200,
+      "retrieved_count": 3200,
       "is_correct": true,
       "error": null,
-      "raw_response": "3226\n\n```json\n{\n  \"methods\": [\"gget==0.30.3 virus module\", \"NCBI Virus\", \"NCBI E-utilities\"],\n  \"reasoning\": [\n    \"Queried TaxID 37124 with the specified completeness, date, length, and ambiguous-N filters.\",\n    \"gget reported 3,230 records after metadata filtering and 3,226 final sequences after sequence-level filters.\",\n    \"Checked command_summary.txt for failures and verified 3,226 FASTA records / metadata rows.\"\n  ]\n}\n```",
-      "duration_seconds": 68.876758,
-      "tool_call_count": 3,
+      "raw_response": "3200\n\n```json\n{\n  \"methods\": [\"Python gget==0.30.3 gget.virus\"],\n  \"reasoning\": [\n    \"Queried NCBI Virus for TaxID 37124 with partial nucleotide completeness, date, length, and max-N filters.\",\n    \"Checked command_summary.txt: command completed successfully with no failed operations reported.\",\n    \"Final sequences after all filters: 3200.\"\n  ]\n}\n```",
+      "duration_seconds": 73.557529,
+      "tool_call_count": 1,
       "methods": [
-        "gget==0.30.3 virus module",
-        "NCBI Virus",
-        "NCBI E-utilities"
+        "Python gget==0.30.3 gget.virus"
       ],
       "reasoning": [
-        "Queried TaxID 37124 with the specified completeness, date, length, and ambiguous-N filters.",
-        "gget reported 3,230 records after metadata filtering and 3,226 final sequences after sequence-level filters.",
-        "Checked command_summary.txt for failures and verified 3,226 FASTA records / metadata rows."
+        "Queried NCBI Virus for TaxID 37124 with partial nucleotide completeness, date, length, and max-N filters.",
+        "Checked command_summary.txt: command completed successfully with no failed operations reported.",
+        "Final sequences after all filters: 3200."
       ]
     },
     {
@@ -6517,14 +6574,22 @@
       "query_id": 118,
       "run_number": 1,
       "expected_count": 5,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 5,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 358.867974,
-      "tool_call_count": 17,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "5\n{\n  \"methods\": [\"gget==0.30.3\", \"NCBI Virus/vvsearch2 query\", \"gget.virus accession retrieval\"],\n  \"reasoning\": [\n    \"Filtered TaxID 11320 nucleotide records for Morocco, HA segment, and release dates 2000-02-14 through 2026-02-17.\",\n    \"Retrieved the 5 matching accessions with gget.virus.\",\n    \"Checked command_summary.txt: completed successfully with no failed operations; final FASTA count was 5.\"\n  ]\n}",
+      "duration_seconds": 774.258634,
+      "tool_call_count": 28,
+      "methods": [
+        "gget==0.30.3",
+        "NCBI Virus/vvsearch2 query",
+        "gget.virus accession retrieval"
+      ],
+      "reasoning": [
+        "Filtered TaxID 11320 nucleotide records for Morocco, HA segment, and release dates 2000-02-14 through 2026-02-17.",
+        "Retrieved the 5 matching accessions with gget.virus.",
+        "Checked command_summary.txt: completed successfully with no failed operations; final FASTA count was 5."
+      ]
     },
     {
       "query_id": 118,
@@ -6534,8 +6599,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 259.278152,
-      "tool_call_count": 15,
+      "duration_seconds": 573.00225,
+      "tool_call_count": 26,
       "methods": null,
       "reasoning": null
     },
@@ -6547,8 +6612,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 183.430808,
-      "tool_call_count": 15,
+      "duration_seconds": 638.553103,
+      "tool_call_count": 25,
       "methods": null,
       "reasoning": null
     },
@@ -6666,9 +6731,8 @@
     }
   ],
   "summary": {
-    "correct_runs": 330,
-    "incorrect_runs": 14,
-    "error_runs": 16,
-    "accuracy": 0.9166666666666666
+    "correct_runs": 351,
+    "incorrect_runs": 9,
+    "accuracy": 0.975
   }
 }

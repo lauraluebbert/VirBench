@@ -134,7 +134,7 @@ query_id,run_number,expected_count,retrieved_count,is_correct,error,duration_sec
 45,1,1535,3744,False,,169.399328
 45,2,1535,4104,False,,194.252491
 45,3,1535,894,False,,294.410459
-46,1,1105,,False,,231.107132
+46,1,1105,356,False,,384.07975
 46,2,1105,3182,False,,256.329098
 46,3,1105,527,False,,183.82174
 47,1,903,656,False,,322.565818

@@ -180,7 +180,7 @@ query_id,run_number,expected_count,retrieved_count,is_correct,error,duration_sec
 60,2,24,24,True,,79.558528
 60,3,24,24,True,,78.865254
 61,1,217,217,True,,131.187383
-61,2,217,,False,,142.950502
+61,2,217,0,False,,234.864308
 61,3,217,217,True,,86.201899
 62,1,1,1,True,,52.489959
 62,2,1,1,True,,75.658875
@@ -307,7 +307,7 @@ query_id,run_number,expected_count,retrieved_count,is_correct,error,duration_sec
 102,3,5,5,True,,38.589922
 103,1,4,0,False,,273.591162
 103,2,4,0,False,,396.091946
-103,3,4,,False,,269.394989
+103,3,4,4,True,,699.501258
 104,1,5,5,True,,68.239078
 104,2,5,5,True,,55.4094
 104,3,5,5,True,,81.918603

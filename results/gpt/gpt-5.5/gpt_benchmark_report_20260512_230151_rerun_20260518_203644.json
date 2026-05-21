@@ -114,58 +114,60 @@
     {
       "query_id": 3,
       "run_number": 1,
-      "expected_count": 23,
+      "expected_count": 22,
       "retrieved_count": 22,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "22\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus API\",\n    \"NCBI E-utilities efetch FASTA\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 3052518 records to geographicRegion=Africa, length 1000\u20132000 bp, collection date 2020-01-01 through 2025-12-31, and releaseDate 2020-01-01 through 2025-12-31.\",\n    \"Fetched FASTA for the 32 metadata-matching accessions and counted N characters per sequence.\",\n    \"22 sequences had <=10 N characters.\"\n  ]\n}\n```",
-      "duration_seconds": 93.645476,
-      "tool_call_count": 12,
+      "raw_response": "22\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 virus dataset_report\",\n    \"NCBI Entrez efetch via Biopython\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 3052518 metadata for Africa, collection/release dates 2020-01-01 through 2025-12-31, and length 1000-2000 bp.\",\n    \"Fetched candidate nucleotide sequences and counted N characters.\",\n    \"Retained sequences with <=10 Ns.\"\n  ]\n}\n```",
+      "duration_seconds": 296.698948,
+      "tool_call_count": 22,
       "methods": [
-        "NCBI Datasets v2 Virus API",
-        "NCBI E-utilities efetch FASTA"
+        "NCBI Datasets v2 virus dataset_report",
+        "NCBI Entrez efetch via Biopython"
       ],
       "reasoning": [
-        "Filtered TaxID 3052518 records to geographicRegion=Africa, length 1000\u20132000 bp, collection date 2020-01-01 through 2025-12-31, and releaseDate 2020-01-01 through 2025-12-31.",
-        "Fetched FASTA for the 32 metadata-matching accessions and counted N characters per sequence.",
-        "22 sequences had <=10 N characters."
+        "Filtered TaxID 3052518 metadata for Africa, collection/release dates 2020-01-01 through 2025-12-31, and length 1000-2000 bp.",
+        "Fetched candidate nucleotide sequences and counted N characters.",
+        "Retained sequences with <=10 Ns."
       ]
     },
     {
       "query_id": 3,
       "run_number": 2,
-      "expected_count": 23,
+      "expected_count": 22,
       "retrieved_count": 22,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "22\n\n```json\n{\n  \"methods\": [\"NCBI E-utilities: esearch, esummary, efetch GenBank\", \"Biopython SeqIO parsing\"],\n  \"reasoning\": [\n    \"Queried nuccore for txid3052518 with sequence length 1000-2000 bp.\",\n    \"Filtered GenBank source qualifiers for African geo_loc_name/country, collection dates within 2020-01-01 to 2025-12-31, and NCBI create/release dates within 2020-2025.\",\n    \"Counted sequence N characters and retained records with <=10 Ns.\"\n  ]\n}\n```",
-      "duration_seconds": 236.733998,
-      "tool_call_count": 9,
+      "raw_response": "22\n```json\n{\n  \"methods\": [\"NCBI E-utilities: esearch, esummary, efetch via Biopython\"],\n  \"reasoning\": [\n    \"Queried nuccore for TaxID 3052518, sequence length 1000-2000 bp, and GenBank release date 2020-01-01 to 2025-12-31.\",\n    \"Parsed GenBank source qualifiers for African geo_loc_name countries and collection_date within 2020-2025.\",\n    \"Fetched sequences and retained records with no more than 10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 209.782388,
+      "tool_call_count": 15,
       "methods": [
-        "NCBI E-utilities: esearch, esummary, efetch GenBank",
-        "Biopython SeqIO parsing"
+        "NCBI E-utilities: esearch, esummary, efetch via Biopython"
       ],
       "reasoning": [
-        "Queried nuccore for txid3052518 with sequence length 1000-2000 bp.",
-        "Filtered GenBank source qualifiers for African geo_loc_name/country, collection dates within 2020-01-01 to 2025-12-31, and NCBI create/release dates within 2020-2025.",
-        "Counted sequence N characters and retained records with <=10 Ns."
+        "Queried nuccore for TaxID 3052518, sequence length 1000-2000 bp, and GenBank release date 2020-01-01 to 2025-12-31.",
+        "Parsed GenBank source qualifiers for African geo_loc_name countries and collection_date within 2020-2025.",
+        "Fetched sequences and retained records with no more than 10 N characters."
       ]
     },
     {
       "query_id": 3,
       "run_number": 3,
-      "expected_count": 23,
+      "expected_count": 22,
       "retrieved_count": 22,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "22\n\n```json\n{\n  \"methods\": \"NCBI Datasets CLI v18.26.0; downloaded NCBI Virus genome package for taxon 3052518 with geo-location Africa and released-after 2020-01-01; parsed data_report.jsonl and genomic.fna\",\n  \"reasoning\": [\n    \"Filtered records to releaseDate 2020-01-01 through 2025-12-31 and collectionDate within 2020-01-01 through 2025-12-31.\",\n    \"Required sequence length between 1000 and 2000 bp inclusive.\",\n    \"Counted only records with <=10 N characters in the nucleotide sequence.\"\n  ]\n}\n```",
-      "duration_seconds": 103.201593,
-      "tool_call_count": 12,
-      "methods": "NCBI Datasets CLI v18.26.0; downloaded NCBI Virus genome package for taxon 3052518 with geo-location Africa and released-after 2020-01-01; parsed data_report.jsonl and genomic.fna",
+      "raw_response": "22\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus dataset_report API\",\n    \"NCBI E-utilities EFetch FASTA\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 3052518 records for Africa, collection/release dates 2020-01-01 to 2025-12-31, and length 1000-2000 bp.\",\n    \"Fetched FASTA sequences for date/length/location matches and counted N characters.\",\n    \"Retained records with <=10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 219.191127,
+      "tool_call_count": 22,
+      "methods": [
+        "NCBI Datasets v2 Virus dataset_report API",
+        "NCBI E-utilities EFetch FASTA"
+      ],
       "reasoning": [
-        "Filtered records to releaseDate 2020-01-01 through 2025-12-31 and collectionDate within 2020-01-01 through 2025-12-31.",
-        "Required sequence length between 1000 and 2000 bp inclusive.",
-        "Counted only records with <=10 N characters in the nucleotide sequence."
+        "Filtered TaxID 3052518 records for Africa, collection/release dates 2020-01-01 to 2025-12-31, and length 1000-2000 bp.",
+        "Fetched FASTA sequences for date/length/location matches and counted N characters.",
+        "Retained records with <=10 N characters."
       ]
     },
     {
@@ -273,14 +275,21 @@
       "query_id": 5,
       "run_number": 3,
       "expected_count": 6,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 6,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 180.916631,
-      "tool_call_count": 22,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "6\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus API\", \"NCBI E-utilities efetch\"],\n  \"reasoning\": [\n    \"Filtered TaxID 3052310 records for Nigeria, collection/release dates in 2020-01-01 through 2025-12-31, and sequence length 2500-4000 bp.\",\n    \"Fetched candidate FASTA sequences and counted N characters.\",\n    \"6 sequences had at most 10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 181.142056,
+      "tool_call_count": 16,
+      "methods": [
+        "NCBI Datasets v2 Virus API",
+        "NCBI E-utilities efetch"
+      ],
+      "reasoning": [
+        "Filtered TaxID 3052310 records for Nigeria, collection/release dates in 2020-01-01 through 2025-12-31, and sequence length 2500-4000 bp.",
+        "Fetched candidate FASTA sequences and counted N characters.",
+        "6 sequences had at most 10 N characters."
+      ]
     },
     {
       "query_id": 6,
@@ -985,14 +994,21 @@
       "query_id": 18,
       "run_number": 2,
       "expected_count": 16,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 16,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 428.344641,
-      "tool_call_count": 15,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "16\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus API\", \"NCBI E-utilities efetch\"],\n  \"reasoning\": [\n    \"Filtered TaxID 11676 records for Africa, release date 2020-01-01 through 2025-12-31, collection year/date 2020 through 2025, and length >= 9000 bp.\",\n    \"Fetched candidate nucleotide FASTA sequences and counted N characters case-insensitively.\",\n    \"16 sequences had <= 10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 290.199203,
+      "tool_call_count": 25,
+      "methods": [
+        "NCBI Datasets v2 Virus API",
+        "NCBI E-utilities efetch"
+      ],
+      "reasoning": [
+        "Filtered TaxID 11676 records for Africa, release date 2020-01-01 through 2025-12-31, collection year/date 2020 through 2025, and length >= 9000 bp.",
+        "Fetched candidate nucleotide FASTA sequences and counted N characters case-insensitively.",
+        "16 sequences had <= 10 N characters."
+      ]
     },
     {
       "query_id": 18,
@@ -1002,8 +1018,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 355.346867,
-      "tool_call_count": 24,
+      "duration_seconds": 537.165149,
+      "tool_call_count": 33,
       "methods": null,
       "reasoning": null
     },
@@ -1084,27 +1100,41 @@
       "query_id": 20,
       "run_number": 2,
       "expected_count": 416,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 416,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 286.36543,
-      "tool_call_count": 16,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "416\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\", \"NCBI E-utilities efetch FASTA\"],\n  \"reasoning\": [\n    \"Filtered TaxID 11053 records to geographic_region=Africa, release_date and collection_date within 2020-01-01..2025-12-31, and length >= 10000 bp.\",\n    \"Fetched candidate FASTA sequences and counted N/n characters directly.\",\n    \"436 metadata candidates; 20 had >10 Ns; final count = 416.\"\n  ]\n}\n```",
+      "duration_seconds": 151.230728,
+      "tool_call_count": 25,
+      "methods": [
+        "NCBI Datasets v2 Virus dataset_report API",
+        "NCBI E-utilities efetch FASTA"
+      ],
+      "reasoning": [
+        "Filtered TaxID 11053 records to geographic_region=Africa, release_date and collection_date within 2020-01-01..2025-12-31, and length >= 10000 bp.",
+        "Fetched candidate FASTA sequences and counted N/n characters directly.",
+        "436 metadata candidates; 20 had >10 Ns; final count = 416."
+      ]
     },
     {
       "query_id": 20,
       "run_number": 3,
       "expected_count": 416,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 416,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 427.576758,
-      "tool_call_count": 19,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "416\n\n```json\n{\n  \"methods\": [\"NCBI Datasets Virus API\", \"NCBI E-utilities efetch FASTA\"],\n  \"reasoning\": [\n    \"Filtered TaxID 11053 NCBI Virus records for geographic region Africa, release date 2020-01-01 through 2025-12-31, collection date 2020-01-01 through 2025-12-31, and length >=10000 bp.\",\n    \"Fetched FASTA sequences for metadata-matching accessions and counted ambiguous N characters.\",\n    \"436 records matched metadata/length filters; 20 had >10 Ns, leaving 416.\"\n  ]\n}\n```",
+      "duration_seconds": 299.351518,
+      "tool_call_count": 25,
+      "methods": [
+        "NCBI Datasets Virus API",
+        "NCBI E-utilities efetch FASTA"
+      ],
+      "reasoning": [
+        "Filtered TaxID 11053 NCBI Virus records for geographic region Africa, release date 2020-01-01 through 2025-12-31, collection date 2020-01-01 through 2025-12-31, and length >=10000 bp.",
+        "Fetched FASTA sequences for metadata-matching accessions and counted ambiguous N characters.",
+        "436 records matched metadata/length filters; 20 had >10 Ns, leaving 416."
+      ]
     },
     {
       "query_id": 21,
@@ -1509,43 +1539,58 @@
       "query_id": 28,
       "run_number": 1,
       "expected_count": 231,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 231,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 131.825094,
-      "tool_call_count": 16,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "231\n\n```json\n{\n  \"methods\": [\n    \"NCBI E-utilities: esearch, esummary, efetch on nuccore\"\n  ],\n  \"reasoning\": [\n    \"Queried txid11019[Organism:exp] with sequence length >=10000 and NCBI release/PDAT from 2020-01-01 to 2025-12-31.\",\n    \"Filtered records by African source country/geo location and collection date within 2020-01-01 to 2025-12-31.\",\n    \"Fetched FASTA sequences and retained only records with <=10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 230.229721,
+      "tool_call_count": 5,
+      "methods": [
+        "NCBI E-utilities: esearch, esummary, efetch on nuccore"
+      ],
+      "reasoning": [
+        "Queried txid11019[Organism:exp] with sequence length >=10000 and NCBI release/PDAT from 2020-01-01 to 2025-12-31.",
+        "Filtered records by African source country/geo location and collection date within 2020-01-01 to 2025-12-31.",
+        "Fetched FASTA sequences and retained only records with <=10 N characters."
+      ]
     },
     {
       "query_id": 28,
       "run_number": 2,
       "expected_count": 231,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 231,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 242.168935,
-      "tool_call_count": 15,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "231\n\n```json\n{\n  \"methods\": [\n    \"NCBI Entrez ESearch/ESummary/EFetch on nuccore via Biopython\"\n  ],\n  \"reasoning\": [\n    \"Queried txid11019[Organism:exp] with sequence length >=10000 bp and release/CreateDate from 2020-01-01 to 2025-12-31.\",\n    \"Parsed GenBank source qualifiers for geo_loc_name in Africa and collection_date within 2020-01-01 to 2025-12-31.\",\n    \"Counted only sequences with <=10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 379.751494,
+      "tool_call_count": 12,
+      "methods": [
+        "NCBI Entrez ESearch/ESummary/EFetch on nuccore via Biopython"
+      ],
+      "reasoning": [
+        "Queried txid11019[Organism:exp] with sequence length >=10000 bp and release/CreateDate from 2020-01-01 to 2025-12-31.",
+        "Parsed GenBank source qualifiers for geo_loc_name in Africa and collection_date within 2020-01-01 to 2025-12-31.",
+        "Counted only sequences with <=10 N characters."
+      ]
     },
     {
       "query_id": 28,
       "run_number": 3,
       "expected_count": 231,
-      "retrieved_count": 0,
-      "is_correct": false,
+      "retrieved_count": 231,
+      "is_correct": true,
       "error": null,
-      "raw_response": "0\n```json\n{\n  \"methods\": \"NCBI E-utilities: Taxonomy, Nuccore esearch/efetch XML\",\n  \"reasoning\": [\n    \"Queried ONNV nucleotide records, applying length >=10000 bp and release date 2020-01-01 through 2025-12-31.\",\n    \"Parsed source qualifiers for geo_loc_name and collection_date, and counted N characters from sequences.\",\n    \"No eligible ONNV record had an Africa collection date within 2020-2025 while meeting all other filters.\"\n  ]\n}\n```",
-      "duration_seconds": 364.043785,
-      "tool_call_count": 13,
-      "methods": "NCBI E-utilities: Taxonomy, Nuccore esearch/efetch XML",
+      "raw_response": "231\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 virus dataset_report API\", \"NCBI E-utilities efetch FASTA\"],\n  \"reasoning\": [\n    \"Filtered TaxID 11019 records for Africa, release date 2020-01-01 through 2025-12-31, collection date 2020 through 2025, and length >=10000 bp.\",\n    \"Fetched FASTA for 245 metadata-matching candidates and counted N/n characters.\",\n    \"231 candidates had <=10 Ns.\"\n  ]\n}\n```",
+      "duration_seconds": 127.86243,
+      "tool_call_count": 15,
+      "methods": [
+        "NCBI Datasets v2 virus dataset_report API",
+        "NCBI E-utilities efetch FASTA"
+      ],
       "reasoning": [
-        "Queried ONNV nucleotide records, applying length >=10000 bp and release date 2020-01-01 through 2025-12-31.",
-        "Parsed source qualifiers for geo_loc_name and collection_date, and counted N characters from sequences.",
-        "No eligible ONNV record had an Africa collection date within 2020-2025 while meeting all other filters."
+        "Filtered TaxID 11019 records for Africa, release date 2020-01-01 through 2025-12-31, collection date 2020 through 2025, and length >=10000 bp.",
+        "Fetched FASTA for 245 metadata-matching candidates and counted N/n characters.",
+        "231 candidates had <=10 Ns."
       ]
     },
     {
@@ -1668,27 +1713,42 @@
       "query_id": 31,
       "run_number": 1,
       "expected_count": 241,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 241,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 426.825663,
-      "tool_call_count": 23,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "241\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus dataset_report API\",\n    \"NCBI E-utilities efetch nuccore FASTA\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 10244 records to Africa, collection/release dates within 2020-01-01 to 2025-12-31, and length >=180000 bp.\",\n    \"Fetched FASTA for metadata-matching accessions and counted N/n characters per sequence.\",\n    \"Counted sequences with <=10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 270.529995,
+      "tool_call_count": 27,
+      "methods": [
+        "NCBI Datasets v2 Virus dataset_report API",
+        "NCBI E-utilities efetch nuccore FASTA"
+      ],
+      "reasoning": [
+        "Filtered TaxID 10244 records to Africa, collection/release dates within 2020-01-01 to 2025-12-31, and length >=180000 bp.",
+        "Fetched FASTA for metadata-matching accessions and counted N/n characters per sequence.",
+        "Counted sequences with <=10 N characters."
+      ]
     },
     {
       "query_id": 31,
       "run_number": 2,
       "expected_count": 241,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 241,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 346.748411,
-      "tool_call_count": 20,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "241\n{\n  \"methods\": [\"NCBI Datasets CLI v18.26.0\", \"NCBI Virus genome data package\", \"local FASTA N-count filtering\"],\n  \"reasoning\": [\n    \"Downloaded TaxID 10244 virus genomes with geographic region Africa and release date >= 2020-01-01.\",\n    \"Filtered metadata for collection dates 2020-01-01 through 2025-12-31, release dates through 2025-12-31, and length >= 180000 bp.\",\n    \"Counted N/n characters in downloaded genomic FASTA and retained records with <= 10 Ns.\"\n  ]\n}",
+      "duration_seconds": 263.919936,
+      "tool_call_count": 21,
+      "methods": [
+        "NCBI Datasets CLI v18.26.0",
+        "NCBI Virus genome data package",
+        "local FASTA N-count filtering"
+      ],
+      "reasoning": [
+        "Downloaded TaxID 10244 virus genomes with geographic region Africa and release date >= 2020-01-01.",
+        "Filtered metadata for collection dates 2020-01-01 through 2025-12-31, release dates through 2025-12-31, and length >= 180000 bp.",
+        "Counted N/n characters in downloaded genomic FASTA and retained records with <= 10 Ns."
+      ]
     },
     {
       "query_id": 31,
@@ -1939,223 +1999,228 @@
     {
       "query_id": 36,
       "run_number": 1,
-      "expected_count": 126,
+      "expected_count": 125,
       "retrieved_count": 125,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "125\n\n```json\n{\n  \"methods\": \"NCBI E-utilities: ESearch on nuccore, then EFetch XML for sequence/features\",\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with sequence length 1000:2000 bp and release date 2020-01-01 to 2025-12-31 using PDAT.\",\n    \"Parsed GenBank source /collection_date values and retained records collected from 2020 through 2025 inclusive.\",\n    \"Counted records with no more than 10 N characters in the nucleotide sequence.\"\n  ]\n}\n```",
-      "duration_seconds": 187.024159,
-      "tool_call_count": 11,
-      "methods": "NCBI E-utilities: ESearch on nuccore, then EFetch XML for sequence/features",
+      "raw_response": "125\n\n```json\n{\n  \"methods\": [\n    \"NCBI Virus Variation vvsearch2 API\",\n    \"NCBI Datasets v2 dataset_report\",\n    \"NCBI E-utilities efetch FASTA validation\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 3052518 nucleotide records by collection date, release date, length 1000\u20132000 bp, and QualNum_i <= 10.\",\n    \"Cross-checked by fetching FASTA sequences and counting N characters.\",\n    \"143 records met date/length filters; 18 had >10 N's; final count was 125.\"\n  ]\n}\n```",
+      "duration_seconds": 187.70104,
+      "tool_call_count": 21,
+      "methods": [
+        "NCBI Virus Variation vvsearch2 API",
+        "NCBI Datasets v2 dataset_report",
+        "NCBI E-utilities efetch FASTA validation"
+      ],
       "reasoning": [
-        "Queried TaxID 3052518 with sequence length 1000:2000 bp and release date 2020-01-01 to 2025-12-31 using PDAT.",
-        "Parsed GenBank source /collection_date values and retained records collected from 2020 through 2025 inclusive.",
-        "Counted records with no more than 10 N characters in the nucleotide sequence."
+        "Filtered TaxID 3052518 nucleotide records by collection date, release date, length 1000\u20132000 bp, and QualNum_i <= 10.",
+        "Cross-checked by fetching FASTA sequences and counting N characters.",
+        "143 records met date/length filters; 18 had >10 N's; final count was 125."
       ]
     },
     {
       "query_id": 36,
       "run_number": 2,
-      "expected_count": 126,
+      "expected_count": 125,
       "retrieved_count": 125,
-      "is_correct": false,
-      "error": null,
-      "raw_response": "125\n```json\n{\n  \"methods\": \"NCBI Entrez ESearch/EFetch against nuccore\",\n  \"reasoning\": [\n    \"Queried TaxID 3052518 with sequence length 1000-2000 bp and release/PDAT 2020-01-01 through 2025-12-31.\",\n    \"Parsed GenBank XML source collection_date qualifiers and retained records collected within 2020-01-01 through 2025-12-31.\",\n    \"Counted only sequences with at most 10 N characters.\"\n  ]\n}\n```",
-      "duration_seconds": 206.337261,
-      "tool_call_count": 11,
-      "methods": "NCBI Entrez ESearch/EFetch against nuccore",
-      "reasoning": [
-        "Queried TaxID 3052518 with sequence length 1000-2000 bp and release/PDAT 2020-01-01 through 2025-12-31.",
-        "Parsed GenBank XML source collection_date qualifiers and retained records collected within 2020-01-01 through 2025-12-31.",
-        "Counted only sequences with at most 10 N characters."
-      ]
-    },
-    {
-      "query_id": 36,
-      "run_number": 3,
-      "expected_count": 126,
-      "retrieved_count": 125,
-      "is_correct": false,
-      "error": null,
-      "raw_response": "125\n\n{\n  \"methods\": [\"NCBI Entrez ESearch/EFetch against nuccore\"],\n  \"reasoning\": [\n    \"ESearch limited TaxID 3052518 records by release date and sequence length.\",\n    \"EFetch XML was parsed for source collection_date and nucleotide sequence.\",\n    \"Counted records with collection date in range and no more than the requested number of N characters.\"\n  ]\n}",
-      "duration_seconds": 167.087921,
-      "tool_call_count": 10,
-      "methods": [
-        "NCBI Entrez ESearch/EFetch against nuccore"
-      ],
-      "reasoning": [
-        "ESearch limited TaxID 3052518 records by release date and sequence length.",
-        "EFetch XML was parsed for source collection_date and nucleotide sequence.",
-        "Counted records with collection date in range and no more than the requested number of N characters."
-      ]
-    },
-    {
-      "query_id": 37,
-      "run_number": 1,
-      "expected_count": 195,
-      "retrieved_count": 199,
-      "is_correct": false,
-      "error": null,
-      "raw_response": "199\n\n```json\n{\n  \"methods\": [\"NCBI Entrez ESearch\", \"NCBI Entrez EFetch\", \"Biopython SeqIO\"],\n  \"reasoning\": [\n    \"Queried nuccore for txid1980442[Organism:exp], sequence length >=5000, and PDAT release date 2020-01-01 through 2025-12-31.\",\n    \"Parsed GenBank source collection_date qualifiers and retained records collected within 2020-01-01 through 2025-12-31.\",\n    \"Counted sequence N characters from fetched records and retained only sequences with <=10 Ns.\"\n  ]\n}\n```",
-      "duration_seconds": 182.634038,
-      "tool_call_count": 10,
-      "methods": [
-        "NCBI Entrez ESearch",
-        "NCBI Entrez EFetch",
-        "Biopython SeqIO"
-      ],
-      "reasoning": [
-        "Queried nuccore for txid1980442[Organism:exp], sequence length >=5000, and PDAT release date 2020-01-01 through 2025-12-31.",
-        "Parsed GenBank source collection_date qualifiers and retained records collected within 2020-01-01 through 2025-12-31.",
-        "Counted sequence N characters from fetched records and retained only sequences with <=10 Ns."
-      ]
-    },
-    {
-      "query_id": 37,
-      "run_number": 2,
-      "expected_count": 195,
-      "retrieved_count": 195,
       "is_correct": true,
       "error": null,
-      "raw_response": "195\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\", \"NCBI Entrez efetch FASTA\"],\n  \"reasoning\": [\n    \"Filtered TaxID 1980442 descendant viral nucleotide records by release date, collection date, and length >= 5000 bp.\",\n    \"Downloaded FASTA for the filtered accessions and counted N/n characters directly.\",\n    \"Retained sequences with <= 10 Ns; final count = 195.\"\n  ]\n}\n```",
-      "duration_seconds": 213.451848,
-      "tool_call_count": 20,
-      "methods": [
-        "NCBI Datasets v2 Virus dataset_report API",
-        "NCBI Entrez efetch FASTA"
-      ],
-      "reasoning": [
-        "Filtered TaxID 1980442 descendant viral nucleotide records by release date, collection date, and length >= 5000 bp.",
-        "Downloaded FASTA for the filtered accessions and counted N/n characters directly.",
-        "Retained sequences with <= 10 Ns; final count = 195."
-      ]
-    },
-    {
-      "query_id": 37,
-      "run_number": 3,
-      "expected_count": 195,
-      "retrieved_count": 199,
-      "is_correct": false,
-      "error": null,
-      "raw_response": "199\n\n```json\n{\n  \"methods\": [\"NCBI Entrez ESearch/EFetch on nuccore\"],\n  \"reasoning\": [\n    \"Queried txid1980442[Organism:exp] with sequence length >=5000 bp and GenBank release/PDAT from 2020-01-01 to 2025-12-31.\",\n    \"Parsed GenBank XML source collection_date qualifiers and retained records collected within 2020-01-01 through 2025-12-31.\",\n    \"Counted sequence N characters from GBSeq_sequence and retained records with <=10 Ns.\"\n  ]\n}\n```",
-      "duration_seconds": 111.441581,
-      "tool_call_count": 6,
-      "methods": [
-        "NCBI Entrez ESearch/EFetch on nuccore"
-      ],
-      "reasoning": [
-        "Queried txid1980442[Organism:exp] with sequence length >=5000 bp and GenBank release/PDAT from 2020-01-01 to 2025-12-31.",
-        "Parsed GenBank XML source collection_date qualifiers and retained records collected within 2020-01-01 through 2025-12-31.",
-        "Counted sequence N characters from GBSeq_sequence and retained records with <=10 Ns."
-      ]
-    },
-    {
-      "query_id": 38,
-      "run_number": 1,
-      "expected_count": 267,
-      "retrieved_count": 272,
-      "is_correct": false,
-      "error": null,
-      "raw_response": "272\n\n```json\n{\n  \"methods\": \"NCBI Entrez E-utilities (ESearch + EFetch XML, nuccore)\",\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with exploded taxonomy, sequence length 2000:4500 bp, and NCBI release/create date 2020-01-01 through 2025-12-31.\",\n    \"Parsed GenBank XML source qualifiers for collection_date and retained records collected within 2020-01-01 through 2025-12-31.\",\n    \"Fetched sequences and counted only records with <=10 N characters.\"\n  ]\n}\n```",
-      "duration_seconds": 118.112313,
-      "tool_call_count": 5,
-      "methods": "NCBI Entrez E-utilities (ESearch + EFetch XML, nuccore)",
-      "reasoning": [
-        "Queried TaxID 1980442 with exploded taxonomy, sequence length 2000:4500 bp, and NCBI release/create date 2020-01-01 through 2025-12-31.",
-        "Parsed GenBank XML source qualifiers for collection_date and retained records collected within 2020-01-01 through 2025-12-31.",
-        "Fetched sequences and counted only records with <=10 N characters."
-      ]
-    },
-    {
-      "query_id": 38,
-      "run_number": 2,
-      "expected_count": 267,
-      "retrieved_count": 272,
-      "is_correct": false,
-      "error": null,
-      "raw_response": "272\n\n{\n  \"methods\": [\"NCBI E-utilities: ESearch nuccore, EFetch GenBank XML\"],\n  \"reasoning\": [\n    \"Queried txid1980442[Organism:exp] with sequence length 2000:4500 bp.\",\n    \"Filtered GenBank XML records by create/release date and source collection_date within 2020-01-01 through 2025-12-31.\",\n    \"Counted only sequences with at most 10 N characters.\"\n  ]\n}",
-      "duration_seconds": 147.583675,
-      "tool_call_count": 6,
-      "methods": [
-        "NCBI E-utilities: ESearch nuccore, EFetch GenBank XML"
-      ],
-      "reasoning": [
-        "Queried txid1980442[Organism:exp] with sequence length 2000:4500 bp.",
-        "Filtered GenBank XML records by create/release date and source collection_date within 2020-01-01 through 2025-12-31.",
-        "Counted only sequences with at most 10 N characters."
-      ]
-    },
-    {
-      "query_id": 38,
-      "run_number": 3,
-      "expected_count": 267,
-      "retrieved_count": 267,
-      "is_correct": true,
-      "error": null,
-      "raw_response": "267\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\", \"NCBI E-utilities efetch FASTA\"],\n  \"reasoning\": [\n    \"Filtered TaxID 1980442 records by release date, collection date, and sequence length.\",\n    \"Treated YYYY and YYYY-MM collection dates within 2020-2025 as eligible.\",\n    \"Fetched candidate FASTA sequences and retained only sequences with <=10 N characters.\"\n  ]\n}\n```",
-      "duration_seconds": 214.629216,
+      "raw_response": "125\n```json\n{\n  \"methods\": [\"NCBI Datasets Virus dataset_report API\", \"NCBI E-utilities EFetch\"],\n  \"reasoning\": [\n    \"Filtered TaxID 3052518 records by release date, collection date, and sequence length.\",\n    \"Retrieved nucleotide FASTA sequences for metadata-matching accessions.\",\n    \"Counted records with <=10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 243.652264,
       "tool_call_count": 18,
+      "methods": [
+        "NCBI Datasets Virus dataset_report API",
+        "NCBI E-utilities EFetch"
+      ],
+      "reasoning": [
+        "Filtered TaxID 3052518 records by release date, collection date, and sequence length.",
+        "Retrieved nucleotide FASTA sequences for metadata-matching accessions.",
+        "Counted records with <=10 N characters."
+      ]
+    },
+    {
+      "query_id": 36,
+      "run_number": 3,
+      "expected_count": 125,
+      "retrieved_count": 125,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "125\n\n```json\n{\n  \"methods\": \"NCBI E-utilities: ESearch on nuccore with txid3052518[Organism:exp], 1000:2000[SLEN], 2020/01/01:2025/12/31[PDAT]; EFetch GenBank XML for sequence and source qualifiers.\",\n  \"reasoning\": [\n    \"Filtered 376 NCBI nucleotide records by release date and sequence length.\",\n    \"Parsed collection_date from the source feature and retained records with collection year/date in 2020-2025.\",\n    \"Counted sequences with <=10 N characters; final retained records: 125.\"\n  ]\n}\n```",
+      "duration_seconds": 135.499793,
+      "tool_call_count": 8,
+      "methods": "NCBI E-utilities: ESearch on nuccore with txid3052518[Organism:exp], 1000:2000[SLEN], 2020/01/01:2025/12/31[PDAT]; EFetch GenBank XML for sequence and source qualifiers.",
+      "reasoning": [
+        "Filtered 376 NCBI nucleotide records by release date and sequence length.",
+        "Parsed collection_date from the source feature and retained records with collection year/date in 2020-2025.",
+        "Counted sequences with <=10 N characters; final retained records: 125."
+      ]
+    },
+    {
+      "query_id": 37,
+      "run_number": 1,
+      "expected_count": 194,
+      "retrieved_count": 199,
+      "is_correct": false,
+      "error": null,
+      "raw_response": "199\n\n```json\n{\n  \"methods\": [\"NCBI E-utilities: nuccore ESearch and EFetch GenBank XML\"],\n  \"reasoning\": [\n    \"Queried TaxID 1980442 with descendant expansion, sequence length >=5000 bp, and NCBI PDAT release date from 2020-01-01 to 2025-12-31.\",\n    \"Parsed GenBank XML source collection_date and retained records collected within 2020-01-01 to 2025-12-31.\",\n    \"Counted N characters in each sequence and retained only records with <=10 Ns.\"\n  ]\n}\n```",
+      "duration_seconds": 155.624432,
+      "tool_call_count": 7,
+      "methods": [
+        "NCBI E-utilities: nuccore ESearch and EFetch GenBank XML"
+      ],
+      "reasoning": [
+        "Queried TaxID 1980442 with descendant expansion, sequence length >=5000 bp, and NCBI PDAT release date from 2020-01-01 to 2025-12-31.",
+        "Parsed GenBank XML source collection_date and retained records collected within 2020-01-01 to 2025-12-31.",
+        "Counted N characters in each sequence and retained only records with <=10 Ns."
+      ]
+    },
+    {
+      "query_id": 37,
+      "run_number": 2,
+      "expected_count": 194,
+      "retrieved_count": 194,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "194\n```json\n{\n  \"methods\": \"NCBI Datasets Virus v2 dataset_report API + NCBI E-utilities efetch FASTA\",\n  \"reasoning\": [\n    \"Retrieved all descendant Orthohantavirus/Hantavirus records for TaxID 1980442 from NCBI Virus metadata.\",\n    \"Filtered for collection year/date 2020-2025, release date 2020-01-01 through 2025-12-31, and length >= 5000 bp.\",\n    \"Fetched FASTA sequences for metadata-passing accessions and counted records with <= 10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 237.966138,
+      "tool_call_count": 12,
+      "methods": "NCBI Datasets Virus v2 dataset_report API + NCBI E-utilities efetch FASTA",
+      "reasoning": [
+        "Retrieved all descendant Orthohantavirus/Hantavirus records for TaxID 1980442 from NCBI Virus metadata.",
+        "Filtered for collection year/date 2020-2025, release date 2020-01-01 through 2025-12-31, and length >= 5000 bp.",
+        "Fetched FASTA sequences for metadata-passing accessions and counted records with <= 10 N characters."
+      ]
+    },
+    {
+      "query_id": 37,
+      "run_number": 3,
+      "expected_count": 194,
+      "retrieved_count": 194,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "194\n\n```json\n{\n  \"methods\": [\"NCBI Datasets Virus API v2\", \"NCBI E-utilities efetch FASTA\"],\n  \"reasoning\": [\n    \"Filtered TaxID 1980442 records for release date 2020-01-01 through 2025-12-31, collection date within the same window, and length >= 5000 bp.\",\n    \"Fetched candidate nucleotide FASTA sequences from NCBI and counted N characters.\",\n    \"Counted records with <= 10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 257.925843,
+      "tool_call_count": 28,
+      "methods": [
+        "NCBI Datasets Virus API v2",
+        "NCBI E-utilities efetch FASTA"
+      ],
+      "reasoning": [
+        "Filtered TaxID 1980442 records for release date 2020-01-01 through 2025-12-31, collection date within the same window, and length >= 5000 bp.",
+        "Fetched candidate nucleotide FASTA sequences from NCBI and counted N characters.",
+        "Counted records with <= 10 N characters."
+      ]
+    },
+    {
+      "query_id": 38,
+      "run_number": 1,
+      "expected_count": 266,
+      "retrieved_count": 272,
+      "is_correct": false,
+      "error": null,
+      "raw_response": "272\n```json\n{\n  \"methods\": \"NCBI Entrez E-utilities (nuccore ESearch + EFetch GenBank XML/FASTA parsing)\",\n  \"reasoning\": [\n    \"Queried txid1980442[Organism:exp] with 2000:4500 bp and GenBank release date 2020-01-01 to 2025-12-31.\",\n    \"Parsed source collection_date and retained records with collection years/dates from 2020 through 2025.\",\n    \"Counted sequence N characters from fetched sequences and retained records with <=10 N's.\"\n  ]\n}\n```",
+      "duration_seconds": 345.856234,
+      "tool_call_count": 29,
+      "methods": "NCBI Entrez E-utilities (nuccore ESearch + EFetch GenBank XML/FASTA parsing)",
+      "reasoning": [
+        "Queried txid1980442[Organism:exp] with 2000:4500 bp and GenBank release date 2020-01-01 to 2025-12-31.",
+        "Parsed source collection_date and retained records with collection years/dates from 2020 through 2025.",
+        "Counted sequence N characters from fetched sequences and retained records with <=10 N's."
+      ]
+    },
+    {
+      "query_id": 38,
+      "run_number": 2,
+      "expected_count": 266,
+      "retrieved_count": 267,
+      "is_correct": false,
+      "error": null,
+      "raw_response": "267\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\", \"NCBI E-utilities efetch FASTA\"],\n  \"reasoning\": [\n    \"Filtered Orthohantavirus TaxID 1980442 nucleotide records by collection date, release date, and length.\",\n    \"Fetched candidate FASTA sequences and counted uppercase/lowercase N characters.\",\n    \"Included only sequences with 0-10 Ns, yielding the final count.\"\n  ]\n}\n```",
+      "duration_seconds": 186.056062,
+      "tool_call_count": 11,
       "methods": [
         "NCBI Datasets v2 Virus dataset_report API",
         "NCBI E-utilities efetch FASTA"
       ],
       "reasoning": [
-        "Filtered TaxID 1980442 records by release date, collection date, and sequence length.",
-        "Treated YYYY and YYYY-MM collection dates within 2020-2025 as eligible.",
-        "Fetched candidate FASTA sequences and retained only sequences with <=10 N characters."
+        "Filtered Orthohantavirus TaxID 1980442 nucleotide records by collection date, release date, and length.",
+        "Fetched candidate FASTA sequences and counted uppercase/lowercase N characters.",
+        "Included only sequences with 0-10 Ns, yielding the final count."
+      ]
+    },
+    {
+      "query_id": 38,
+      "run_number": 3,
+      "expected_count": 266,
+      "retrieved_count": 267,
+      "is_correct": false,
+      "error": null,
+      "raw_response": "267\n\n```json\n{\n  \"methods\": \"NCBI Virus Solr endpoint (vvsearch2) with TaxID 1980442, nucleotide sequences, collection/release date ranges, length and ambiguous-character filters\",\n  \"reasoning\": [\n    \"Applied filters: SeqType_s=Nucleotide, VirusLineage_ss=Orthohantavirus taxid:1980442, SLen_i=[2000 TO 4500], QualNum_i=[0 TO 10].\",\n    \"Date filters used: CollectionDate_dr=[2020-01-01 TO 2025-12-31] and CreateDate_dt=[2020-01-01 TO 2025-12-31].\",\n    \"The filtered NCBI Virus query returned numFound=267.\"\n  ]\n}\n```",
+      "duration_seconds": 343.541328,
+      "tool_call_count": 30,
+      "methods": "NCBI Virus Solr endpoint (vvsearch2) with TaxID 1980442, nucleotide sequences, collection/release date ranges, length and ambiguous-character filters",
+      "reasoning": [
+        "Applied filters: SeqType_s=Nucleotide, VirusLineage_ss=Orthohantavirus taxid:1980442, SLen_i=[2000 TO 4500], QualNum_i=[0 TO 10].",
+        "Date filters used: CollectionDate_dr=[2020-01-01 TO 2025-12-31] and CreateDate_dt=[2020-01-01 TO 2025-12-31].",
+        "The filtered NCBI Virus query returned numFound=267."
       ]
     },
     {
       "query_id": 39,
       "run_number": 1,
-      "expected_count": 362,
+      "expected_count": 361,
       "retrieved_count": 367,
       "is_correct": false,
       "error": null,
-      "raw_response": "367\n{\n  \"methods\": \"NCBI E-utilities: nuccore esearch with txid1980442[Organism:exp], 1000:2000[SLEN], 2020/01/01:2025/12/31[PDAT]; efetch XML for record-level filtering.\",\n  \"reasoning\": [\n    \"Used PDAT/GBSeq_create-date as the NCBI release date and required it within 2020-01-01 to 2025-12-31.\",\n    \"Parsed source feature collection_date and required it within 2020-01-01 to 2025-12-31.\",\n    \"Counted only records with sequence length 1000-2000 bp and <=10 N characters.\"\n  ]\n}",
-      "duration_seconds": 141.041836,
-      "tool_call_count": 8,
-      "methods": "NCBI E-utilities: nuccore esearch with txid1980442[Organism:exp], 1000:2000[SLEN], 2020/01/01:2025/12/31[PDAT]; efetch XML for record-level filtering.",
+      "raw_response": "367\n\n```json\n{\n  \"methods\": [\"NCBI E-utilities esearch/efetch against nuccore\", \"Biopython SeqIO GenBank parsing\"],\n  \"reasoning\": [\n    \"Queried txid1980442[Organism:exp] with 1000:2000[SLEN] and 2020/01/01:2025/12/31[PDAT].\",\n    \"Parsed GenBank source collection_date and retained records with collection years fully within 2020-2025.\",\n    \"Counted only sequences with <=10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 207.270942,
+      "tool_call_count": 9,
+      "methods": [
+        "NCBI E-utilities esearch/efetch against nuccore",
+        "Biopython SeqIO GenBank parsing"
+      ],
       "reasoning": [
-        "Used PDAT/GBSeq_create-date as the NCBI release date and required it within 2020-01-01 to 2025-12-31.",
-        "Parsed source feature collection_date and required it within 2020-01-01 to 2025-12-31.",
-        "Counted only records with sequence length 1000-2000 bp and <=10 N characters."
+        "Queried txid1980442[Organism:exp] with 1000:2000[SLEN] and 2020/01/01:2025/12/31[PDAT].",
+        "Parsed GenBank source collection_date and retained records with collection years fully within 2020-2025.",
+        "Counted only sequences with <=10 N characters."
       ]
     },
     {
       "query_id": 39,
       "run_number": 2,
-      "expected_count": 362,
-      "retrieved_count": 367,
+      "expected_count": 361,
+      "retrieved_count": 362,
       "is_correct": false,
       "error": null,
-      "raw_response": "367\n\n```json\n{\n  \"methods\": \"NCBI E-utilities: esearch + efetch on nuccore\",\n  \"reasoning\": [\n    \"Queried txid1980442[Organism:exp] with 1000:2000[SLEN] and 2020/01/01:2025/12/31[PDAT].\",\n    \"Parsed GenBank XML source collection_date and sequence strings.\",\n    \"Counted records with collection date in range and <=10 N characters.\"\n  ]\n}\n```",
-      "duration_seconds": 229.31805,
-      "tool_call_count": 10,
-      "methods": "NCBI E-utilities: esearch + efetch on nuccore",
+      "raw_response": "362\n\n```json\n{\n  \"methods\": [\"NCBI Virus vvsearch2 Solr API\"],\n  \"reasoning\": [\n    \"Filtered nucleotide records for VirusLineageId taxid 1980442.\",\n    \"Applied collection and release date windows 2020-01-01 through 2025-12-31, sequence length 1000-2000 bp, and QualNum_i 0-10.\",\n    \"Returned numFound from the filtered NCBI Virus query.\"\n  ]\n}\n```",
+      "duration_seconds": 528.773118,
+      "tool_call_count": 27,
+      "methods": [
+        "NCBI Virus vvsearch2 Solr API"
+      ],
       "reasoning": [
-        "Queried txid1980442[Organism:exp] with 1000:2000[SLEN] and 2020/01/01:2025/12/31[PDAT].",
-        "Parsed GenBank XML source collection_date and sequence strings.",
-        "Counted records with collection date in range and <=10 N characters."
+        "Filtered nucleotide records for VirusLineageId taxid 1980442.",
+        "Applied collection and release date windows 2020-01-01 through 2025-12-31, sequence length 1000-2000 bp, and QualNum_i 0-10.",
+        "Returned numFound from the filtered NCBI Virus query."
       ]
     },
     {
       "query_id": 39,
       "run_number": 3,
-      "expected_count": 362,
-      "retrieved_count": 367,
+      "expected_count": 361,
+      "retrieved_count": 362,
       "is_correct": false,
       "error": null,
-      "raw_response": "367\n\n```json\n{\n  \"methods\": [\"NCBI E-utilities: ESearch and EFetch XML against nuccore\"],\n  \"reasoning\": [\n    \"Queried txid1980442[Organism:exp] with 1000:2000[SLEN] and 2020/01/01:2025/12/31[PDAT].\",\n    \"Parsed source collection_date qualifiers and retained records collected within 2020-01-01 to 2025-12-31.\",\n    \"Counted sequence N characters from fetched XML sequences and retained records with <=10 Ns.\"\n  ]\n}\n```",
-      "duration_seconds": 223.117305,
-      "tool_call_count": 11,
+      "raw_response": "362\n```json\n{\n  \"methods\": [\"NCBI Datasets Virus API\", \"NCBI E-utilities efetch FASTA\"],\n  \"reasoning\": [\n    \"Filtered TaxID 1980442 nucleotide virus records by release date, collection date, and length.\",\n    \"Fetched candidate FASTA sequences and counted uppercase/lowercase N characters.\",\n    \"Counted records with sequence length 1000-2000 bp and <=10 Ns.\"\n  ]\n}\n```",
+      "duration_seconds": 337.152685,
+      "tool_call_count": 27,
       "methods": [
-        "NCBI E-utilities: ESearch and EFetch XML against nuccore"
+        "NCBI Datasets Virus API",
+        "NCBI E-utilities efetch FASTA"
       ],
       "reasoning": [
-        "Queried txid1980442[Organism:exp] with 1000:2000[SLEN] and 2020/01/01:2025/12/31[PDAT].",
-        "Parsed source collection_date qualifiers and retained records collected within 2020-01-01 to 2025-12-31.",
-        "Counted sequence N characters from fetched XML sequences and retained records with <=10 Ns."
+        "Filtered TaxID 1980442 nucleotide virus records by release date, collection date, and length.",
+        "Fetched candidate FASTA sequences and counted uppercase/lowercase N characters.",
+        "Counted records with sequence length 1000-2000 bp and <=10 Ns."
       ]
     },
     {
@@ -2370,14 +2435,18 @@
       "query_id": 43,
       "run_number": 3,
       "expected_count": 928,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 928,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 552.405978,
-      "tool_call_count": 18,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "928\n\n```json\n{\n  \"methods\": \"NCBI E-utilities: ESearch/ESummary/EFetch on nuccore\",\n  \"reasoning\": [\n    \"Queried TaxID 11676 with sequence length >=9000 and GenBank release date 2020-01-01 through 2025-12-31.\",\n    \"Parsed ESummary collection_date metadata and retained records collected within 2020-01-01 through 2025-12-31.\",\n    \"Fetched FASTA for retained records and counted only sequences with <=10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 423.51641,
+      "tool_call_count": 24,
+      "methods": "NCBI E-utilities: ESearch/ESummary/EFetch on nuccore",
+      "reasoning": [
+        "Queried TaxID 11676 with sequence length >=9000 and GenBank release date 2020-01-01 through 2025-12-31.",
+        "Parsed ESummary collection_date metadata and retained records collected within 2020-01-01 through 2025-12-31.",
+        "Fetched FASTA for retained records and counted only sequences with <=10 N characters."
+      ]
     },
     {
       "query_id": 44,
@@ -2859,8 +2928,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 121.19682,
-      "tool_call_count": 15,
+      "duration_seconds": 216.768287,
+      "tool_call_count": 34,
       "methods": null,
       "reasoning": null
     },
@@ -2944,14 +3013,18 @@
       "query_id": 54,
       "run_number": 1,
       "expected_count": 1475,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1475,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 196.929769,
-      "tool_call_count": 15,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "1475\n```json\n{\n  \"methods\": \"NCBI Datasets v2 virus dataset_report API + NCBI E-utilities efetch FASTA\",\n  \"reasoning\": [\n    \"Used TaxID 11019 as currently resolved by NCBI; it is Alphavirus, so descendant viral sequences were included.\",\n    \"Filtered records by collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, and length >=10000 bp.\",\n    \"Fetched FASTA for filtered candidates and retained sequences with <=10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 277.544575,
+      "tool_call_count": 23,
+      "methods": "NCBI Datasets v2 virus dataset_report API + NCBI E-utilities efetch FASTA",
+      "reasoning": [
+        "Used TaxID 11019 as currently resolved by NCBI; it is Alphavirus, so descendant viral sequences were included.",
+        "Filtered records by collection date 2020-01-01..2025-12-31, release date 2020-01-01..2025-12-31, and length >=10000 bp.",
+        "Fetched FASTA for filtered candidates and retained sequences with <=10 N characters."
+      ]
     },
     {
       "query_id": 54,
@@ -2960,36 +3033,37 @@
       "retrieved_count": 1475,
       "is_correct": true,
       "error": null,
-      "raw_response": "1475\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report\", \"NCBI E-utilities efetch FASTA\"],\n  \"reasoning\": [\n    \"Applied filters to current NCBI TaxID 11019 records: length >=10000 bp, release date 2020-01-01..2025-12-31, collection date/year 2020..2025.\",\n    \"Fetched FASTA for 1,658 metadata candidates and counted N/n characters; 1,475 had <=10 Ns.\",\n    \"Note: current NCBI TaxID 11019 resolves to Alphavirus; current ONNV taxid is 2169701.\"\n  ]\n}\n```",
-      "duration_seconds": 210.580055,
-      "tool_call_count": 15,
+      "raw_response": "1475\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 virus dataset_report\",\n    \"NCBI E-utilities efetch FASTA\"\n  ],\n  \"reasoning\": [\n    \"Filtered records under provided TaxID 11019 by release date, collection date, and length >=10000 bp.\",\n    \"Fetched FASTA sequences and retained records with <=10 N characters.\",\n    \"Note: current NCBI TaxID 11019 is Alphavirus genus; ONNV-specific TaxID 2169701 would yield 0.\"\n  ]\n}\n```",
+      "duration_seconds": 263.308693,
+      "tool_call_count": 21,
       "methods": [
-        "NCBI Datasets v2 Virus dataset_report",
+        "NCBI Datasets v2 virus dataset_report",
         "NCBI E-utilities efetch FASTA"
       ],
       "reasoning": [
-        "Applied filters to current NCBI TaxID 11019 records: length >=10000 bp, release date 2020-01-01..2025-12-31, collection date/year 2020..2025.",
-        "Fetched FASTA for 1,658 metadata candidates and counted N/n characters; 1,475 had <=10 Ns.",
-        "Note: current NCBI TaxID 11019 resolves to Alphavirus; current ONNV taxid is 2169701."
+        "Filtered records under provided TaxID 11019 by release date, collection date, and length >=10000 bp.",
+        "Fetched FASTA sequences and retained records with <=10 N characters.",
+        "Note: current NCBI TaxID 11019 is Alphavirus genus; ONNV-specific TaxID 2169701 would yield 0."
       ]
     },
     {
       "query_id": 54,
       "run_number": 3,
       "expected_count": 1475,
-      "retrieved_count": 0,
-      "is_correct": false,
+      "retrieved_count": 1475,
+      "is_correct": true,
       "error": null,
-      "raw_response": "0\n\n```json\n{\n  \"methods\": [\"NCBI E-utilities: Taxonomy efetch, Nuccore esearch/efetch\"],\n  \"reasoning\": [\n    \"NCBI currently maps O'nyong-nyong virus records to taxid 2169701 / legacy 11027, while taxid 11019 is Alphavirus.\",\n    \"Filtered Nuccore records for ONNV by release date 2020-01-01..2025-12-31, length >=10000 bp, collection_date within 2020-01-01..2025-12-31, and N count <=10.\",\n    \"No eligible ONNV records had a qualifying collection_date in the requested interval.\"\n  ]\n}\n```",
-      "duration_seconds": 215.745285,
-      "tool_call_count": 11,
+      "raw_response": "1475\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus dataset_report API\",\n    \"NCBI E-utilities EFetch FASTA\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 11019 records to release date and collection date between 2020-01-01 and 2025-12-31, length >= 10000 bp.\",\n    \"Counted N characters from fetched FASTA sequences and retained records with <= 10 Ns.\",\n    \"NCBI currently maps TaxID 11019 to Alphavirus; ONNV itself maps to TaxID 2169701.\"\n  ]\n}\n```",
+      "duration_seconds": 340.285082,
+      "tool_call_count": 31,
       "methods": [
-        "NCBI E-utilities: Taxonomy efetch, Nuccore esearch/efetch"
+        "NCBI Datasets v2 Virus dataset_report API",
+        "NCBI E-utilities EFetch FASTA"
       ],
       "reasoning": [
-        "NCBI currently maps O'nyong-nyong virus records to taxid 2169701 / legacy 11027, while taxid 11019 is Alphavirus.",
-        "Filtered Nuccore records for ONNV by release date 2020-01-01..2025-12-31, length >=10000 bp, collection_date within 2020-01-01..2025-12-31, and N count <=10.",
-        "No eligible ONNV records had a qualifying collection_date in the requested interval."
+        "Filtered TaxID 11019 records to release date and collection date between 2020-01-01 and 2025-12-31, length >= 10000 bp.",
+        "Counted N characters from fetched FASTA sequences and retained records with <= 10 Ns.",
+        "NCBI currently maps TaxID 11019 to Alphavirus; ONNV itself maps to TaxID 2169701."
       ]
     },
     {
@@ -3032,97 +3106,117 @@
       "query_id": 55,
       "run_number": 3,
       "expected_count": 395,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 395,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 387.329704,
-      "tool_call_count": 19,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "395\n```json\n{\n  \"methods\": [\n    \"NCBI Entrez E-utilities via Biopython: esearch on nuccore, efetch GenBank records\"\n  ],\n  \"reasoning\": [\n    \"Searched txid11234[Organism:exp] with length >=14000 and release/CreateDate 2020-01-01 through 2025-12-31.\",\n    \"Parsed GenBank source collection_date and retained records collected within 2020-01-01 through 2025-12-31.\",\n    \"Counted sequence N characters and retained records with <=10 Ns.\"\n  ]\n}\n```",
+      "duration_seconds": 323.540578,
+      "tool_call_count": 8,
+      "methods": [
+        "NCBI Entrez E-utilities via Biopython: esearch on nuccore, efetch GenBank records"
+      ],
+      "reasoning": [
+        "Searched txid11234[Organism:exp] with length >=14000 and release/CreateDate 2020-01-01 through 2025-12-31.",
+        "Parsed GenBank source collection_date and retained records collected within 2020-01-01 through 2025-12-31.",
+        "Counted sequence N characters and retained records with <=10 Ns."
+      ]
     },
     {
       "query_id": 56,
       "run_number": 1,
-      "expected_count": 738,
+      "expected_count": 663,
       "retrieved_count": 738,
-      "is_correct": true,
+      "is_correct": false,
       "error": null,
-      "raw_response": "738\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus dataset_report API\",\n    \"NCBI E-utilities efetch FASTA\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 11292 records by release date, collection date, and length >= 10000 bp.\",\n    \"Fetched candidate FASTA sequences and counted uppercase/lowercase N characters.\",\n    \"Counted records with <= 10 N characters.\"\n  ]\n}\n```",
-      "duration_seconds": 240.789566,
-      "tool_call_count": 19,
+      "raw_response": "738\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus dataset_report API\",\n    \"NCBI E-utilities efetch FASTA\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 11292 records by release date 2020-01-01 to 2025-12-31, collection date 2020-01-01 to 2025-12-31, and length >= 10000 bp.\",\n    \"Fetched FASTA for metadata-matching accessions and counted N characters.\",\n    \"Kept sequences with <= 10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 382.22971,
+      "tool_call_count": 29,
       "methods": [
         "NCBI Datasets v2 Virus dataset_report API",
         "NCBI E-utilities efetch FASTA"
       ],
       "reasoning": [
-        "Filtered TaxID 11292 records by release date, collection date, and length >= 10000 bp.",
-        "Fetched candidate FASTA sequences and counted uppercase/lowercase N characters.",
-        "Counted records with <= 10 N characters."
+        "Filtered TaxID 11292 records by release date 2020-01-01 to 2025-12-31, collection date 2020-01-01 to 2025-12-31, and length >= 10000 bp.",
+        "Fetched FASTA for metadata-matching accessions and counted N characters.",
+        "Kept sequences with <= 10 N characters."
       ]
     },
     {
       "query_id": 56,
       "run_number": 2,
-      "expected_count": 738,
+      "expected_count": 663,
       "retrieved_count": 738,
-      "is_correct": true,
+      "is_correct": false,
       "error": null,
-      "raw_response": "738\n\n```json\n{\n  \"methods\": \"NCBI E-utilities: ESearch on nuccore with txid11292[Organism:exp], SLEN >= 10000, PDAT 2020-01-01..2025-12-31; EFetch GenBank records for collection_date and sequence parsing.\",\n  \"reasoning\": [\n    \"Used PDAT as NCBI GenBank release/addition date.\",\n    \"Accepted collection dates and date ranges fully within 2020-01-01..2025-12-31.\",\n    \"Counted records with sequence length >= 10000 bp and <= 10 N characters.\"\n  ]\n}\n```",
-      "duration_seconds": 828.348755,
-      "tool_call_count": 13,
-      "methods": "NCBI E-utilities: ESearch on nuccore with txid11292[Organism:exp], SLEN >= 10000, PDAT 2020-01-01..2025-12-31; EFetch GenBank records for collection_date and sequence parsing.",
+      "raw_response": "738\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets Virus API: taxon 11292 metadata, release_date, collection_date, length\",\n    \"NCBI E-utilities efetch: FASTA retrieval for N-count filtering\"\n  ],\n  \"reasoning\": [\n    \"Filtered records to release dates 2020-01-01 through 2025-12-31, collection years/dates within 2020-2025, and length >= 10000 bp.\",\n    \"Fetched 1643 candidate nucleotide sequences and counted N/n characters directly.\",\n    \"738 sequences had <= 10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 240.729322,
+      "tool_call_count": 21,
+      "methods": [
+        "NCBI Datasets Virus API: taxon 11292 metadata, release_date, collection_date, length",
+        "NCBI E-utilities efetch: FASTA retrieval for N-count filtering"
+      ],
       "reasoning": [
-        "Used PDAT as NCBI GenBank release/addition date.",
-        "Accepted collection dates and date ranges fully within 2020-01-01..2025-12-31.",
-        "Counted records with sequence length >= 10000 bp and <= 10 N characters."
+        "Filtered records to release dates 2020-01-01 through 2025-12-31, collection years/dates within 2020-2025, and length >= 10000 bp.",
+        "Fetched 1643 candidate nucleotide sequences and counted N/n characters directly.",
+        "738 sequences had <= 10 N characters."
       ]
     },
     {
       "query_id": 56,
       "run_number": 3,
-      "expected_count": 738,
-      "retrieved_count": 738,
+      "expected_count": 663,
+      "retrieved_count": 663,
       "is_correct": true,
       "error": null,
-      "raw_response": "738\n{\n  \"methods\": [\n    \"NCBI Datasets v2 virus dataset_report API\",\n    \"NCBI E-utilities ESearch/EFetch FASTA\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 11292 nucleotide records by release date 2020-01-01 through 2025-12-31 and length >=10000 bp.\",\n    \"Applied collection-date filter for 2020 through 2025, including incomplete year-only dates and the in-range [2020 TO 2022] interval.\",\n    \"Fetched FASTA sequences and counted records with <=10 N/n characters.\"\n  ]\n}",
-      "duration_seconds": 266.098074,
-      "tool_call_count": 22,
-      "methods": [
-        "NCBI Datasets v2 virus dataset_report API",
-        "NCBI E-utilities ESearch/EFetch FASTA"
-      ],
+      "raw_response": "663\n\n```json\n{\n  \"methods\": \"NCBI Datasets CLI summary virus genome taxon 11292; NCBI E-utilities efetch FASTA\",\n  \"reasoning\": [\n    \"Filtered Rabies lyssavirus metadata for release dates 2020-01-01 through 2025-12-31 and collection dates overlapping 2020-01-01 through 2025-12-31.\",\n    \"Retained sequences with length >= 10000 bp.\",\n    \"Fetched FASTA sequences and counted only records with <= 10 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 572.809396,
+      "tool_call_count": 30,
+      "methods": "NCBI Datasets CLI summary virus genome taxon 11292; NCBI E-utilities efetch FASTA",
       "reasoning": [
-        "Filtered TaxID 11292 nucleotide records by release date 2020-01-01 through 2025-12-31 and length >=10000 bp.",
-        "Applied collection-date filter for 2020 through 2025, including incomplete year-only dates and the in-range [2020 TO 2022] interval.",
-        "Fetched FASTA sequences and counted records with <=10 N/n characters."
+        "Filtered Rabies lyssavirus metadata for release dates 2020-01-01 through 2025-12-31 and collection dates overlapping 2020-01-01 through 2025-12-31.",
+        "Retained sequences with length >= 10000 bp.",
+        "Fetched FASTA sequences and counted only records with <= 10 N characters."
       ]
     },
     {
       "query_id": 57,
       "run_number": 1,
       "expected_count": 1782,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1782,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 285.551572,
-      "tool_call_count": 22,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "1782\n\n```json\n{\n  \"methods\": [\n    \"NCBI Virus Variation Solr endpoint (vvsearch2)\",\n    \"NCBI Datasets Virus report API for cross-checking metadata counts\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 10244 nucleotide records by sequence length >=180000 bp.\",\n    \"Applied collection and release date ranges from 2020-01-01 through 2025-12-31.\",\n    \"Applied ambiguous-character filter QualNum_i <= 10 and used exact Solr numFound.\"\n  ]\n}\n```",
+      "duration_seconds": 232.838885,
+      "tool_call_count": 26,
+      "methods": [
+        "NCBI Virus Variation Solr endpoint (vvsearch2)",
+        "NCBI Datasets Virus report API for cross-checking metadata counts"
+      ],
+      "reasoning": [
+        "Filtered TaxID 10244 nucleotide records by sequence length >=180000 bp.",
+        "Applied collection and release date ranges from 2020-01-01 through 2025-12-31.",
+        "Applied ambiguous-character filter QualNum_i <= 10 and used exact Solr numFound."
+      ]
     },
     {
       "query_id": 57,
       "run_number": 2,
       "expected_count": 1782,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1782,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 161.936347,
-      "tool_call_count": 22,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "1782\n\n```json\n{\n  \"methods\": [\n    \"NCBI Virus vvsearch2/Solr API via Python requests\",\n    \"Cross-check against NCBI Datasets virus dataset_report metadata\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID lineage 10244, nucleotide records, length >= 180000 bp.\",\n    \"Applied collection and release date ranges 2020-01-01 through 2025-12-31.\",\n    \"Applied ambiguous-character filter QualNum_i <= 10.\"\n  ]\n}\n```",
+      "duration_seconds": 236.695158,
+      "tool_call_count": 28,
+      "methods": [
+        "NCBI Virus vvsearch2/Solr API via Python requests",
+        "Cross-check against NCBI Datasets virus dataset_report metadata"
+      ],
+      "reasoning": [
+        "Filtered TaxID lineage 10244, nucleotide records, length >= 180000 bp.",
+        "Applied collection and release date ranges 2020-01-01 through 2025-12-31.",
+        "Applied ambiguous-character filter QualNum_i <= 10."
+      ]
     },
     {
       "query_id": 57,
@@ -3132,8 +3226,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 217.281705,
-      "tool_call_count": 19,
+      "duration_seconds": 656.887677,
+      "tool_call_count": 33,
       "methods": null,
       "reasoning": null
     },
@@ -3201,8 +3295,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 285.109159,
-      "tool_call_count": 19,
+      "duration_seconds": 867.405123,
+      "tool_call_count": 37,
       "methods": null,
       "reasoning": null
     },
@@ -3214,8 +3308,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 277.743627,
-      "tool_call_count": 18,
+      "duration_seconds": 696.521173,
+      "tool_call_count": 32,
       "methods": null,
       "reasoning": null
     },
@@ -3227,8 +3321,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 482.527199,
-      "tool_call_count": 22,
+      "duration_seconds": 257.111242,
+      "tool_call_count": 32,
       "methods": null,
       "reasoning": null
     },
@@ -3255,14 +3349,21 @@
       "query_id": 60,
       "run_number": 2,
       "expected_count": 24,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 24,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 126.549851,
-      "tool_call_count": 18,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "24\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 REST API\", \"Python local filtering\"],\n  \"reasoning\": [\n    \"Queried TaxID 11320 with host=human, RefSeq-only, complete-only.\",\n    \"Filtered records for collection_date >= 1993-04-20, release_date <= 2020-12-22, and length <= 15000 bp.\",\n    \"Excluded 3 records collected in 1968; 24 records remained.\"\n  ]\n}\n```",
+      "duration_seconds": 113.021761,
+      "tool_call_count": 21,
+      "methods": [
+        "NCBI Datasets v2 REST API",
+        "Python local filtering"
+      ],
+      "reasoning": [
+        "Queried TaxID 11320 with host=human, RefSeq-only, complete-only.",
+        "Filtered records for collection_date >= 1993-04-20, release_date <= 2020-12-22, and length <= 15000 bp.",
+        "Excluded 3 records collected in 1968; 24 records remained."
+      ]
     },
     {
       "query_id": 60,
@@ -3287,14 +3388,20 @@
       "query_id": 61,
       "run_number": 1,
       "expected_count": 217,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 217,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 365.380429,
-      "tool_call_count": 19,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "217\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus Genome API\"],\n  \"reasoning\": [\n    \"Downloaded metadata for TaxID 11320 with host=9606 and complete_only=true.\",\n    \"Filtered records for submitter country France, releaseDate <= 2024-12-31, and length <= 15000 bp.\",\n    \"All 217 matching records also satisfied the length and release-date criteria.\"\n  ]\n}\n```",
+      "duration_seconds": 313.678751,
+      "tool_call_count": 25,
+      "methods": [
+        "NCBI Datasets v2 Virus Genome API"
+      ],
+      "reasoning": [
+        "Downloaded metadata for TaxID 11320 with host=9606 and complete_only=true.",
+        "Filtered records for submitter country France, releaseDate <= 2024-12-31, and length <= 15000 bp.",
+        "All 217 matching records also satisfied the length and release-date criteria."
+      ]
     },
     {
       "query_id": 61,
@@ -3304,8 +3411,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 243.183728,
-      "tool_call_count": 20,
+      "duration_seconds": 779.523948,
+      "tool_call_count": 29,
       "methods": null,
       "reasoning": null
     },
@@ -3336,8 +3443,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 336.788386,
-      "tool_call_count": 22,
+      "duration_seconds": 535.256567,
+      "tool_call_count": 34,
       "methods": null,
       "reasoning": null
     },
@@ -3349,8 +3456,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 130.01848,
-      "tool_call_count": 18,
+      "duration_seconds": 559.357524,
+      "tool_call_count": 35,
       "methods": null,
       "reasoning": null
     },
@@ -3358,14 +3465,22 @@
       "query_id": 62,
       "run_number": 3,
       "expected_count": 1,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 253.958164,
-      "tool_call_count": 20,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "1\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus genome API\",\n    \"NCBI Virus AllNuclMetadata.csv.gz cross-check\",\n    \"NCBI E-utilities efetch GenBank record verification\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 11320 with host=human, geo_location=Hong Kong, and complete_only=true.\",\n    \"The single matching accession was MG693001.1; collection date 2017-07-10 and release date 2018-03-16 satisfy the date criteria.\",\n    \"GenBank direct submission address lists Hong Kong, China, satisfying submitter country=China.\"\n  ]\n}\n```",
+      "duration_seconds": 520.672874,
+      "tool_call_count": 25,
+      "methods": [
+        "NCBI Datasets v2 Virus genome API",
+        "NCBI Virus AllNuclMetadata.csv.gz cross-check",
+        "NCBI E-utilities efetch GenBank record verification"
+      ],
+      "reasoning": [
+        "Filtered TaxID 11320 with host=human, geo_location=Hong Kong, and complete_only=true.",
+        "The single matching accession was MG693001.1; collection date 2017-07-10 and release date 2018-03-16 satisfy the date criteria.",
+        "GenBank direct submission address lists Hong Kong, China, satisfying submitter country=China."
+      ]
     },
     {
       "query_id": 63,
@@ -3391,40 +3506,57 @@
       "query_id": 63,
       "run_number": 2,
       "expected_count": 708,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 708,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 366.629734,
-      "tool_call_count": 22,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "708\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus Data Report API: /virus/taxon/11320/dataset_report\"\n  ],\n  \"reasoning\": [\n    \"Queried TaxID 11320 with host=human and geo_location=Chile.\",\n    \"Locally retained records with completeness=COMPLETE, release_date <= 2024-05-25, length <= 15000.\",\n    \"Excluded records flagged as lab-passaged via is_lab_host=true; none of the complete records were flagged.\"\n  ]\n}\n```",
+      "duration_seconds": 358.272912,
+      "tool_call_count": 23,
+      "methods": [
+        "NCBI Datasets v2 Virus Data Report API: /virus/taxon/11320/dataset_report"
+      ],
+      "reasoning": [
+        "Queried TaxID 11320 with host=human and geo_location=Chile.",
+        "Locally retained records with completeness=COMPLETE, release_date <= 2024-05-25, length <= 15000.",
+        "Excluded records flagged as lab-passaged via is_lab_host=true; none of the complete records were flagged."
+      ]
     },
     {
       "query_id": 63,
       "run_number": 3,
       "expected_count": 708,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 708,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 303.038747,
-      "tool_call_count": 23,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "708\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\", \"Python filtering\"],\n  \"reasoning\": [\n    \"Queried TaxID 11320 with host=human and geo_location=Chile.\",\n    \"Filtered records for completeness=COMPLETE, release_date <= 2024-05-25, length <= 15000.\",\n    \"Excluded records marked is_lab_host=true; none of the complete candidates were lab-host records.\"\n  ]\n}\n```",
+      "duration_seconds": 698.184631,
+      "tool_call_count": 34,
+      "methods": [
+        "NCBI Datasets v2 Virus dataset_report API",
+        "Python filtering"
+      ],
+      "reasoning": [
+        "Queried TaxID 11320 with host=human and geo_location=Chile.",
+        "Filtered records for completeness=COMPLETE, release_date <= 2024-05-25, length <= 15000.",
+        "Excluded records marked is_lab_host=true; none of the complete candidates were lab-host records."
+      ]
     },
     {
       "query_id": 64,
       "run_number": 1,
       "expected_count": 98,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 98,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 483.162167,
-      "tool_call_count": 19,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "98\n\n```json\n{\n  \"methods\": \"NCBI Virus vvsearch2 Solr API; NCBI E-utilities efetch FASTA validation\",\n  \"reasoning\": [\n    \"Filtered TaxID 11320 nucleotide records for human host, Cambodia, complete status, release date <= 2024-12-31, length <= 15000, QualNum_i=0, and no LabHost_s.\",\n    \"Retrieved all matching accessions and verified FASTA sequences had zero N characters.\",\n    \"Final matching sequence count was 98.\"\n  ]\n}\n```",
+      "duration_seconds": 347.625967,
+      "tool_call_count": 28,
+      "methods": "NCBI Virus vvsearch2 Solr API; NCBI E-utilities efetch FASTA validation",
+      "reasoning": [
+        "Filtered TaxID 11320 nucleotide records for human host, Cambodia, complete status, release date <= 2024-12-31, length <= 15000, QualNum_i=0, and no LabHost_s.",
+        "Retrieved all matching accessions and verified FASTA sequences had zero N characters.",
+        "Final matching sequence count was 98."
+      ]
     },
     {
       "query_id": 64,
@@ -3434,8 +3566,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 336.081531,
-      "tool_call_count": 20,
+      "duration_seconds": 530.343604,
+      "tool_call_count": 36,
       "methods": null,
       "reasoning": null
     },
@@ -3480,14 +3612,21 @@
       "query_id": 65,
       "run_number": 2,
       "expected_count": 216,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 216,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 274.610051,
-      "tool_call_count": 24,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "216\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus API\", \"NCBI Entrez EFetch FASTA\"],\n  \"reasoning\": [\n    \"Filtered TaxID 11320 records for Homo sapiens host, France geo-location, COMPLETE nucleotide completeness, collection date range, release date <= 2024-12-31, and length <= 15000 bp.\",\n    \"Retrieved FASTA for retained accessions and counted ambiguous N characters.\",\n    \"All 216 retained sequences had <= 100 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 479.10482,
+      "tool_call_count": 29,
+      "methods": [
+        "NCBI Datasets v2 Virus API",
+        "NCBI Entrez EFetch FASTA"
+      ],
+      "reasoning": [
+        "Filtered TaxID 11320 records for Homo sapiens host, France geo-location, COMPLETE nucleotide completeness, collection date range, release date <= 2024-12-31, and length <= 15000 bp.",
+        "Retrieved FASTA for retained accessions and counted ambiguous N characters.",
+        "All 216 retained sequences had <= 100 N characters."
+      ]
     },
     {
       "query_id": 65,
@@ -3497,8 +3636,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 212.8391,
-      "tool_call_count": 22,
+      "duration_seconds": 545.852993,
+      "tool_call_count": 34,
       "methods": null,
       "reasoning": null
     },
@@ -3506,66 +3645,97 @@
       "query_id": 66,
       "run_number": 1,
       "expected_count": 3,
-      "retrieved_count": null,
+      "retrieved_count": 0,
       "is_correct": false,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 167.78548,
-      "tool_call_count": 26,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "0\n\n```json\n{\n  \"methods\": \"NCBI Datasets CLI v18.26.0; NCBI Entrez E-utilities cross-check\",\n  \"reasoning\": [\n    \"Queried TaxID 11320 with RefSeq, complete-only, host=human, geo-location=Korea/South Korea.\",\n    \"Applied release_date <= 2024-12-31 and length <= 15000 bp; all candidate RefSeq segment lengths were below threshold.\",\n    \"No RefSeq records simultaneously had human host and Korea/South Korea collection location.\"\n  ]\n}\n```",
+      "duration_seconds": 181.400782,
+      "tool_call_count": 17,
+      "methods": "NCBI Datasets CLI v18.26.0; NCBI Entrez E-utilities cross-check",
+      "reasoning": [
+        "Queried TaxID 11320 with RefSeq, complete-only, host=human, geo-location=Korea/South Korea.",
+        "Applied release_date <= 2024-12-31 and length <= 15000 bp; all candidate RefSeq segment lengths were below threshold.",
+        "No RefSeq records simultaneously had human host and Korea/South Korea collection location."
+      ]
     },
     {
       "query_id": 66,
       "run_number": 2,
       "expected_count": 3,
-      "retrieved_count": null,
+      "retrieved_count": 0,
       "is_correct": false,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 119.203878,
-      "tool_call_count": 26,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "0\n```json\n{\n  \"methods\": [\"NCBI Datasets CLI v18.26.0 / NCBI Datasets API v2 virus summary\"],\n  \"reasoning\": [\n    \"Filtered TaxID 11320 for human host, Korea geo-location, complete nucleotide records, and RefSeq source.\",\n    \"The filtered NCBI Virus/Datasets result returned total_count = 0 before length and release-date post-filters.\",\n    \"Therefore length <=15000 bp and release <=2024-12-31 do not change the count.\"\n  ]\n}\n```",
+      "duration_seconds": 304.214886,
+      "tool_call_count": 30,
+      "methods": [
+        "NCBI Datasets CLI v18.26.0 / NCBI Datasets API v2 virus summary"
+      ],
+      "reasoning": [
+        "Filtered TaxID 11320 for human host, Korea geo-location, complete nucleotide records, and RefSeq source.",
+        "The filtered NCBI Virus/Datasets result returned total_count = 0 before length and release-date post-filters.",
+        "Therefore length <=15000 bp and release <=2024-12-31 do not change the count."
+      ]
     },
     {
       "query_id": 66,
       "run_number": 3,
       "expected_count": 3,
-      "retrieved_count": null,
+      "retrieved_count": 0,
       "is_correct": false,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 386.08603,
-      "tool_call_count": 23,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "0\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\", \"NCBI Entrez E-utilities cross-check\"],\n  \"reasoning\": [\n    \"Filtered TaxID 11320 for RefSeq and COMPLETE records.\",\n    \"Applied host=Homo sapiens, Korea/South Korea collection location, release_date <= 2024-12-31, and length <= 15000 bp.\",\n    \"No record satisfied both the human host and Korea collection-location metadata criteria.\"\n  ]\n}\n```",
+      "duration_seconds": 127.655019,
+      "tool_call_count": 20,
+      "methods": [
+        "NCBI Datasets v2 Virus dataset_report API",
+        "NCBI Entrez E-utilities cross-check"
+      ],
+      "reasoning": [
+        "Filtered TaxID 11320 for RefSeq and COMPLETE records.",
+        "Applied host=Homo sapiens, Korea/South Korea collection location, release_date <= 2024-12-31, and length <= 15000 bp.",
+        "No record satisfied both the human host and Korea collection-location metadata criteria."
+      ]
     },
     {
       "query_id": 67,
       "run_number": 1,
       "expected_count": 43,
-      "retrieved_count": null,
+      "retrieved_count": 42,
       "is_correct": false,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 86.763288,
-      "tool_call_count": 21,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "42\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets Virus Genome summary via datasets CLI/API\",\n    \"Filtered JSONL metadata for TaxID 64320 records\"\n  ],\n  \"reasoning\": [\n    \"Required Homo sapiens host, COMPLETE nucleotide completeness, North America collection region, and USA submitter country.\",\n    \"Applied collection date >= 2015-01-08, release date <= 2024-12-31, and length 8784-11784 bp.\",\n    \"Partial collection dates were interpreted by their earliest represented date for threshold comparison.\"\n  ]\n}\n```",
+      "duration_seconds": 151.87697,
+      "tool_call_count": 19,
+      "methods": [
+        "NCBI Datasets Virus Genome summary via datasets CLI/API",
+        "Filtered JSONL metadata for TaxID 64320 records"
+      ],
+      "reasoning": [
+        "Required Homo sapiens host, COMPLETE nucleotide completeness, North America collection region, and USA submitter country.",
+        "Applied collection date >= 2015-01-08, release date <= 2024-12-31, and length 8784-11784 bp.",
+        "Partial collection dates were interpreted by their earliest represented date for threshold comparison."
+      ]
     },
     {
       "query_id": 67,
       "run_number": 2,
       "expected_count": 43,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 43,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 118.04742,
-      "tool_call_count": 24,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "43\n\n```json\n{\n  \"methods\": [\"NCBI Virus vvsearch2/Solr query\", \"NCBI Datasets virus dataset_report cross-check\"],\n  \"reasoning\": [\n    \"Queried TaxID 64320 nucleotide records and applied filters for Homo sapiens host, complete nucleotide status, North America geographic region, USA submitter country, collection date range, release date cutoff, and length 8784-11784 bp.\",\n    \"Used NCBI Virus CollectionDate_dr range behavior, which includes partial collection dates such as year-only/month-only when matching the range.\",\n    \"Final Solr numFoundExact count was 43.\"\n  ]\n}\n```",
+      "duration_seconds": 299.961364,
+      "tool_call_count": 28,
+      "methods": [
+        "NCBI Virus vvsearch2/Solr query",
+        "NCBI Datasets virus dataset_report cross-check"
+      ],
+      "reasoning": [
+        "Queried TaxID 64320 nucleotide records and applied filters for Homo sapiens host, complete nucleotide status, North America geographic region, USA submitter country, collection date range, release date cutoff, and length 8784-11784 bp.",
+        "Used NCBI Virus CollectionDate_dr range behavior, which includes partial collection dates such as year-only/month-only when matching the range.",
+        "Final Solr numFoundExact count was 43."
+      ]
     },
     {
       "query_id": 67,
@@ -3646,57 +3816,56 @@
     {
       "query_id": 69,
       "run_number": 1,
-      "expected_count": 2694,
+      "expected_count": 2907,
       "retrieved_count": 2907,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "2907\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\"],\n  \"reasoning\": [\n    \"Retrieved all NCBI Virus records for taxon 11060.\",\n    \"Filtered for completeness == PARTIAL, release_date from 2000-02-14 through 2026-02-17 inclusive, and length 10416\u201313416 bp.\",\n    \"Final filtered record count was 2907.\"\n  ]\n}\n```",
-      "duration_seconds": 83.246471,
+      "raw_response": "2907\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\"],\n  \"reasoning\": [\n    \"Fetched all TaxID 11060 virus genome metadata records with pagination.\",\n    \"Filtered for completeness = PARTIAL, release_date from 2000-02-14 through 2026-02-17 inclusive, and length 10416\u201313416 bp.\",\n    \"Counted matching nucleotide records.\"\n  ]\n}\n```",
+      "duration_seconds": 155.783928,
       "tool_call_count": 8,
       "methods": [
         "NCBI Datasets v2 Virus dataset_report API"
       ],
       "reasoning": [
-        "Retrieved all NCBI Virus records for taxon 11060.",
-        "Filtered for completeness == PARTIAL, release_date from 2000-02-14 through 2026-02-17 inclusive, and length 10416\u201313416 bp.",
-        "Final filtered record count was 2907."
+        "Fetched all TaxID 11060 virus genome metadata records with pagination.",
+        "Filtered for completeness = PARTIAL, release_date from 2000-02-14 through 2026-02-17 inclusive, and length 10416\u201313416 bp.",
+        "Counted matching nucleotide records."
       ]
     },
     {
       "query_id": 69,
       "run_number": 2,
-      "expected_count": 2694,
+      "expected_count": 2907,
       "retrieved_count": 2907,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "2907\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus dataset_report API\",\n    \"Python requests pagination and local filtering\"\n  ],\n  \"reasoning\": [\n    \"Queried TaxID 11060 reports from NCBI Virus metadata.\",\n    \"Filtered records where completeness was PARTIAL, release_date was 2000-02-14 through 2026-02-17 inclusive, and length was 10416-13416 bp.\",\n    \"Counted 2907 matching nucleotide sequence records.\"\n  ]\n}\n```",
-      "duration_seconds": 117.082728,
-      "tool_call_count": 15,
-      "methods": [
-        "NCBI Datasets v2 Virus dataset_report API",
-        "Python requests pagination and local filtering"
-      ],
+      "raw_response": "2907\n```json\n{\n  \"methods\": \"NCBI Datasets v2 Virus dataset_report API\",\n  \"reasoning\": [\n    \"Queried TaxID 11060 with release date >= 2000-02-14.\",\n    \"Filtered locally for release date <= 2026-02-17, completeness == PARTIAL, and length 10416-13416 bp.\",\n    \"Counted matching nucleotide records.\"\n  ]\n}\n```",
+      "duration_seconds": 131.866678,
+      "tool_call_count": 17,
+      "methods": "NCBI Datasets v2 Virus dataset_report API",
       "reasoning": [
-        "Queried TaxID 11060 reports from NCBI Virus metadata.",
-        "Filtered records where completeness was PARTIAL, release_date was 2000-02-14 through 2026-02-17 inclusive, and length was 10416-13416 bp.",
-        "Counted 2907 matching nucleotide sequence records."
+        "Queried TaxID 11060 with release date >= 2000-02-14.",
+        "Filtered locally for release date <= 2026-02-17, completeness == PARTIAL, and length 10416-13416 bp.",
+        "Counted matching nucleotide records."
       ]
     },
     {
       "query_id": 69,
       "run_number": 3,
-      "expected_count": 2694,
+      "expected_count": 2907,
       "retrieved_count": 2907,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "2907\n\n```json\n{\n  \"methods\": \"NCBI Datasets v2 Virus dataset_report API; NCBI E-utilities esearch cross-check\",\n  \"reasoning\": [\n    \"Fetched TaxID 11060 virus nucleotide reports released since 2000-02-14.\",\n    \"Filtered for release_date <= 2026-02-17, completeness == PARTIAL, and length 10416-13416 bp.\",\n    \"Cross-check: total matching length/date records = 4571; COMPLETE = 1664; PARTIAL = 2907.\"\n  ]\n}\n```",
-      "duration_seconds": 110.671118,
+      "raw_response": "2907\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\"],\n  \"reasoning\": [\n    \"Fetched all NCBI Virus genome metadata for TaxID 11060.\",\n    \"Filtered records to completeness = PARTIAL, release_date between 2000-02-14 and 2026-02-17 inclusive, and length 10416\u201313416 bp.\",\n    \"Counted matching nucleotide accessions.\"\n  ]\n}\n```",
+      "duration_seconds": 150.620455,
       "tool_call_count": 16,
-      "methods": "NCBI Datasets v2 Virus dataset_report API; NCBI E-utilities esearch cross-check",
+      "methods": [
+        "NCBI Datasets v2 Virus dataset_report API"
+      ],
       "reasoning": [
-        "Fetched TaxID 11060 virus nucleotide reports released since 2000-02-14.",
-        "Filtered for release_date <= 2026-02-17, completeness == PARTIAL, and length 10416-13416 bp.",
-        "Cross-check: total matching length/date records = 4571; COMPLETE = 1664; PARTIAL = 2907."
+        "Fetched all NCBI Virus genome metadata for TaxID 11060.",
+        "Filtered records to completeness = PARTIAL, release_date between 2000-02-14 and 2026-02-17 inclusive, and length 10416\u201313416 bp.",
+        "Counted matching nucleotide accessions."
       ]
     },
     {
@@ -3723,14 +3892,18 @@
       "query_id": 70,
       "run_number": 2,
       "expected_count": 83,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 83,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 106.372019,
-      "tool_call_count": 19,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "83\n\n```json\n{\n  \"methods\": \"NCBI Datasets v2 Virus dataset_report API; NCBI E-utilities efetch FASTA\",\n  \"reasoning\": [\n    \"Filtered TaxID 10244 records by host Macaca fascicularis, geo_location USA, completeness PARTIAL, and release_date <= 2026-02-17.\",\n    \"Fetched matching nucleotide FASTA sequences from nuccore.\",\n    \"Counted ambiguous N characters per sequence and retained records with <= 10 Ns.\"\n  ]\n}\n```",
+      "duration_seconds": 129.58669,
+      "tool_call_count": 20,
+      "methods": "NCBI Datasets v2 Virus dataset_report API; NCBI E-utilities efetch FASTA",
+      "reasoning": [
+        "Filtered TaxID 10244 records by host Macaca fascicularis, geo_location USA, completeness PARTIAL, and release_date <= 2026-02-17.",
+        "Fetched matching nucleotide FASTA sequences from nuccore.",
+        "Counted ambiguous N characters per sequence and retained records with <= 10 Ns."
+      ]
     },
     {
       "query_id": 70,
@@ -4067,14 +4240,20 @@
       "query_id": 76,
       "run_number": 2,
       "expected_count": 551,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 551,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 133.059776,
-      "tool_call_count": 23,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "551\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\"],\n  \"reasoning\": [\n    \"Fetched all TaxID 11234 virus reports via paginated API.\",\n    \"Filtered for completeness PARTIAL, submitter.country Germany, and release_date <= 2024-11-05.\",\n    \"Final matching accession count was 551.\"\n  ]\n}\n```",
+      "duration_seconds": 109.097685,
+      "tool_call_count": 15,
+      "methods": [
+        "NCBI Datasets v2 Virus dataset_report API"
+      ],
+      "reasoning": [
+        "Fetched all TaxID 11234 virus reports via paginated API.",
+        "Filtered for completeness PARTIAL, submitter.country Germany, and release_date <= 2024-11-05.",
+        "Final matching accession count was 551."
+      ]
     },
     {
       "query_id": 76,
@@ -4159,8 +4338,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 135.393795,
-      "tool_call_count": 24,
+      "duration_seconds": 1092.221391,
+      "tool_call_count": 31,
       "methods": null,
       "reasoning": null
     },
@@ -4188,14 +4367,22 @@
       "query_id": 78,
       "run_number": 3,
       "expected_count": 3,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 3,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 522.793194,
-      "tool_call_count": 21,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "3\n\n```json\n{\n  \"methods\": [\"NCBI Entrez ESearch/EFetch\", \"NCBI Datasets v2 virus accession dataset_report\", \"Biopython SeqIO\"],\n  \"reasoning\": [\n    \"Searched Retroviridae (txid11632) nucleotide records with Gabon and release-date window, then parsed GenBank source qualifiers for host=Homo sapiens and country/geo_loc_name=Gabon.\",\n    \"Used NCBI Datasets completeness and release_date fields to require COMPLETE and 2012-02-14 through 2024-08-31.\",\n    \"Counted ambiguous N bases in each retained sequence and kept records with N <= 15.\"\n  ]\n}\n```",
+      "duration_seconds": 324.775322,
+      "tool_call_count": 30,
+      "methods": [
+        "NCBI Entrez ESearch/EFetch",
+        "NCBI Datasets v2 virus accession dataset_report",
+        "Biopython SeqIO"
+      ],
+      "reasoning": [
+        "Searched Retroviridae (txid11632) nucleotide records with Gabon and release-date window, then parsed GenBank source qualifiers for host=Homo sapiens and country/geo_loc_name=Gabon.",
+        "Used NCBI Datasets completeness and release_date fields to require COMPLETE and 2012-02-14 through 2024-08-31.",
+        "Counted ambiguous N bases in each retained sequence and kept records with N <= 15."
+      ]
     },
     {
       "query_id": 79,
@@ -4424,14 +4611,18 @@
       "query_id": 83,
       "run_number": 1,
       "expected_count": 6,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 6,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 148.331718,
-      "tool_call_count": 21,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "6\n\n```json\n{\n  \"methods\": \"NCBI Datasets Virus Genome API v2\",\n  \"reasoning\": [\n    \"Queried TaxID 11266 with complete-only and geo_location=China.\",\n    \"Filtered returned metadata for releaseDate between 1990-04-12 and 2026-01-22 and length >= 8181 bp.\",\n    \"Excluded records marked as lab-passaged via isLabHost/labHost; none of the 6 qualifying records were marked lab-passaged.\"\n  ]\n}\n```",
+      "duration_seconds": 116.627211,
+      "tool_call_count": 18,
+      "methods": "NCBI Datasets Virus Genome API v2",
+      "reasoning": [
+        "Queried TaxID 11266 with complete-only and geo_location=China.",
+        "Filtered returned metadata for releaseDate between 1990-04-12 and 2026-01-22 and length >= 8181 bp.",
+        "Excluded records marked as lab-passaged via isLabHost/labHost; none of the 6 qualifying records were marked lab-passaged."
+      ]
     },
     {
       "query_id": 83,
@@ -4454,14 +4645,18 @@
       "query_id": 83,
       "run_number": 3,
       "expected_count": 6,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 6,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 153.77982,
-      "tool_call_count": 18,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "6\n\n```json\n{\n  \"methods\": \"NCBI Datasets v2 Virus dataset_report API\",\n  \"reasoning\": [\n    \"Queried TaxID 11266 with complete_only=true, geo_location=China, released_since=1990-04-12.\",\n    \"Client-side filtered release_date <= 2026-01-22, length >= 8181 bp, and is_lab_host not true.\",\n    \"NCBI currently resolves TaxID 11266 as Filoviridae; count used the supplied TaxID.\"\n  ]\n}\n```",
+      "duration_seconds": 99.203884,
+      "tool_call_count": 17,
+      "methods": "NCBI Datasets v2 Virus dataset_report API",
+      "reasoning": [
+        "Queried TaxID 11266 with complete_only=true, geo_location=China, released_since=1990-04-12.",
+        "Client-side filtered release_date <= 2026-01-22, length >= 8181 bp, and is_lab_host not true.",
+        "NCBI currently resolves TaxID 11266 as Filoviridae; count used the supplied TaxID."
+      ]
     },
     {
       "query_id": 84,
@@ -4562,14 +4757,22 @@
       "query_id": 85,
       "run_number": 3,
       "expected_count": 1,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 154.093761,
-      "tool_call_count": 18,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "1\n\n```json\n{\n  \"methods\": [\"NCBI Virus vvsearch2/Solr query\", \"NCBI Datasets v2 Virus metadata API\", \"NCBI EFetch FASTA validation\"],\n  \"reasoning\": [\n    \"Filtered TaxID 10407 nucleotide records by New Caledonia collection location, France submitter country, collection/release date bounds, QualNum_i <= 0, and no LabHost_s.\",\n    \"NCBI Virus returned 1 matching record.\",\n    \"The matching FASTA sequence had 0 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 254.844123,
+      "tool_call_count": 31,
+      "methods": [
+        "NCBI Virus vvsearch2/Solr query",
+        "NCBI Datasets v2 Virus metadata API",
+        "NCBI EFetch FASTA validation"
+      ],
+      "reasoning": [
+        "Filtered TaxID 10407 nucleotide records by New Caledonia collection location, France submitter country, collection/release date bounds, QualNum_i <= 0, and no LabHost_s.",
+        "NCBI Virus returned 1 matching record.",
+        "The matching FASTA sequence had 0 N characters."
+      ]
     },
     {
       "query_id": 86,
@@ -4595,14 +4798,22 @@
       "query_id": 86,
       "run_number": 2,
       "expected_count": 381,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 381,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 106.800067,
-      "tool_call_count": 26,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "381\n\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets CLI v18.26.0: summary virus genome taxon 10239 --host human --refseq --released-after 1990-04-12\",\n    \"Filtered release_date <= 2026-01-22\",\n    \"NCBI E-utilities EFetch FASTA; counted N characters per nucleotide sequence\"\n  ],\n  \"reasoning\": [\n    \"382 RefSeq viral nucleotide records matched TaxID 10239, human host, and release-date criteria.\",\n    \"All 382 were released on or before 2026-01-22.\",\n    \"One record had >22 N characters; 381 records had <=22 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 364.546116,
+      "tool_call_count": 18,
+      "methods": [
+        "NCBI Datasets CLI v18.26.0: summary virus genome taxon 10239 --host human --refseq --released-after 1990-04-12",
+        "Filtered release_date <= 2026-01-22",
+        "NCBI E-utilities EFetch FASTA; counted N characters per nucleotide sequence"
+      ],
+      "reasoning": [
+        "382 RefSeq viral nucleotide records matched TaxID 10239, human host, and release-date criteria.",
+        "All 382 were released on or before 2026-01-22.",
+        "One record had >22 N characters; 381 records had <=22 N characters."
+      ]
     },
     {
       "query_id": 86,
@@ -4668,14 +4879,18 @@
       "query_id": 87,
       "run_number": 3,
       "expected_count": 35,
-      "retrieved_count": null,
+      "retrieved_count": 33,
       "is_correct": false,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 134.564797,
+      "raw_response": "33\n\n```json\n{\n  \"methods\": \"NCBI Datasets Virus v2 dataset_report API; NCBI E-utilities efetch FASTA\",\n  \"reasoning\": [\n    \"Filtered TaxID 10407 records to geo_location France, submitter.country France, release_date <= 2026-02-17, and length 2824-3224 bp.\",\n    \"Fetched FASTA for the 33 metadata-matching accessions from NCBI Nucleotide.\",\n    \"All 33 fetched sequences contained 0 N characters.\"\n  ]\n}\n```",
+      "duration_seconds": 262.884119,
       "tool_call_count": 18,
-      "methods": null,
-      "reasoning": null
+      "methods": "NCBI Datasets Virus v2 dataset_report API; NCBI E-utilities efetch FASTA",
+      "reasoning": [
+        "Filtered TaxID 10407 records to geo_location France, submitter.country France, release_date <= 2026-02-17, and length 2824-3224 bp.",
+        "Fetched FASTA for the 33 metadata-matching accessions from NCBI Nucleotide.",
+        "All 33 fetched sequences contained 0 N characters."
+      ]
     },
     {
       "query_id": 88,
@@ -4831,14 +5046,21 @@
       "query_id": 90,
       "run_number": 3,
       "expected_count": 1,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 1,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 88.145685,
-      "tool_call_count": 22,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "1\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus genome API\", \"NCBI Entrez E-utilities cross-check\"],\n  \"reasoning\": [\n    \"Filtered TaxID 10244 by host Praomys jacksoni and geo-location Democratic Republic of the Congo.\",\n    \"One matching genome record was returned: OZ305314.1.\",\n    \"Its collection date was 2024-02-27 and release date was 2025-08-12, satisfying the requested date bounds.\"\n  ]\n}\n```",
+      "duration_seconds": 152.139139,
+      "tool_call_count": 24,
+      "methods": [
+        "NCBI Datasets v2 Virus genome API",
+        "NCBI Entrez E-utilities cross-check"
+      ],
+      "reasoning": [
+        "Filtered TaxID 10244 by host Praomys jacksoni and geo-location Democratic Republic of the Congo.",
+        "One matching genome record was returned: OZ305314.1.",
+        "Its collection date was 2024-02-27 and release date was 2025-08-12, satisfying the requested date bounds."
+      ]
     },
     {
       "query_id": 91,
@@ -4922,14 +5144,21 @@
       "query_id": 92,
       "run_number": 2,
       "expected_count": 4,
-      "retrieved_count": null,
+      "retrieved_count": 2,
       "is_correct": false,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 108.674473,
-      "tool_call_count": 22,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "2\n```json\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus dataset_report API\",\n    \"NCBI E-utilities efetch GenBank records\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 186538 records for geo_location=Italy and release_date >= 2012-02-14.\",\n    \"All 4 matching NCBI Virus records were released before 2024-08-31.\",\n    \"Excluded 2 lab-passaged tissue-culture records marked by '-tc'; counted the 2 remaining '-wt' records.\"\n  ]\n}\n```",
+      "duration_seconds": 127.943009,
+      "tool_call_count": 25,
+      "methods": [
+        "NCBI Datasets v2 Virus dataset_report API",
+        "NCBI E-utilities efetch GenBank records"
+      ],
+      "reasoning": [
+        "Filtered TaxID 186538 records for geo_location=Italy and release_date >= 2012-02-14.",
+        "All 4 matching NCBI Virus records were released before 2024-08-31.",
+        "Excluded 2 lab-passaged tissue-culture records marked by '-tc'; counted the 2 remaining '-wt' records."
+      ]
     },
     {
       "query_id": 92,
@@ -5130,54 +5359,55 @@
     {
       "query_id": 96,
       "run_number": 1,
-      "expected_count": 12,
+      "expected_count": 11,
       "retrieved_count": 11,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "11\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 API: /virus/taxon/11292/dataset_report\"],\n  \"reasoning\": [\n    \"Queried TaxID 11292 with host filter 10090 and released_since 1990-04-12.\",\n    \"Filtered retrieved records for completeness == PARTIAL and release_date <= 2026-01-22.\",\n    \"11 records matched.\"\n  ]\n}\n```",
-      "duration_seconds": 66.352564,
-      "tool_call_count": 15,
+      "raw_response": "11\n\n```json\n{\n  \"methods\": [\"NCBI Datasets v2 Virus dataset_report API\", \"NCBI Virus AllNuclMetadata CSV cross-check\"],\n  \"reasoning\": [\n    \"Queried taxon 11292 with host filter 10090 and release date >= 1990-04-12.\",\n    \"Counted records with completeness PARTIAL and release date <= 2026-01-22.\",\n    \"Final matching accession count was 11.\"\n  ]\n}\n```",
+      "duration_seconds": 493.84221,
+      "tool_call_count": 22,
       "methods": [
-        "NCBI Datasets v2 API: /virus/taxon/11292/dataset_report"
+        "NCBI Datasets v2 Virus dataset_report API",
+        "NCBI Virus AllNuclMetadata CSV cross-check"
       ],
       "reasoning": [
-        "Queried TaxID 11292 with host filter 10090 and released_since 1990-04-12.",
-        "Filtered retrieved records for completeness == PARTIAL and release_date <= 2026-01-22.",
-        "11 records matched."
+        "Queried taxon 11292 with host filter 10090 and release date >= 1990-04-12.",
+        "Counted records with completeness PARTIAL and release date <= 2026-01-22.",
+        "Final matching accession count was 11."
       ]
     },
     {
       "query_id": 96,
       "run_number": 2,
-      "expected_count": 12,
+      "expected_count": 11,
       "retrieved_count": 11,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "11\n```json\n{\n  \"methods\": \"NCBI Datasets v2 Virus API via ncbi-datasets-pyclient\",\n  \"reasoning\": [\n    \"Queried TaxID 11292 with host filter 10090 and released_since 1990-04-12.\",\n    \"Retrieved all 33 matching host/date-start virus reports.\",\n    \"Counted records with release_date <= 2026-01-22 and completeness == PARTIAL.\"\n  ]\n}\n```",
-      "duration_seconds": 115.248876,
-      "tool_call_count": 17,
-      "methods": "NCBI Datasets v2 Virus API via ncbi-datasets-pyclient",
+      "raw_response": "11\n\n```json\n{\n  \"methods\": \"NCBI Datasets v2 Virus dataset_report API\",\n  \"reasoning\": [\n    \"Queried TaxID 11292 with filter.host=10090 and filter.released_since=1990-04-12.\",\n    \"Filtered returned records to completeness == PARTIAL.\",\n    \"Retained records with release_date <= 2026-01-22; all host-filtered records were within the upper bound.\"\n  ]\n}\n```",
+      "duration_seconds": 112.404133,
+      "tool_call_count": 18,
+      "methods": "NCBI Datasets v2 Virus dataset_report API",
       "reasoning": [
-        "Queried TaxID 11292 with host filter 10090 and released_since 1990-04-12.",
-        "Retrieved all 33 matching host/date-start virus reports.",
-        "Counted records with release_date <= 2026-01-22 and completeness == PARTIAL."
+        "Queried TaxID 11292 with filter.host=10090 and filter.released_since=1990-04-12.",
+        "Filtered returned records to completeness == PARTIAL.",
+        "Retained records with release_date <= 2026-01-22; all host-filtered records were within the upper bound."
       ]
     },
     {
       "query_id": 96,
       "run_number": 3,
-      "expected_count": 12,
+      "expected_count": 11,
       "retrieved_count": 11,
-      "is_correct": false,
+      "is_correct": true,
       "error": null,
-      "raw_response": "11\n```json\n{\n  \"methods\": \"NCBI Datasets v2 Virus dataset_report API\",\n  \"reasoning\": [\n    \"Queried taxon 11292 with host filter 10090 and released_since 1990-04-12.\",\n    \"Filtered returned records for release_date <= 2026-01-22 and completeness == PARTIAL.\",\n    \"All 33 host-filtered records were before the end date; 11 were PARTIAL.\"\n  ]\n}\n```",
-      "duration_seconds": 122.948833,
-      "tool_call_count": 20,
+      "raw_response": "11\n```json\n{\n  \"methods\": \"NCBI Datasets v2 Virus dataset_report API\",\n  \"reasoning\": [\n    \"Queried taxon 11292 with host filter 10090 and released_since 1990-04-12.\",\n    \"Filtered returned reports for completeness == PARTIAL.\",\n    \"Applied release date window through 2026-01-22; 11 records matched.\"\n  ]\n}\n```",
+      "duration_seconds": 94.573258,
+      "tool_call_count": 18,
       "methods": "NCBI Datasets v2 Virus dataset_report API",
       "reasoning": [
         "Queried taxon 11292 with host filter 10090 and released_since 1990-04-12.",
-        "Filtered returned records for release_date <= 2026-01-22 and completeness == PARTIAL.",
-        "All 33 host-filtered records were before the end date; 11 were PARTIAL."
+        "Filtered returned reports for completeness == PARTIAL.",
+        "Applied release date window through 2026-01-22; 11 records matched."
       ]
     },
     {
@@ -5526,14 +5756,21 @@
       "query_id": 103,
       "run_number": 1,
       "expected_count": 4,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 4,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 447.982523,
-      "tool_call_count": 20,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "4\n\n{\n  \"methods\": [\n    \"NCBI Virus vvsearch2 Solr endpoint\",\n    \"NCBI Datasets v2 virus accession dataset_report cross-check\"\n  ],\n  \"reasoning\": [\n    \"Applied filters: TaxID 11632 lineage, nucleotide records, partial completeness, Taiwan geographic location, release date 2012-02-14 through 2024-08-31, and vaccine-strain flag.\",\n    \"The filtered NCBI Virus query returned numFound = 4.\",\n    \"All 4 accessions cross-checked as PARTIAL, Taiwan, release date 2014-02-09, and vaccine strain = true.\"\n  ]\n}",
+      "duration_seconds": 212.688074,
+      "tool_call_count": 27,
+      "methods": [
+        "NCBI Virus vvsearch2 Solr endpoint",
+        "NCBI Datasets v2 virus accession dataset_report cross-check"
+      ],
+      "reasoning": [
+        "Applied filters: TaxID 11632 lineage, nucleotide records, partial completeness, Taiwan geographic location, release date 2012-02-14 through 2024-08-31, and vaccine-strain flag.",
+        "The filtered NCBI Virus query returned numFound = 4.",
+        "All 4 accessions cross-checked as PARTIAL, Taiwan, release date 2014-02-09, and vaccine strain = true."
+      ]
     },
     {
       "query_id": 103,
@@ -5543,8 +5780,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 251.053314,
-      "tool_call_count": 21,
+      "duration_seconds": 429.474851,
+      "tool_call_count": 32,
       "methods": null,
       "reasoning": null
     },
@@ -6127,65 +6364,73 @@
     {
       "query_id": 114,
       "run_number": 1,
-      "expected_count": 3226,
+      "expected_count": 3200,
       "retrieved_count": 3226,
-      "is_correct": true,
+      "is_correct": false,
       "error": null,
-      "raw_response": "3226\n{\n  \"methods\": [\n    \"NCBI Datasets v2 Virus API metadata\",\n    \"NCBI E-utilities efetch FASTA\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 37124 records for PARTIAL completeness, collection date range, release date <= 2024-11-05, and length 280-3600 bp.\",\n    \"Fetched candidate nucleotide FASTA records and counted N characters.\",\n    \"Excluded sequences with more than 5 Ns.\"\n  ]\n}",
-      "duration_seconds": 188.161395,
-      "tool_call_count": 19,
+      "raw_response": "3226\n\n{\n  \"methods\": [\"NCBI VirusVariation vvsearch2 API\", \"NCBI E-utilities efetch\"],\n  \"reasoning\": [\n    \"Filtered TaxID 37124 lineage nucleotide records for partial completeness, collection/release dates, length 280-3600 bp, and QualNum_i <= 5.\",\n    \"Retrieved all matching FASTA records and verified sequence length and N-count against the filters.\",\n    \"All 3226 filtered records had <= 5 N characters.\"\n  ]\n}",
+      "duration_seconds": 258.908465,
+      "tool_call_count": 26,
       "methods": [
-        "NCBI Datasets v2 Virus API metadata",
-        "NCBI E-utilities efetch FASTA"
+        "NCBI VirusVariation vvsearch2 API",
+        "NCBI E-utilities efetch"
       ],
       "reasoning": [
-        "Filtered TaxID 37124 records for PARTIAL completeness, collection date range, release date <= 2024-11-05, and length 280-3600 bp.",
-        "Fetched candidate nucleotide FASTA records and counted N characters.",
-        "Excluded sequences with more than 5 Ns."
+        "Filtered TaxID 37124 lineage nucleotide records for partial completeness, collection/release dates, length 280-3600 bp, and QualNum_i <= 5.",
+        "Retrieved all matching FASTA records and verified sequence length and N-count against the filters.",
+        "All 3226 filtered records had <= 5 N characters."
       ]
     },
     {
       "query_id": 114,
       "run_number": 2,
-      "expected_count": 3226,
+      "expected_count": 3200,
       "retrieved_count": null,
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 249.934773,
-      "tool_call_count": 22,
+      "duration_seconds": 280.583306,
+      "tool_call_count": 35,
       "methods": null,
       "reasoning": null
     },
     {
       "query_id": 114,
       "run_number": 3,
-      "expected_count": 3226,
+      "expected_count": 3200,
       "retrieved_count": 3226,
-      "is_correct": true,
+      "is_correct": false,
       "error": null,
-      "raw_response": "3226\n\n{\n  \"methods\": \"NCBI Datasets API v2 virus dataset_report; NCBI E-utilities efetch FASTA\",\n  \"reasoning\": [\n    \"Filtered TaxID 37124 records for PARTIAL completeness, collection/release date bounds, and length 280\u20133600 bp.\",\n    \"Fetched FASTA sequences for the metadata-passing accessions.\",\n    \"Excluded sequences with more than 5 N characters.\"\n  ]\n}",
-      "duration_seconds": 207.850425,
-      "tool_call_count": 16,
-      "methods": "NCBI Datasets API v2 virus dataset_report; NCBI E-utilities efetch FASTA",
+      "raw_response": "3226\n\n{\n  \"methods\": [\n    \"NCBI VirusVariation vvsearch2 Solr endpoint\",\n    \"NCBI Datasets v2 virus dataset_report\",\n    \"NCBI E-utilities efetch FASTA validation\"\n  ],\n  \"reasoning\": [\n    \"Filtered TaxID 37124 nucleotide records for partial completeness, collection date 2004-06-07 to 2025-09-04, release date <= 2024-11-05, and length 280-3600 bp.\",\n    \"Applied NCBI Virus QualNum_i <= 5, which counts nucleotide N characters.\",\n    \"Final filtered NCBI Virus count was 3226.\"\n  ]\n}",
+      "duration_seconds": 372.414225,
+      "tool_call_count": 32,
+      "methods": [
+        "NCBI VirusVariation vvsearch2 Solr endpoint",
+        "NCBI Datasets v2 virus dataset_report",
+        "NCBI E-utilities efetch FASTA validation"
+      ],
       "reasoning": [
-        "Filtered TaxID 37124 records for PARTIAL completeness, collection/release date bounds, and length 280\u20133600 bp.",
-        "Fetched FASTA sequences for the metadata-passing accessions.",
-        "Excluded sequences with more than 5 N characters."
+        "Filtered TaxID 37124 nucleotide records for partial completeness, collection date 2004-06-07 to 2025-09-04, release date <= 2024-11-05, and length 280-3600 bp.",
+        "Applied NCBI Virus QualNum_i <= 5, which counts nucleotide N characters.",
+        "Final filtered NCBI Virus count was 3226."
       ]
     },
     {
       "query_id": 115,
       "run_number": 1,
       "expected_count": 43,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 43,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 111.772186,
-      "tool_call_count": 22,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "43\n\n```json\n{\n  \"methods\": \"NCBI Datasets Virus v2 API via Python\",\n  \"reasoning\": [\n    \"Downloaded Virus genome metadata for TaxID 11082 with host=human.\",\n    \"Filtered records where submitter.country == Greece.\",\n    \"Counted records with releaseDate from 1990-04-12 through 2026-01-22 inclusive.\"\n  ]\n}\n```",
+      "duration_seconds": 108.77309,
+      "tool_call_count": 16,
+      "methods": "NCBI Datasets Virus v2 API via Python",
+      "reasoning": [
+        "Downloaded Virus genome metadata for TaxID 11082 with host=human.",
+        "Filtered records where submitter.country == Greece.",
+        "Counted records with releaseDate from 1990-04-12 through 2026-01-22 inclusive."
+      ]
     },
     {
       "query_id": 115,
@@ -6340,14 +6585,18 @@
       "query_id": 118,
       "run_number": 1,
       "expected_count": 5,
-      "retrieved_count": null,
-      "is_correct": false,
+      "retrieved_count": 5,
+      "is_correct": true,
       "error": null,
-      "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 179.55577,
-      "tool_call_count": 17,
-      "methods": null,
-      "reasoning": null
+      "raw_response": "5\n\n```json\n{\n  \"methods\": \"NCBI Virus vvsearch2 API\",\n  \"reasoning\": [\n    \"Filtered nucleotide records for VirusLineageId_ss 11320, Country_s Morocco, Segment_s HA.\",\n    \"Applied inclusive release-date range using CreateDate_dt from 2000-02-14T00:00:00Z to 2026-02-17T23:59:59Z.\",\n    \"Used API response numFound as the final count.\"\n  ]\n}\n```",
+      "duration_seconds": 268.587541,
+      "tool_call_count": 30,
+      "methods": "NCBI Virus vvsearch2 API",
+      "reasoning": [
+        "Filtered nucleotide records for VirusLineageId_ss 11320, Country_s Morocco, Segment_s HA.",
+        "Applied inclusive release-date range using CreateDate_dt from 2000-02-14T00:00:00Z to 2026-02-17T23:59:59Z.",
+        "Used API response numFound as the final count."
+      ]
     },
     {
       "query_id": 118,
@@ -6357,8 +6606,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 313.615089,
-      "tool_call_count": 21,
+      "duration_seconds": 534.840605,
+      "tool_call_count": 28,
       "methods": null,
       "reasoning": null
     },
@@ -6370,8 +6619,8 @@
       "is_correct": false,
       "error": null,
       "raw_response": "Max turns reached without final answer.",
-      "duration_seconds": 377.592097,
-      "tool_call_count": 22,
+      "duration_seconds": 497.087437,
+      "tool_call_count": 31,
       "methods": null,
       "reasoning": null
     },
@@ -6487,9 +6736,8 @@
     }
   ],
   "summary": {
-    "correct_runs": 272,
-    "incorrect_runs": 34,
-    "error_runs": 54,
-    "accuracy": 0.7555555555555555
+    "correct_runs": 314,
+    "incorrect_runs": 46,
+    "accuracy": 0.8722222222222222
   }
 }

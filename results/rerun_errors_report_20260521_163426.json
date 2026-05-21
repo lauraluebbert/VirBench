@@ -1,0 +1,52 @@
+{
+  "timestamp": "20260521_163426",
+  "summary": {
+    "total_reports_processed": 1,
+    "total_errors_before": 2,
+    "total_errors_after": 2,
+    "total_errors_resolved": 0
+  },
+  "technologies": [
+    {
+      "report_path": "results/gget_virus/gget_direct_benchmark_summary_20260301_112357_rerun_20260302_112103.csv",
+      "technology": "gget_virus",
+      "gget_virus": null,
+      "total_runs": 360,
+      "before": {
+        "correct": 358,
+        "incorrect": 0,
+        "errors": 2,
+        "accuracy": 0.9944
+      },
+      "after": {
+        "correct": 358,
+        "incorrect": 0,
+        "errors": 2,
+        "accuracy": 0.9944
+      },
+      "rerun_details": [
+        {
+          "query_id": 103,
+          "run_number": 2,
+          "status": "ERROR (again)",
+          "still_error": true,
+          "retrieved_count": 0,
+          "expected_count": 4,
+          "error": "command_summary.txt contains 'Command failed'",
+          "duration_seconds": 26.17
+        },
+        {
+          "query_id": 103,
+          "run_number": 3,
+          "status": "ERROR (again)",
+          "still_error": true,
+          "retrieved_count": 0,
+          "expected_count": 4,
+          "error": "command_summary.txt contains 'Command failed'",
+          "duration_seconds": 26.03
+        }
+      ],
+      "output_csv": "results/gget_virus/gget_direct_benchmark_summary_20260301_112357_rerun_20260302_112103_rerun_20260521_163519.csv"
+    }
+  ]
+}
