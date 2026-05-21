@@ -2,8 +2,8 @@
 GGET VIRUS COMMAND SUMMARY
 ================================================================================
 
-Execution Date: 2026-05-20 14:20:17
-Output Folder: debug_gget_q3
+Execution Date: 2026-05-20 14:20:23
+Output Folder: debug_gget_q28
 
 --------------------------------------------------------------------------------
 SOFTWARE VERSIONS
@@ -23,47 +23,42 @@ EXECUTION STATUS
 --------------------------------------------------------------------------------
 SEQUENCE STATISTICS
 --------------------------------------------------------------------------------
-Total records from API: 204
-After metadata filtering: 32
-Final sequences (after all filters): 22
+Total records from API: 3595
+After metadata filtering: 245
+Final sequences (after all filters): 231
 
 --------------------------------------------------------------------------------
 DETAILED STATISTICS
 --------------------------------------------------------------------------------
-Unique hosts: 12
-  - Amblyomma variegatum
-  - Bos taurus
+Unique hosts: 7
+  - Culex annulioris
+  - Culex quinquefasciatus
+  - Culex univittatus
   - Homo sapiens
-  - Hyalomma impeltatum
-  - Hyalomma marginatum
-  - Hyalomma rufipes
-  - Rhipicephalus annulatus
-  - Rhipicephalus evertsi
-  - Rhipicephalus geigyi
-  - Rhipicephalus sanguineus
-  - Rhipicephalus senegalensis
-  - Rhipicephalus sulcatus
+  - Mansonia africana
+  - Mansonia uniformis
+  - Turdus pelios
 
 Unique geographic locations: 0
 
-Sequence length range: 1542 - 1687 bp
-Average sequence length: 1639 bp
+Sequence length range: 10510 - 11646 bp
+Average sequence length: 11211 bp
 
 Completeness breakdown:
-  - complete: 2
-  - partial: 20
+  - complete: 179
+  - partial: 52
 
 Source database breakdown:
-  - GenBank: 22
+  - GenBank: 231
 
 Unique submitter countries: 0
 
 --------------------------------------------------------------------------------
 OUTPUT FILES
 --------------------------------------------------------------------------------
-FASTA Sequences: 3052518_sequences.fasta (0.04 MB)
-JSONL Metadata: 3052518_metadata.jsonl (0.04 MB)
-CSV Metadata: 3052518_metadata.csv (0.02 MB)
+FASTA Sequences: 11019_sequences.fasta (2.52 MB)
+JSONL Metadata: 11019_metadata.jsonl (0.47 MB)
+CSV Metadata: 11019_metadata.csv (0.32 MB)
 
 ================================================================================
 END OF SUMMARY

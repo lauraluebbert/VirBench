@@ -14,7 +14,7 @@ columns which are not passed to gget:
 The ``tax_id`` column is used as the positional ``virus`` argument.
 
 Usage:
-    python benchmark_gget_virus.py                      # run all queries
+    python benchmark_gget_virus.py                       # run all queries
     python benchmark_gget_virus.py --test                # run only the first query
     python benchmark_gget_virus.py -o results_custom     # custom output directory
 """

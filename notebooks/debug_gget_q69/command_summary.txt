@@ -2,7 +2,7 @@
 GGET VIRUS COMMAND SUMMARY
 ================================================================================
 
-Execution Date: 2026-05-20 14:11:51
+Execution Date: 2026-05-20 14:21:36
 Output Folder: debug_gget_q69
 
 --------------------------------------------------------------------------------
@@ -13,7 +13,7 @@ gget version: 0.30.3
 --------------------------------------------------------------------------------
 COMMAND LINE
 --------------------------------------------------------------------------------
-/ewsc/lluebber/projects/VirBench/.venv_08/lib/python3.13/site-packages/ipykernel_launcher.py --f=/home/unix/lluebber/.local/share/jupyter/runtime/kernel-v3c1e9a8e13020fb9a130e0250354bca236d1114f0.json
+/ewsc/lluebber/projects/VirBench/.venv_08/lib/python3.13/site-packages/ipykernel_launcher.py --f=/home/unix/lluebber/.local/share/jupyter/runtime/kernel-v32eb0b982afd2fc0b873ee33ada21c62b13ff6719.json
 
 --------------------------------------------------------------------------------
 EXECUTION STATUS
@@ -25,7 +25,7 @@ SEQUENCE STATISTICS
 --------------------------------------------------------------------------------
 Total records from API: 17808
 After metadata filtering: 2907
-Final sequences (after all filters): 2907
+Final sequences (after all filters): 2707
 
 --------------------------------------------------------------------------------
 DETAILED STATISTICS
@@ -59,9 +59,25 @@ Unique submitter countries: 0
 --------------------------------------------------------------------------------
 OUTPUT FILES
 --------------------------------------------------------------------------------
-FASTA Sequences: 11060_sequences.fasta (30.13 MB)
+FASTA Sequences: 11060_sequences.fasta (28.04 MB)
 JSONL Metadata: 11060_metadata.jsonl (6.09 MB)
 CSV Metadata: 11060_metadata.csv (3.86 MB)
+
+--------------------------------------------------------------------------------
+⚠️ FAILED OPERATIONS - MANUAL RETRY AVAILABLE
+--------------------------------------------------------------------------------
+
+📍 FAILED SEQUENCE DOWNLOAD BATCHES (1 batches):
+
+   Batch 12
+   Error: Response ended prematurely
+   Retry URL: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&id=MZ130527.1,MZ130526.1,MZ130525.1,MZ130524.1,MZ130523.1,MZ130522.1,MZ130521.1,MZ130520.1,MZ130519.1,MZ130518.1,MZ008466.1,MZ008465.1,MZ008464.1,MZ008462.1,MZ008461.1,MZ008460.1,MZ008459.1,MZ008458.1,MZ008457.1,MZ008456.1,MZ008455.1,MZ008454.1,MW881533.1,MW788987.1,MW788986.1,MW788985.1,MW788984.1,MW788983.1,MW788982.1,MW788981.1,MW741553.1,MW730839.1,MW730838.1,MW730837.1,MW730836.1,MW730835.1,MW730834.1,MW730833.1,MW730832.1,MW730831.1,MW730830.1,MW730829.1,MW730828.1,MW730827.1,MW730826.1,MW730825.1,MW730824.1,MW730823.1,MW730822.1,MW730821.1,MW730820.1,MW730819.1,MW730818.1,MW730817.1,MW730816.1,MW730815.1,MW730814.1,MW730813.1,MW730812.1,MW730811.1,MW721475.1,MW721474.1,MW721473.1,MW721471.1,MW721470.1,MW721469.1,MW721468.1,MW721467.1,MW721466.1,MW721465.1,MW721464.1,MW721463.1,MW721462.1,MW721461.1,MW721460.1,MW720957.1,MW720956.1,MW720955.1,MW720954.1,MW720953.1,MW720952.1,MW720951.1,MW720950.1,MW720949.1,MW720948.1,MW720947.1,MW720946.1,MW720945.1,MW577855.1,MW577854.1,MW577853.1,MW577852.1,MW577851.1,MW577850.1,MW577848.1,MW577847.1,MW577846.1,MW577845.1,MW577844.1,MW577843.1,MW577842.1,MW577841.1,MW577840.1,MW577839.1,MW577838.1,MW577837.1,MW577836.1,MW577835.1,MW577829.1,MW577828.1,MW577827.1,MW577826.1,MW577820.1,MW577814.1,MW577812.1,MW577811.1,MW577810.1,MW577809.1,MW512495.1,MW512484.1,MW512478.1,MW512466.1,MW512464.1,MW512463.1,MW512460.1,MW512459.1,MW512455.1,MW512453.1,MW512452.1,MW512442.1,MW512424.1,MW512419.1,MW512416.1,MW387614.1,MW345921.1,MW295818.1,MW295816.1,MW288034.1,MW288030.1,MW288029.1,MW288024.1,MW191701.1,MW191700.1,MW191699.1,MW191698.1,MT982731.1,MT982169.1,MT982148.1,MT982126.1,MT981148.1,MT981085.1,MT981011.1,MT980927.1,MT921573.1,MT921572.1,MT921570.1,MT754372.1,MT754371.1,MT754370.1,MT754369.1,MT754368.1,MT754367.1,MT754366.1,MT261971.1,MT261970.1,MT261969.1,MT261968.1,MT261967.1,MT261966.1,MT261965.1,MT261964.1,MT261963.1,MT261962.1,MT261961.1,MT261960.1,MT261959.1,MT261957.1,MT261956.1,MS631898.1,MN982899.1,MN944002.1,MN923122.1,MN923121.1,MN923120.1,MN923119.1,MN923118.1,MN923117.1,MN923116.1,MN923115.1,MN923114.1,MN923113.1,MN923112.1,MN923111.1,MN923110.1,MN923109.1,MN923108.1,MN923107.1,MN720746.1,MN589884.1,MN589883.1&rettype=fasta&retmode=text
+
+💡 RECOVERY INSTRUCTIONS:
+   1. Copy the URL from above and paste it into your browser
+   2. Save the downloaded file manually
+   3. Retry the command with updated filters (e.g., stricter date ranges)
+   4. If the issue persists, NCBI servers may be temporarily unavailable
 
 ================================================================================
 END OF SUMMARY

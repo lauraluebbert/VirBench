@@ -1,0 +1,71 @@
+{
+  "timestamp": "20260520_173400",
+  "model": "claude-opus-4-7",
+  "total_queries": 1,
+  "total_runs": 3,
+  "results": [
+    {
+      "query_id": 1,
+      "run_number": 1,
+      "expected_count": 14,
+      "retrieved_count": 14,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "14\n\n```json\n{\n  \"methods\": [\"NCBI Virus vvsearch2 API\"],\n  \"reasoning\": [\n    \"Queried NCBI Virus for TaxID 3052518 with filters: Region_s=Africa, CollectionDate_dt 2020-2025, CreateDate_dt 2020-2025, SLen_i>=11000, QualNum_i (ambiguous count) <=10.\",\n    \"Identified QualNum_i as the field tracking ambiguous nucleotides per record.\",\n    \"Returned 14 accessions matching all criteria.\"\n  ]\n}\n```",
+      "duration_seconds": 150.032374,
+      "tool_call_count": 8,
+      "methods": [
+        "NCBI Virus vvsearch2 API"
+      ],
+      "reasoning": [
+        "Queried NCBI Virus for TaxID 3052518 with filters: Region_s=Africa, CollectionDate_dt 2020-2025, CreateDate_dt 2020-2025, SLen_i>=11000, QualNum_i (ambiguous count) <=10.",
+        "Identified QualNum_i as the field tracking ambiguous nucleotides per record.",
+        "Returned 14 accessions matching all criteria."
+      ]
+    },
+    {
+      "query_id": 1,
+      "run_number": 2,
+      "expected_count": 14,
+      "retrieved_count": 14,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "All 14 records pass all filters (Africa region, collected 2020-2025, released 2020-2025, length \u226511000, \u226410 ambiguous Ns).\n\n14\n\n```json\n{\n  \"methods\": [\"NCBI Virus vvsearch2 Solr API\"],\n  \"reasoning\": [\n    \"Queried NCBI Virus for VirusLineageId 3052518, Region_s=Africa, CollectionDate_dr in [2020-01-01,2025-12-31], CreateDate_dt in [2020-01-01,2025-12-31], SLen_i>=11000, QualNum_i (ambiguous N count) in [0,10].\",\n    \"Applied filters incrementally to validate field names (CreateDate_dt, QualNum_i) and confirmed 14 matches.\",\n    \"Verified by listing accessions (e.g. PP916049, OQ441065, PP835507-12, PP894718-21, PP845328, OQ441062) \u2014 all from Senegal/Ghana, lengths ~12000 bp, 0 ambiguous bases.\"\n  ]\n}\n```",
+      "duration_seconds": 86.625237,
+      "tool_call_count": 8,
+      "methods": [
+        "NCBI Virus vvsearch2 Solr API"
+      ],
+      "reasoning": [
+        "Queried NCBI Virus for VirusLineageId 3052518, Region_s=Africa, CollectionDate_dr in [2020-01-01,2025-12-31], CreateDate_dt in [2020-01-01,2025-12-31], SLen_i>=11000, QualNum_i (ambiguous N count) in [0,10].",
+        "Applied filters incrementally to validate field names (CreateDate_dt, QualNum_i) and confirmed 14 matches.",
+        "Verified by listing accessions (e.g. PP916049, OQ441065, PP835507-12, PP894718-21, PP845328, OQ441062) \u2014 all from Senegal/Ghana, lengths ~12000 bp, 0 ambiguous bases."
+      ]
+    },
+    {
+      "query_id": 1,
+      "run_number": 3,
+      "expected_count": 14,
+      "retrieved_count": 14,
+      "is_correct": true,
+      "error": null,
+      "raw_response": "14\n\n```json\n{\n  \"methods\": [\"NCBI Virus vvsearch2 Solr API\"],\n  \"reasoning\": [\n    \"Queried NCBI Virus with VirusLineageId_ss=3052518, Region_s=Africa, CollectionDate_dr and CreateDate_dt 2020-01-01 to 2025-12-31, SLen_i \u2265 11000, QualNum_i \u2264 10.\",\n    \"Identified correct Solr field names by inspecting a sample document (CreateDate_dt for release, QualNum_i for ambiguous N count).\",\n    \"Final numFound = 14 sequences matching all criteria.\"\n  ]\n}\n```",
+      "duration_seconds": 78.758057,
+      "tool_call_count": 10,
+      "methods": [
+        "NCBI Virus vvsearch2 Solr API"
+      ],
+      "reasoning": [
+        "Queried NCBI Virus with VirusLineageId_ss=3052518, Region_s=Africa, CollectionDate_dr and CreateDate_dt 2020-01-01 to 2025-12-31, SLen_i \u2265 11000, QualNum_i \u2264 10.",
+        "Identified correct Solr field names by inspecting a sample document (CreateDate_dt for release, QualNum_i for ambiguous N count).",
+        "Final numFound = 14 sequences matching all criteria."
+      ]
+    }
+  ],
+  "summary": {
+    "correct_runs": 3,
+    "incorrect_runs": 0,
+    "error_runs": 0,
+    "accuracy": 1.0
+  }
+}
