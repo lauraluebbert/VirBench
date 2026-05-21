@@ -1,6 +1,6 @@
 """Rerun errored benchmark queries.
 
-Identifies runs that errored out in previous benchmark reports,
+Identifies runs that errored out (due to API errors, server timeouts, or other NCBI server-side issues) in previous benchmark reports,
 reruns only those queries, and produces new .csv and .json files
 where the errored runs are replaced with the new results.
 

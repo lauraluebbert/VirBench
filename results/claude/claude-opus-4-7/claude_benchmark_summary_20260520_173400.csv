@@ -1,4 +1,0 @@
-query_id,run_number,expected_count,retrieved_count,is_correct,error,duration_seconds,tool_call_count
-1,1,14,14,True,,150.032374,8
-1,2,14,14,True,,86.625237,8
-1,3,14,14,True,,78.758057,10

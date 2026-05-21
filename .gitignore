@@ -3,6 +3,9 @@
 # =========================
 docs/virbench_v*_DO_NOT_SHARE.csv
 
+src/hbv_out/
+src/retro_out/
+
 data/
 archive/
 tmp/
