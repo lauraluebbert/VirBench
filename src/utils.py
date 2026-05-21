@@ -13,6 +13,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional
 
+import yaml
+
 import anthropic
 from dotenv import load_dotenv
 
@@ -24,7 +26,15 @@ load_dotenv(override=True)
 
 NUM_RUNS = 3
 
-GGET_VIRUS_DOC_MD_PATH = str(Path(__file__).parent.parent / "docs" / "gget_virus_docs.md")
+_PROJECT_ROOT = Path(__file__).parent.parent
+
+def _load_config() -> dict:
+    with open(_PROJECT_ROOT / "config.yaml") as f:
+        return yaml.safe_load(f)
+
+BENCHMARK_CSV_PATH = str(_PROJECT_ROOT / _load_config()["benchmark_csv"])
+
+GGET_VIRUS_DOC_MD_PATH = str(_PROJECT_ROOT / "docs" / "gget_virus_docs.md")
 
 # ---------------------------------------------------------------------------
 # Anthropic client (used by extract_count_from_response)

@@ -5,6 +5,7 @@ numpy
 openai==2.24.0
 pandas
 python-dotenv
+pyyaml
 biomni
 langchain_openai
 langchain-anthropic

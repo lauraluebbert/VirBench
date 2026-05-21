@@ -11,10 +11,11 @@
 
 ```
 VirBench/
+├── config.yaml                   # Central configuration (benchmark CSV path, etc.)
 ├── requirements.txt              # Python dependencies
 │
 ├── docs/                         # Benchmark inputs and reference data
-│   ├── virseq_benchmark.csv          # Benchmark queries and expected counts - CONTACT US FOR ACCESS
+│   ├── virbench_v2_DO_NOT_SHARE.csv          # Benchmark queries and expected counts - CONTACT US FOR ACCESS
 │   └── gget_virus_docs.md            # gget virus module documentation (provided to agents)
 │
 ├── src/                          # Benchmark scripts and shared utilities
@@ -45,11 +46,14 @@ VirBench/
 ## Usage
 
 ```bash
-# Add the virseq_benchmark.csv file (CONTACT US FOR ACCESS) into the docs folder
+# Add the virbench_v2_DO_NOT_SHARE.csv file (CONTACT US FOR ACCESS) into the docs folder
 
 # Set up environment
 cp .env.example .env   # add your API keys
 pip install -r requirements.txt
+
+# (Optional) To use a different benchmark version, edit config.yaml:
+#   benchmark_csv: docs/virbench_v3_DO_NOT_SHARE.csv
 
 # Run a quick test (first query only, 3 runs)
 python src/benchmark_claude.py --test
@@ -79,7 +83,7 @@ python src/benchmark_gpt.py --model gpt-5.5-pro -o results/gpt
 
 ### Query definitions
 
-All queries are defined in `docs/virseq_benchmark.csv`. Each row specifies:
+All queries are defined in `docs/virbench_v2_DO_NOT_SHARE.csv`. Each row specifies:
 
 - **query_id** and **pathogen** — identifies the query
 - **tax_id** — NCBI taxonomy ID for the virus
@@ -157,7 +161,7 @@ Subdomain matching is supported: allowing `ncbi.nlm.nih.gov` also permits `eutil
 
 Each benchmark script follows the same pattern:
 
-1. **Parse** `docs/virseq_benchmark.csv` into query configurations
+1. **Parse** the benchmark CSV (path defined in `config.yaml`) into query configurations
 2. **For each query**, run `NUM_RUNS` (default 3) independent trials:
    - Build the natural-language query from the config
    - Send it to the agent/tool and collect the raw response
@@ -250,7 +254,7 @@ python src/rerun_errors.py --report results/gpt/gpt-5.2-pro/gpt_benchmark_report
 |--------|------------|
 | `QueryConfig` | Dataclass holding query_id, pathogen, expected_count, tax_id, and a filters dict |
 | `BenchmarkResult` | Dataclass for a single run's outcome (counts, correctness, timing, errors) |
-| `parse_csv(path)` | Parses `docs/virseq_benchmark.csv` into a list of `QueryConfig` objects |
+| `parse_csv(path)` | Parses `docs/virbench_v2_DO_NOT_SHARE.csv` into a list of `QueryConfig` objects |
 | `build_query(config, use_gget_virus)` | Converts a `QueryConfig` into a natural-language prompt |
 | `extract_count_from_response(text)` | Uses Claude to extract an integer count from free-text agent responses |
 | `NUM_RUNS` | Number of independent trials per query (default: 3) |

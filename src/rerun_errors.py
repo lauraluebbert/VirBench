@@ -36,6 +36,7 @@ from utils import (
     QueryConfig,
     NUM_RUNS,
     GGET_VIRUS_DOC_MD_PATH,
+    BENCHMARK_CSV_PATH,
 )
 from benchmark_edison_analysis import run_single_benchmark as edison_run_single_benchmark
 from benchmark_biomni import run_single_benchmark as biomni_run_single_benchmark
@@ -49,7 +50,7 @@ from benchmark_gget_virus import (
 load_dotenv()
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
-CSV_PATH = str(ROOT_DIR / "docs" / "virseq_benchmark.csv")
+CSV_PATH = BENCHMARK_CSV_PATH
 
 SOURCES = {
     "Edison Analysis": ("results/edison_analysis/*/benchmark_report_*.json", "_gv_"),
@@ -301,7 +302,7 @@ async def rerun_errors_for_report(
             gget_cfg = gget_config_by_id.get(qid)
             if gget_cfg is None:
                 print(
-                    f"  WARNING: query_id {qid} not found in virseq_benchmark.csv -- skipping."
+                    f"  WARNING: query_id {qid} not found in benchmark CSV -- skipping."
                 )
                 continue
 
@@ -370,7 +371,7 @@ async def rerun_errors_for_report(
             config = config_by_id.get(qid)
             if config is None:
                 print(
-                    f"  WARNING: query_id {qid} not found in virseq_benchmark.csv -- skipping."
+                    f"  WARNING: query_id {qid} not found in benchmark CSV -- skipping."
                 )
                 continue
 

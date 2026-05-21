@@ -32,7 +32,7 @@ from typing import Any, Optional
 import gget
 import pandas as pd
 
-from utils import load_completed_runs_from_csv
+from utils import load_completed_runs_from_csv, BENCHMARK_CSV_PATH
 
 NUM_RUNS = 3
 
@@ -316,8 +316,8 @@ def main():
     parser.add_argument(
         "csv_path",
         nargs="?",
-        default=str(Path(__file__).parent.parent / "docs" / "virseq_benchmark.csv"),
-        help="Path to virseq_benchmark.csv",
+        default=BENCHMARK_CSV_PATH,
+        help="Path to the benchmark CSV file",
     )
     parser.add_argument("--output-dir", "-o", default=str(Path(__file__).parent.parent / "results" / "gget_virus"))
     parser.add_argument(

@@ -26,6 +26,7 @@ from utils import (
     parse_csv,
     BenchmarkResult,
     GGET_VIRUS_DOC_MD_PATH,
+    BENCHMARK_CSV_PATH,
     NUM_RUNS,
 )
 from benchmark_claude import (
@@ -43,7 +44,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # ── Identify target query IDs ──────────────────────────────────────────────
 
-BENCHMARK_CSV = ROOT / "docs" / "virseq_benchmark.csv"
+BENCHMARK_CSV = BENCHMARK_CSV_PATH
 
 
 def get_target_query_ids() -> set[int]:

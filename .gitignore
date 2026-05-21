@@ -1,7 +1,7 @@
 # =========================
 # Data directories
 # =========================
-docs/virseq_benchmark.csv
+docs/virbench_v*_DO_NOT_SHARE.csv
 
 data/
 archive/

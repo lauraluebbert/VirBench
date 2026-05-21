@@ -39,6 +39,7 @@ from utils import (
     QueryConfig,
     NUM_RUNS,
     GGET_VIRUS_DOC_MD_PATH,
+    BENCHMARK_CSV_PATH,
     DOMAIN_ALLOWLIST,
     load_completed_runs_from_json,
 )
@@ -559,7 +560,7 @@ def main():
     parser.add_argument(
         "csv_path",
         nargs="?",
-        default=str(Path(__file__).parent.parent / "docs" / "virseq_benchmark.csv"),
+        default=BENCHMARK_CSV_PATH,
         help="Path to the benchmark CSV file",
     )
     parser.add_argument(
