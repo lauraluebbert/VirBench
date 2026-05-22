@@ -15,8 +15,8 @@ VirBench/
 ├── requirements.txt              # Python dependencies
 │
 ├── docs/                         # Benchmark inputs and reference data
-│   ├── virbench_v2_DO_NOT_SHARE.csv          # Benchmark queries and expected counts - CONTACT US FOR ACCESS
-│   └── gget_virus_docs.md            # gget virus module documentation (provided to agents)
+│   ├── virbench_v{VERSION}_DO_NOT_SHARE.csv  # Benchmark queries and expected counts - CONTACT US FOR ACCESS
+│   └── gget_virus_docs.md                    # gget virus module documentation (provided to agents)
 │
 ├── src/                          # Benchmark scripts and shared utilities
 │   ├── utils.py                      # Shared data classes, CSV parsing, query building, LLM extraction
@@ -83,7 +83,7 @@ python src/benchmark_gpt.py --model gpt-5.5-pro -o results/gpt
 
 ### Query definitions
 
-All queries are defined in `docs/virbench_v2_DO_NOT_SHARE.csv`. Each row specifies:
+All queries are defined in `docs/virbench_v{VERSION}_DO_NOT_SHARE.csv`. Each row specifies:
 
 - **query_id** and **pathogen** — identifies the query
 - **tax_id** — NCBI taxonomy ID for the virus
