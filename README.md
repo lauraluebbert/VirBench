@@ -23,8 +23,8 @@ VirBench/
 │   ├── benchmark_edison_analysis.py  # Edison Analysis agent benchmark
 │   ├── benchmark_biomni.py           # Biomni data-lake agent benchmark
 │   ├── benchmark_gget_virus.py       # gget virus benchmark (no agent)
-│   ├── benchmark_claude.py           # Claude Sonnet 4 benchmark (Anthropic API + code execution)
-│   └── benchmark_gpt.py              # GPT benchmark (OpenAI Responses API + code execution)
+│   ├── benchmark_claude.py           # Claude benchmark (Anthropic API + code execution)
+│   ├── benchmark_gpt.py              # GPT benchmark (OpenAI Responses API + code execution)
 │   └── rerun_errors.py               # Rerun failed runs for all technologies
 │
 ├── results/                      # Benchmark output (CSV summaries + JSON reports)
@@ -122,14 +122,14 @@ When gget virus mode is enabled, the instruction *"Use the gget virus module ins
 | **Edison Analysis** | `benchmark_edison_analysis.py` | Proprietary agent via Edison client SDK. Queries are sent as analysis jobs. |
 | **Biomni** | `benchmark_biomni.py` | Data-lake agent accessed via HTTP API. Uses `claude-sonnet-4-20250514` as its LLM (configurable via `--llm`). |
 | **gget virus** | `benchmark_gget_virus.py` | Direct API call to `gget.virus()` — no LLM involved. Serves as a deterministic baseline. |
-| **Claude Sonnet 4** | `benchmark_claude.py` | Claude Sonnet 4 (`claude-sonnet-4-20250514`) via the Anthropic Messages API with tool use. Tools: `execute_python` (local code execution) and `web_search` (server-side web search). Optionally enhanced with K-Dense scientific skills (see below). Note: newer Claude models (e.g. `claude-sonnet-4-6`) refuse viral sequence queries due to biosecurity safety filters, so we use `claude-sonnet-4-20250514`. |
-| **GPT-5.2-pro** | `benchmark_gpt.py` | GPT-5.2-pro via the OpenAI Responses API with tool use. Tools: `execute_python` (local code execution) and `web_search_preview` (server-side web search). |
+| **Claude** | `benchmark_claude.py` | Claude via the Anthropic Messages API with tool use (default: `claude-sonnet-4-20250514`, configurable via `--model`). Tools: `execute_python` (local code execution) and `web_search` (server-side web search). Optionally enhanced with K-Dense scientific skills (see below). Claude Sonnet 4 (`claude-sonnet-4-20250514`) is the latest publicly available Anthropic model that can be used for this evaluation, as subsequent models have biosafety-related access restrictions that prevent viral sequence retrieval. To evaluate Anthropic's latest frontier model, we obtained special research access from Anthropic to run Claude Opus 4.7 without these restrictions. |
+| **GPT** | `benchmark_gpt.py` | GPT via the OpenAI Responses API with tool use (default: `gpt-5.2-pro`, configurable via `--model`). Tools: `execute_python` (local code execution) and `web_search_preview` (server-side web search). |
 
 ### Claude and GPT tool use
 
 Both the Claude and GPT benchmarks call their respective APIs with two tools:
 
-- **Web search** (server-side) — a built-in tool provided by each API (`web_search_20260209` for Claude, `web_search_preview` for GPT). The model can search the web for API documentation, examples, or any other information. Search execution and result retrieval are handled entirely by the provider; the benchmark script does not need to process these tool calls.
+- **Web search** (server-side) — a built-in tool provided by each API (`web_search_20250305` for Claude, `web_search_preview` for GPT). The model can search the web for API documentation, examples, or any other information. Search execution and result retrieval are handled entirely by the provider; the benchmark script does not need to process these tool calls.
 - **`execute_python`** (client-side) — a custom function tool that runs model-generated Python code locally in a subprocess with a 120-second timeout. The script executes the code and returns stdout/stderr (truncated to 10K chars) as the tool result.
 
 The agentic loop sends the query, lets the model call tools (up to 25 turns), and collects the final integer response. This gives the model full autonomy to search for documentation, install packages (e.g. `pip install gget`), write multi-step scripts, and retry on errors.
@@ -227,7 +227,7 @@ When computing metrics (accuracy, stability, MAE, duration), there are two categ
 
 2. **None results** — runs where `retrieved_count` is missing/empty but the `error` column is also empty. These represent cases where the agent completed without raising an exception but did not return a parseable integer count.
 
-The analysis notebook (`notebooks/create_figures.ipynb`) provides a toggle to control how None results are handled:
+The analysis notebook (`notebooks/main_comparisons.ipynb`) provides a toggle to control how None results are handled:
 
 ```python
 NONE_TREATED_AS_ZERO = True   # None results count as 0 (included in metrics)
@@ -254,7 +254,7 @@ python src/rerun_errors.py --report results/gpt/gpt-5.2-pro/gpt_benchmark_report
 |--------|------------|
 | `QueryConfig` | Dataclass holding query_id, pathogen, expected_count, tax_id, and a filters dict |
 | `BenchmarkResult` | Dataclass for a single run's outcome (counts, correctness, timing, errors) |
-| `parse_csv(path)` | Parses `docs/virbench_v2_DO_NOT_SHARE.csv` into a list of `QueryConfig` objects |
+| `parse_csv(path)` | Parses the benchmark CSV into a list of `QueryConfig` objects |
 | `build_query(config, use_gget_virus)` | Converts a `QueryConfig` into a natural-language prompt |
 | `extract_count_from_response(text)` | Uses Claude to extract an integer count from free-text agent responses |
 | `NUM_RUNS` | Number of independent trials per query (default: 3) |
