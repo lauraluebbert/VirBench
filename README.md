@@ -29,14 +29,14 @@ VirBench/
 │
 ├── results/                      # Benchmark output (CSV summaries + JSON reports)
 │   ├── edison_analysis/          # Edison agent results
-│   │   └── <date>/              # Results grouped by run date (YYYY-MM-DD)
+│   │   └── <date>/               # Results grouped by run date (YYYY-MM-DD)
 │   ├── biomni/                   # Biomni agent results
-│   │   └── <model>/             # Results grouped by LLM model name
+│   │   └── <model>/              # Results grouped by LLM model name
 │   ├── gget_virus/               # gget virus results
 │   ├── claude/                   # Claude results
-│   │   └── <model>/             # Results grouped by model name
+│   │   └── <model>/              # Results grouped by model name
 │   └── gpt/                      # GPT results
-│       └── <model>/             # Results grouped by model name
+│       └── <model>/              # Results grouped by model name
 │
 ├── notebooks/                    # Analysis and visualization notebooks
 │
