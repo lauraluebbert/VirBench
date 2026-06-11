@@ -1,6 +1,7 @@
 # =========================
 # Data directories
 # =========================
+notebooks/blog_post_examples/
 docs/virbench_v*_DO_NOT_SHARE.csv
 
 src/hbv_out/
