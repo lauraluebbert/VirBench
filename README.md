@@ -46,14 +46,12 @@ VirBench/
 ## Usage
 
 ```bash
-# Add the virbench_v2_DO_NOT_SHARE.csv file (CONTACT US FOR ACCESS) into the docs folder
+# Add the virbench_v{VERSION}_DO_NOT_SHARE.csv file (CONTACT US FOR ACCESS) into the docs folder
+# (Optional) To use a different benchmark version, edit config.yaml
 
 # Set up environment
 cp .env.example .env   # add your API keys
 pip install -r requirements.txt
-
-# (Optional) To use a different benchmark version, edit config.yaml:
-#   benchmark_csv: docs/virbench_v3_DO_NOT_SHARE.csv
 
 # Run a quick test (first query only, 3 runs)
 python src/benchmark_claude.py --test
@@ -65,16 +63,11 @@ python src/benchmark_gget_virus.py --test
 # Full benchmark run
 python src/benchmark_claude.py
 
-# With gget virus documentation
+# With gget virus
 python src/benchmark_claude.py --use-gget-virus
 
-# With K-Dense scientific skills (Claude only)
-python src/benchmark_claude.py --test \
-    --kdense data/claude-scientific-skills/scientific-skills \
-    --kdense-skills biopython,gget --kdense-refs
-
 # Custom model / output directory
-# Results are automatically saved in a model subdirectory (e.g., results/gpt/gpt-5.2-pro/)
+# By default, results are saved in a model subdirectory (e.g., results/gpt/gpt-5.2-pro/)
 python src/benchmark_claude.py --model claude-sonnet-4-20250514 -o results/claude
 python src/benchmark_gpt.py --model gpt-5.5-pro -o results/gpt
 ```
