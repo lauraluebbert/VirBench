@@ -6,6 +6,11 @@
 
 **NOTE:** The full VirBench benchmark dataset is not publicly released to prevent potential data leakage into large language model training corpora, which could compromise the validity of evaluation results by enabling models to retrieve or memorize answers. Researchers interested in accessing the benchmark are encouraged to [contact the corresponding authors](https://www.lauraluebbert.com/contact/) to request access.
 
+If you use VirBench or `gget virus` in a publication, please cite [our preprint](https://arxiv.org/abs/2606.06749):  
+```
+Nasri, F., Gurev, S., Varilly, P., Ramesh, K., O’Leary, N. A., Cool, J., Renard, B. Y., Sabeti, P. C., & Luebbert, L. (2026). Deterministic access to global viral sequence data enables robust agentic scientific discovery. arXiv:2606.06749.
+```
+
 
 ## File structure
 
