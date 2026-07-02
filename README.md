@@ -4,7 +4,7 @@
 
 **VirBench** is a benchmark for evaluating how well different AI agents and tools retrieve viral sequence data. Each agent is given a natural-language query describing a pathogen and a set of filters (host, date range, sequence length, geographic location, etc.) and asked to return the number of matching sequences. Results are compared against a manually curated set of expected counts based on the NCBI Virus web UI.
 
-**NOTE:** The full VirBench benchmark dataset is not publicly released to prevent potential data leakage into large language model training corpora, which could compromise the validity of evaluation results by enabling models to retrieve or memorize answers. Researchers interested in accessing the benchmark are encouraged to [contact the corresponding authors](https://www.lauraluebbert.com/contact/) to request access.
+**NOTE:** The full VirBench benchmark dataset is not publicly released to prevent potential data leakage into large language model training corpora, which could compromise the validity of evaluation results by enabling models to retrieve or memorize answers. Researchers interested in accessing the benchmark are encouraged to contact the corresponding authors to request access.
 
 If you use VirBench or `gget virus` in a publication, please cite [our preprint](https://arxiv.org/abs/2606.06749):  
 ```
