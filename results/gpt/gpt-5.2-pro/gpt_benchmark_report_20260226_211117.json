@@ -1,0 +1,2894 @@
+{
+  "timestamp": "20260226_211117",
+  "model": "gpt-5.2-pro",
+  "total_queries": 120,
+  "total_runs": 360,
+  "results": [
+    {
+      "query_id": 1,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 647.25983,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 1,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 184.454878,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 1,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 338.908566,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 2,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 244.766471,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 2,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 281.272413,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 2,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 338.57118,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 3,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 341.698307,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 3,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 374.010573,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 3,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 132.740236,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 4,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 175.904306,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 4,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 187.22653,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 4,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 465.224771,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 5,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 150.234272,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 5,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 221.597733,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 5,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 349.457393,
+      "tool_call_count": 11
+    },
+    {
+      "query_id": 6,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 459.142695,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 6,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 399.49896,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 6,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 242.953203,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 7,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 136.926295,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 7,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 316.147194,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 7,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 399.211477,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 8,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 565.4131,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 8,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 233.753228,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 8,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 148.941009,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 9,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 352.816285,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 9,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 441.667703,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 9,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 520.243719,
+      "tool_call_count": 18
+    },
+    {
+      "query_id": 10,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 855.950148,
+      "tool_call_count": 11
+    },
+    {
+      "query_id": 10,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 281.861605,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 10,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 596.401577,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 11,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 421.36876,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 11,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 546.479259,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 11,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 664.954145,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 12,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 527.153385,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 12,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 211.983909,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 12,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 187.833576,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 13,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 325.737904,
+      "tool_call_count": 12
+    },
+    {
+      "query_id": 13,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 415.837804,
+      "tool_call_count": 10
+    },
+    {
+      "query_id": 13,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 224.946947,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 14,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 206.753866,
+      "tool_call_count": 22
+    },
+    {
+      "query_id": 14,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 269.124844,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 14,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 316.698309,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 15,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 313.458318,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 15,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 265.040871,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 15,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 552.641287,
+      "tool_call_count": 23
+    },
+    {
+      "query_id": 16,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 386.166301,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 16,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 2103.256718,
+      "tool_call_count": 28
+    },
+    {
+      "query_id": 16,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 428.739528,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 17,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 203.176654,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 17,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 424.75975,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 17,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 161.472897,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 18,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1212.360994,
+      "tool_call_count": 33
+    },
+    {
+      "query_id": 18,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1363.479838,
+      "tool_call_count": 15
+    },
+    {
+      "query_id": 18,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 2171.540429,
+      "tool_call_count": 48
+    },
+    {
+      "query_id": 19,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1004.677357,
+      "tool_call_count": 29
+    },
+    {
+      "query_id": 19,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 277.585367,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 19,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 382.858718,
+      "tool_call_count": 10
+    },
+    {
+      "query_id": 20,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 360.844904,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 20,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 484.85176,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 20,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 418.106254,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 21,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1161.773389,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 21,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 356.267736,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 21,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 333.014101,
+      "tool_call_count": 23
+    },
+    {
+      "query_id": 22,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 404.192408,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 22,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 530.595993,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 22,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 757.462972,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 23,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 568.084689,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 23,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 582.844608,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 23,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 433.773834,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 24,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 344.37761,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 24,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 524.578208,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 24,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 392.207907,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 25,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 605.069578,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 25,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 387.385524,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 25,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 194.477617,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 26,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 301.395526,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 26,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 475.003388,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 26,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 175.895978,
+      "tool_call_count": 15
+    },
+    {
+      "query_id": 27,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 205.525739,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 27,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 236.140409,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 27,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 425.630948,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 28,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1010.474335,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 28,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 487.412706,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 28,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1189.908084,
+      "tool_call_count": 14
+    },
+    {
+      "query_id": 29,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 453.913885,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 29,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 817.404741,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 29,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 231.683018,
+      "tool_call_count": 15
+    },
+    {
+      "query_id": 30,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 451.880568,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 30,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 669.473374,
+      "tool_call_count": 26
+    },
+    {
+      "query_id": 30,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 458.442722,
+      "tool_call_count": 16
+    },
+    {
+      "query_id": 31,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 2200.642344,
+      "tool_call_count": 15
+    },
+    {
+      "query_id": 31,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1614.960699,
+      "tool_call_count": 32
+    },
+    {
+      "query_id": 31,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 593.809862,
+      "tool_call_count": 26
+    },
+    {
+      "query_id": 32,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 546.482546,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 32,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 189.059659,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 32,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 730.893376,
+      "tool_call_count": 32
+    },
+    {
+      "query_id": 33,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 145.183561,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 33,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 426.575938,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 33,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 545.696759,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 34,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 179.143693,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 34,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 208.549129,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 34,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 505.035686,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 35,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 156.663004,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 35,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 283.122362,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 35,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 161.124647,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 36,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 189.915347,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 36,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 237.105513,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 36,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 384.757168,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 37,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 224.950642,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 37,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 315.185319,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 37,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 248.994431,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 38,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 316.030093,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 38,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 288.520749,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 38,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 182.061068,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 39,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 280.49538,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 39,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 324.35115,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 39,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 194.616978,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 40,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 331.511399,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 40,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 117.858,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 40,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 200.630836,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 41,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 244.132732,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 41,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 205.910071,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 41,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 234.91563,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 42,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 271.938497,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 42,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 167.671597,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 42,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 261.097608,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 43,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1251.443752,
+      "tool_call_count": 15
+    },
+    {
+      "query_id": 43,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 936.15427,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 43,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 633.91735,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 44,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 294.167796,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 44,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 348.353223,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 44,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 222.845647,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 45,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 442.090421,
+      "tool_call_count": 10
+    },
+    {
+      "query_id": 45,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 305.914143,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 45,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 268.546457,
+      "tool_call_count": 27
+    },
+    {
+      "query_id": 46,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 320.249404,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 46,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 451.350465,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 46,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 243.823646,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 47,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 501.313712,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 47,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 349.763756,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 47,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 465.827184,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 48,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 225.35285,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 48,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 235.666659,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 48,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 175.805874,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 49,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 452.492136,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 49,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 174.814128,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 49,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 137.928411,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 50,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 282.367432,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 50,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 244.228336,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 50,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 282.49819,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 51,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 278.499987,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 51,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 453.545761,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 51,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 966.808285,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 52,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 277.322631,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 52,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 169.945049,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 52,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 383.515616,
+      "tool_call_count": 11
+    },
+    {
+      "query_id": 53,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 160.114107,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 53,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 164.011589,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 53,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 305.06106,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 54,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 418.388399,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 54,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 240.166335,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 54,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 251.996887,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 55,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 180.361371,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 55,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 286.337817,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 55,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 280.431008,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 56,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 834.751992,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 56,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 648.300464,
+      "tool_call_count": 22
+    },
+    {
+      "query_id": 56,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1276.867022,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 57,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1191.35898,
+      "tool_call_count": 29
+    },
+    {
+      "query_id": 57,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 2140.354316,
+      "tool_call_count": 26
+    },
+    {
+      "query_id": 57,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1229.642483,
+      "tool_call_count": 57
+    },
+    {
+      "query_id": 58,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1257.520763,
+      "tool_call_count": 28
+    },
+    {
+      "query_id": 58,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 899.335878,
+      "tool_call_count": 25
+    },
+    {
+      "query_id": 58,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 3028.295576,
+      "tool_call_count": 15
+    },
+    {
+      "query_id": 59,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1385.943803,
+      "tool_call_count": 22
+    },
+    {
+      "query_id": 59,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 938.97603,
+      "tool_call_count": 16
+    },
+    {
+      "query_id": 59,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1144.477151,
+      "tool_call_count": 31
+    },
+    {
+      "query_id": 60,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 369.556381,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 60,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 302.304802,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 60,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 864.145305,
+      "tool_call_count": 37
+    },
+    {
+      "query_id": 61,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 215.762557,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 61,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1226.308867,
+      "tool_call_count": 36
+    },
+    {
+      "query_id": 61,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 791.567133,
+      "tool_call_count": 16
+    },
+    {
+      "query_id": 62,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 1178.802214,
+      "tool_call_count": 23
+    },
+    {
+      "query_id": 62,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 728.172495,
+      "tool_call_count": 24
+    },
+    {
+      "query_id": 62,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 589.233852,
+      "tool_call_count": 22
+    },
+    {
+      "query_id": 63,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 152.611945,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 63,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 379.570696,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 63,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 260.481067,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 64,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 958.825206,
+      "tool_call_count": 48
+    },
+    {
+      "query_id": 64,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 406.92142,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 64,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 537.960109,
+      "tool_call_count": 22
+    },
+    {
+      "query_id": 65,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 678.513868,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 65,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 355.957784,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 65,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 308.103268,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 66,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 268.53183,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 66,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 451.41878,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 66,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 736.691335,
+      "tool_call_count": 26
+    },
+    {
+      "query_id": 67,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 564.651296,
+      "tool_call_count": 10
+    },
+    {
+      "query_id": 67,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 920.030233,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 67,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 205.68522,
+      "tool_call_count": 20
+    },
+    {
+      "query_id": 68,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 421.103398,
+      "tool_call_count": 16
+    },
+    {
+      "query_id": 68,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 223.582129,
+      "tool_call_count": 16
+    },
+    {
+      "query_id": 68,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 331.489458,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 69,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 121.2384,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 69,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 195.714501,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 69,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 221.563125,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 70,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 545.562732,
+      "tool_call_count": 24
+    },
+    {
+      "query_id": 70,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 560.279519,
+      "tool_call_count": 10
+    },
+    {
+      "query_id": 70,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 431.487233,
+      "tool_call_count": 18
+    },
+    {
+      "query_id": 71,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 606.13113,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 71,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 341.57234,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 71,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 535.820599,
+      "tool_call_count": 17
+    },
+    {
+      "query_id": 72,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 138.813412,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 72,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 107.080549,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 72,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 106.198635,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 73,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 368.457406,
+      "tool_call_count": 25
+    },
+    {
+      "query_id": 73,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 172.931296,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 73,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 396.134887,
+      "tool_call_count": 22
+    },
+    {
+      "query_id": 74,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 203.794292,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 74,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 412.672004,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 74,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 132.080781,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 75,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 293.376084,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 75,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 407.676631,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 75,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 337.930667,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 76,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 419.582561,
+      "tool_call_count": 20
+    },
+    {
+      "query_id": 76,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 135.045496,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 76,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 150.939019,
+      "tool_call_count": 20
+    },
+    {
+      "query_id": 77,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 284.130202,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 77,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 446.281442,
+      "tool_call_count": 15
+    },
+    {
+      "query_id": 77,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 444.908728,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 78,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 92.686491,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 78,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 115.842332,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 78,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 288.976177,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 79,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 286.23325,
+      "tool_call_count": 18
+    },
+    {
+      "query_id": 79,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 480.261268,
+      "tool_call_count": 22
+    },
+    {
+      "query_id": 79,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 268.290898,
+      "tool_call_count": 10
+    },
+    {
+      "query_id": 80,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 108.941965,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 80,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 240.135728,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 80,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 102.674836,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 81,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 545.475208,
+      "tool_call_count": 31
+    },
+    {
+      "query_id": 81,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 608.503395,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 81,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 219.473073,
+      "tool_call_count": 14
+    },
+    {
+      "query_id": 82,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 271.329275,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 82,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 310.838476,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 82,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 264.028603,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 83,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 759.90831,
+      "tool_call_count": 31
+    },
+    {
+      "query_id": 83,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 128.977349,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 83,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 298.611604,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 84,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 300.305155,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 84,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 242.054908,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 84,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 327.10222,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 85,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 449.80905,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 85,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 390.296836,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 85,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 433.765379,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 86,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 167.65172,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 86,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 204.653273,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 86,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 363.676434,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 87,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 203.527165,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 87,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 308.48038,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 87,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 157.692072,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 88,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 137.589321,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 88,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 332.190937,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 88,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 203.840044,
+      "tool_call_count": 16
+    },
+    {
+      "query_id": 89,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 88.93838,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 89,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 70.31757,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 89,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 48.24226,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 90,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 500.472014,
+      "tool_call_count": 22
+    },
+    {
+      "query_id": 90,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 678.916976,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 90,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 838.203666,
+      "tool_call_count": 11
+    },
+    {
+      "query_id": 91,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 326.340025,
+      "tool_call_count": 7
+    },
+    {
+      "query_id": 91,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 480.869214,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 91,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 196.407027,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 92,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 314.812768,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 92,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 163.025502,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 92,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 252.773249,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 93,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 218.386906,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 93,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 303.336067,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 93,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 419.288,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 94,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 2028.910511,
+      "tool_call_count": 17
+    },
+    {
+      "query_id": 94,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 190.806272,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 94,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 144.176247,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 95,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 259.286149,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 95,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 357.675169,
+      "tool_call_count": 20
+    },
+    {
+      "query_id": 95,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 179.627491,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 96,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 172.594549,
+      "tool_call_count": 16
+    },
+    {
+      "query_id": 96,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 264.526288,
+      "tool_call_count": 14
+    },
+    {
+      "query_id": 96,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 221.413889,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 97,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 440.055904,
+      "tool_call_count": 25
+    },
+    {
+      "query_id": 97,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 408.335376,
+      "tool_call_count": 27
+    },
+    {
+      "query_id": 97,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 356.645958,
+      "tool_call_count": 23
+    },
+    {
+      "query_id": 98,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 243.357709,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 98,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 523.453265,
+      "tool_call_count": 23
+    },
+    {
+      "query_id": 98,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 243.30627,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 99,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 364.970386,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 99,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 615.257875,
+      "tool_call_count": 31
+    },
+    {
+      "query_id": 99,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 484.885323,
+      "tool_call_count": 31
+    },
+    {
+      "query_id": 100,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 71.785578,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 100,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 47.490371,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 100,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 68.708558,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 101,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 275.088898,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 101,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 217.402646,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 101,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 301.53621,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 102,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 207.969851,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 102,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 182.711791,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 102,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 215.439975,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 103,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 290.731205,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 103,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 250.028417,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 103,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 234.66055,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 104,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 183.705802,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 104,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 154.285493,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 104,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 142.452664,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 105,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 134.392385,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 105,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 256.561363,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 105,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 157.21837,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 106,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 330.669824,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 106,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 231.388941,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 106,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 531.271616,
+      "tool_call_count": 14
+    },
+    {
+      "query_id": 107,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 67.494107,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 107,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 109.614819,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 107,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 103.408105,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 108,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 36.654541,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 108,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 55.188008,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 108,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 43.442653,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 109,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 237.85872,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 109,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 79.283089,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 109,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 208.516662,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 110,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 384.290235,
+      "tool_call_count": 11
+    },
+    {
+      "query_id": 110,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 402.148477,
+      "tool_call_count": 29
+    },
+    {
+      "query_id": 110,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 266.586786,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 111,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 369.999537,
+      "tool_call_count": 15
+    },
+    {
+      "query_id": 111,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 203.937458,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 111,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 288.300427,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 112,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 224.134793,
+      "tool_call_count": 9
+    },
+    {
+      "query_id": 112,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 127.215116,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 112,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 162.839899,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 113,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 292.455525,
+      "tool_call_count": 10
+    },
+    {
+      "query_id": 113,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 343.66646,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 113,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 451.847539,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 114,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 794.62912,
+      "tool_call_count": 14
+    },
+    {
+      "query_id": 114,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 206.297573,
+      "tool_call_count": 13
+    },
+    {
+      "query_id": 114,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 261.563055,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 115,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 225.52102,
+      "tool_call_count": 5
+    },
+    {
+      "query_id": 115,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 304.88496,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 115,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 88.609584,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 116,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 448.107731,
+      "tool_call_count": 8
+    },
+    {
+      "query_id": 116,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 177.910786,
+      "tool_call_count": 6
+    },
+    {
+      "query_id": 116,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 379.343671,
+      "tool_call_count": 11
+    },
+    {
+      "query_id": 117,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 407.015061,
+      "tool_call_count": 19
+    },
+    {
+      "query_id": 117,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 212.000855,
+      "tool_call_count": 11
+    },
+    {
+      "query_id": 117,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 667.286334,
+      "tool_call_count": 12
+    },
+    {
+      "query_id": 118,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 177.369112,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 118,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 151.736899,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 118,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 163.775527,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 119,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 144.098504,
+      "tool_call_count": 3
+    },
+    {
+      "query_id": 119,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 81.871918,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 119,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 256.666015,
+      "tool_call_count": 4
+    },
+    {
+      "query_id": 120,
+      "run_number": 1,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 95.569046,
+      "tool_call_count": 1
+    },
+    {
+      "query_id": 120,
+      "run_number": 2,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 134.469017,
+      "tool_call_count": 2
+    },
+    {
+      "query_id": 120,
+      "run_number": 3,
+      "error": null,
+      "error_flag": false,
+      "duration_seconds": 216.204293,
+      "tool_call_count": 3
+    }
+  ],
+  "summary": {
+    "correct_runs": 228,
+    "incorrect_runs": 132,
+    "error_runs": 0,
+    "accuracy": 0.6333333333333333
+  }
+}

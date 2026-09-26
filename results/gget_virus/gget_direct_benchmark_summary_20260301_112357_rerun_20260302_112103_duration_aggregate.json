@@ -1,0 +1,15 @@
+{
+  "source_file": "gget_direct_benchmark_summary_20260301_112357_rerun_20260302_112103.csv",
+  "arm": "gget_virus",
+  "n_runs": 360,
+  "n_error_runs": 2,
+  "duration": {
+    "n_runs_with_duration": 360,
+    "mean_seconds": 28.27055759628614,
+    "median_seconds": 1.2792638540267944,
+    "stdev_seconds": 115.19330048354837,
+    "min_seconds": 0.11998844146728516,
+    "max_seconds": 1129.8502418994904,
+    "total_seconds": 10177.40073466301
+  }
+}

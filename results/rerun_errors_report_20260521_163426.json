@@ -1,0 +1,55 @@
+{
+  "timestamp": "20260521_163426",
+  "summary": {
+    "total_reports_processed": 1,
+    "total_errors_before": 2,
+    "total_errors_after": 2,
+    "total_errors_resolved": 0
+  },
+  "technologies": [
+    {
+      "report_path": "results/gget_virus/gget_direct_benchmark_summary_20260301_112357_rerun_20260302_112103.csv",
+      "technology": "gget_virus",
+      "gget_virus": null,
+      "total_runs": 360,
+      "before": {
+        "correct": 358,
+        "incorrect": 0,
+        "errors": 2,
+        "accuracy": 0.9944
+      },
+      "after": {
+        "correct": 358,
+        "incorrect": 0,
+        "errors": 2,
+        "accuracy": 0.9944
+      },
+      "rerun_details": [
+        {
+          "query_id": 103,
+          "run_number": 2,
+          "error": "command_summary.txt contains 'Command failed'",
+          "error_flag": true,
+          "still_error": true
+        },
+        {
+          "query_id": 103,
+          "run_number": 3,
+          "error": "command_summary.txt contains 'Command failed'",
+          "error_flag": true,
+          "still_error": true
+        }
+      ],
+      "output_csv": "results/gget_virus/gget_direct_benchmark_summary_20260301_112357_rerun_20260302_112103_rerun_20260521_163519.csv",
+      "rerun_duration_aggregate": {
+        "n_runs_with_duration": 2,
+        "mean_seconds": 26.1,
+        "median_seconds": 26.1,
+        "stdev_seconds": 0.09899494936611705,
+        "min_seconds": 26.03,
+        "max_seconds": 26.17,
+        "total_seconds": 52.2
+      }
+    }
+  ]
+}

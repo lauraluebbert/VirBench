@@ -1,0 +1,261 @@
+<p align="center">
+  <img src="figures/virbench_logo.png" alt="VirBench Logo" width="200">
+</p>
+
+**VirBench** is a benchmark for evaluating how well different AI agents and tools retrieve viral sequence data. Each agent is given a natural-language query describing a pathogen and a set of filters (host, date range, sequence length, geographic location, etc.) and asked to return the number of matching sequences. Results are compared against a manually curated set of expected counts based on the NCBI Virus web UI.
+
+**NOTE:** The full VirBench benchmark dataset is not publicly released to prevent potential data leakage into large language model training corpora, which could compromise the validity of evaluation results by enabling models to retrieve or memorize answers. The benchmark is deposited under restricted access at https://huggingface.co/datasets/ferbsx/VirBench and is available to any researcher on request, under a condition of use: recipients agree not to republish the reference values or post them where they can be crawled.
+
+If you use VirBench or `gget virus` in a publication, please cite [our preprint](https://arxiv.org/abs/2606.06749):  
+```
+Nasri, F., Gurev, S., Varilly, P., Ramesh, K., O’Leary, N. A., Cool, J., Renard, B. Y., Sabeti, P. C., & Luebbert, L. (2026). Deterministic access to global viral sequence data enables robust agentic scientific discovery. arXiv:2606.06749.
+```
+
+
+## File structure
+
+```
+VirBench/
+├── config.yaml                   # Central configuration (benchmark CSV path, etc.)
+├── requirements.txt              # Python dependencies
+│
+├── docs/                         # Benchmark inputs and reference data
+│   ├── virbench_v{VERSION}.csv               # Benchmark queries and reference counts - gated, see README
+│   └── gget_virus_docs.md                    # gget virus module documentation (provided to agents)
+│
+├── src/                          # Benchmark scripts and shared utilities
+│   ├── utils.py                      # Shared data classes, CSV parsing, query building, LLM extraction
+│   ├── benchmark_edison_analysis.py  # Edison Analysis agent benchmark
+│   ├── benchmark_biomni.py           # Biomni data-lake agent benchmark
+│   ├── benchmark_gget_virus.py       # gget virus benchmark (no agent)
+│   ├── benchmark_claude.py           # Claude benchmark (Anthropic API + code execution)
+│   ├── benchmark_gpt.py              # GPT benchmark (OpenAI Responses API + code execution)
+│   └── rerun_errors.py               # Rerun failed runs for all technologies
+│
+├── results/                      # Benchmark output (CSV summaries + JSON reports)
+│   ├── edison_analysis/          # Edison agent results
+│   │   └── <date>/               # Results grouped by run date (YYYY-MM-DD)
+│   ├── biomni/                   # Biomni agent results
+│   │   └── <model>/              # Results grouped by LLM model name
+│   ├── gget_virus/               # gget virus results
+│   ├── claude/                   # Claude results
+│   │   └── <model>/              # Results grouped by model name
+│   └── gpt/                      # GPT results
+│       └── <model>/              # Results grouped by model name
+│
+├── notebooks/                    # Analysis and visualization notebooks
+│
+└── figures/                      # Plots generated in notebooks
+```
+
+## Usage
+
+```bash
+# Request the benchmark CSV at https://huggingface.co/datasets/ferbsx/VirBench
+# and place it in the docs folder
+# (Optional) To use a different benchmark version, edit config.yaml
+
+# Set up environment
+cp .env.example .env   # add your API keys
+pip install -r requirements.txt
+
+# Run a quick test (first query only, 3 runs)
+python src/benchmark_claude.py --test
+python src/benchmark_gpt.py --test
+python src/benchmark_edison_analysis.py --test
+python src/benchmark_biomni.py --test
+python src/benchmark_gget_virus.py --test
+
+# Full benchmark run
+python src/benchmark_claude.py
+
+# With gget virus
+python src/benchmark_claude.py --use-gget-virus
+
+# Custom model / output directory
+# By default, results are saved in a model subdirectory (e.g., results/gpt/gpt-5.2-pro/)
+python src/benchmark_claude.py --model claude-sonnet-4-20250514 -o results/claude
+python src/benchmark_gpt.py --model gpt-5.5-pro -o results/gpt
+```
+
+## Benchmarking process
+
+### Query definitions
+
+All queries are defined in `docs/virbench_v{VERSION}_DO_NOT_SHARE.csv`. Each row specifies:
+
+- **query_id** and **pathogen** — identifies the query
+- **tax_id** — NCBI taxonomy ID for the virus
+- **expected_count** — the ground-truth sequence count based on manual queries through the NCBI Virus web UI
+- **Filter columns** — host, geographic_location, date ranges, sequence length bounds, refseq_only, annotated, segment, lineage, and many others
+
+All queries include a maximum release date to increase the stability of expected counts over time.  
+
+The shared `build_query()` function in `src/utils.py` converts each row into a natural-language prompt (e.g. *"Retrieve viral sequences from NCBI for TaxID 121791 (Nipah virus) with the following filters: host: Homo sapiens, nucleotide completeness: complete, collected on or after 2001-01-01, minimum sequence length: 18000 bp..."*).
+
+### Prompts
+
+The shared `build_query()` function in `src/utils.py` converts each CSV row into a natural-language prompt. The prompt structure varies depending on the query type:
+
+- **Standard queries** (most rows) — the prompt opens with *"Retrieve viral sequences from NCBI for TaxID {tax_id} ({pathogen})"* followed by any filter criteria (host, dates, sequence length, etc.).
+- **Accession queries** (`is_accession=TRUE`) — instead of searching by taxonomy, the prompt asks *"Retrieve the sequence(s) that belong to NCBI accession ID {tax_id}"*. In these rows, the `tax_id` column holds an accession ID (e.g. `NC_XXXXXX.X`) rather than a numeric taxonomy ID.
+- **All-virus queries** (no `tax_id` or `pathogen`) — the prompt opens with *"Retrieve all viral sequences (for any virus) from NCBI"* and relies entirely on the filter columns to narrow results.
+
+Filter columns (host, date ranges, sequence length, geographic location, lineage, etc.) are converted into human-readable phrases and appended after the opening sentence. Boolean flags like `vaccine_strain` and `lab_passaged` produce phrases such as *"exclude vaccine strains"* or *"only lab-passaged samples"*. Columns in the exclude set (`is_sars_cov2`, `is_alphainfluenza`, `is_accession`) are used for routing logic but are not included in the prompt text.
+
+When gget virus mode is enabled, the instruction *"Use the gget virus module installable with 'pip install gget==0.30.3'. The documentation is attached."* is prepended to the prompt.
+
+**Example — standard query** (synthetic illustration; this pathogen and filter set are not part of VirBench, without gget virus):
+> Retrieve viral sequences from NCBI for TaxID 121791 (Nipah virus) that adhere to the following criteria: host organism: Homo sapiens, nucleotide completeness: complete, collected on or after 2001-01-01, collected on or before 2018-12-31, minimum sequence length: 18000 bp. Return only the count of sequences that match these criteria.
+
+**Example — same query with gget virus**:
+> Use the gget virus module installable with 'pip install gget==0.30.3'. The documentation is attached. Retrieve viral sequences from NCBI for TaxID 121791 (Nipah virus) that adhere to the following criteria: host organism: Homo sapiens, nucleotide completeness: complete, collected on or after 2001-01-01, collected on or before 2018-12-31, minimum sequence length: 18000 bp. Return only the count of sequences that match these criteria.
+
+### Agents under test
+
+| Agent | Script | How it works |
+|-------|--------|-------------|
+| **Edison Analysis** | `benchmark_edison_analysis.py` | Proprietary agent via Edison client SDK. Queries are sent as analysis jobs. |
+| **Biomni** | `benchmark_biomni.py` | Data-lake agent accessed via HTTP API. Uses `claude-sonnet-4-20250514` as its LLM (configurable via `--llm`). |
+| **gget virus** | `benchmark_gget_virus.py` | Direct API call to `gget.virus()` — no LLM involved. Serves as a deterministic baseline. |
+| **Claude** | `benchmark_claude.py` | Claude via the Anthropic Messages API with tool use (default: `claude-sonnet-4-20250514`, configurable via `--model`). Tools: `execute_python` (local code execution) and `web_search` (server-side web search). Optionally enhanced with K-Dense scientific skills (see below). Claude Sonnet 4 (`claude-sonnet-4-20250514`) is the latest publicly available Anthropic model that can be used for this evaluation, as subsequent models have biosafety-related access restrictions that prevent viral sequence retrieval. Queries of this class were restricted by default for Claude Opus 4.7 pending a provider-side access review, which was completed in May 2026 and determines the evaluation window for that arm. |
+| **GPT** | `benchmark_gpt.py` | GPT via the OpenAI Responses API with tool use (default: `gpt-5.2-pro`, configurable via `--model`). Tools: `execute_python` (local code execution) and `web_search_preview` (server-side web search). |
+
+### Claude and GPT tool use
+
+Both the Claude and GPT benchmarks call their respective APIs with two tools:
+
+- **Web search** (server-side) — a built-in tool provided by each API (`web_search_20250305` for Claude, `web_search_preview` for GPT). The model can search the web for API documentation, examples, or any other information. Search execution and result retrieval are handled entirely by the provider; the benchmark script does not need to process these tool calls.
+- **`execute_python`** (client-side) — a custom function tool that runs model-generated Python code locally in a subprocess with a 120-second timeout. The script executes the code and returns stdout/stderr (truncated to 10K chars) as the tool result.
+
+The agentic loop sends the query, lets the model call tools (up to 25 turns), and collects the final integer response. This gives the model full autonomy to search for documentation, install packages (e.g. `pip install gget`), write multi-step scripts, and retry on errors.
+
+#### Domain allowlist
+
+For safety reasons, the Claude and GPT benchmarks restrict outbound network access from `execute_python` to a configurable domain allowlist. Before each code execution, a socket-level guard is injected that monkey-patches `socket.getaddrinfo` and `socket.create_connection` to block connections to any host not on the allowlist. This catches all common Python HTTP libraries (requests, urllib, httpx, etc.) at the socket layer. Raw IP connections are also blocked.
+
+The default allowlist permits only NCBI and PyPI domains:
+
+| Domain | Purpose |
+|--------|---------|
+| `ncbi.nlm.nih.gov` | NCBI web and FTP |
+| `eutils.ncbi.nlm.nih.gov` | NCBI E-utilities API |
+| `api.ncbi.nlm.nih.gov` | NCBI Datasets API |
+| `ftp.ncbi.nlm.nih.gov` | NCBI FTP |
+| `pypi.org` | pip package index |
+| `files.pythonhosted.org` | pip package downloads |
+
+To override the default allowlist, set the `EXECUTE_PYTHON_DOMAIN_ALLOWLIST` environment variable to a comma-separated list of domains:
+
+```bash
+export EXECUTE_PYTHON_DOMAIN_ALLOWLIST="ncbi.nlm.nih.gov,eutils.ncbi.nlm.nih.gov,pypi.org"
+```
+
+Subdomain matching is supported: allowing `ncbi.nlm.nih.gov` also permits `eutils.ncbi.nlm.nih.gov`.
+
+### Execution flow
+
+Each benchmark script follows the same pattern:
+
+1. **Parse** the benchmark CSV (path defined in `config.yaml`) into query configurations
+2. **For each query**, run `NUM_RUNS` (default 3) independent trials:
+   - Build the natural-language query from the config
+   - Send it to the agent/tool and collect the raw response
+   - For Edison and Biomni, extract the integer count from the response using `claude-sonnet-4-20250514` (`extract_count_from_response`)
+   - Compare against the expected count
+3. **Write results incrementally** — after every single run, append to both the CSV summary and JSON report so partial results are preserved if the process is interrupted
+
+### gget virus mode
+
+All agent benchmarks support a `--use-gget-virus` / `-gv` flag. When enabled, the agent is instructed to use the `gget virus` Python module and the documentation from `docs/gget_virus_docs.md` is provided (either uploaded to the agent's environment or prepended to the system prompt). This tests whether giving agents access to a purpose-built tool improves retrieval accuracy.
+
+### K-Dense scientific skills mode (Claude only)
+
+The Claude benchmark supports loading [K-Dense scientific skills](https://github.com/kdense/claude-scientific-skills) into the system prompt via the `--kdense` flag. Each skill is a curated documentation bundle (a `SKILL.md` file plus optional `references/` and `scripts/` directories) that teaches the model how to use a specific bioinformatics tool or database API.
+
+The skills relevant to this benchmark are **biopython** (NCBI Entrez access, sequence I/O) and **gget** (unified queries to 20+ genomic databases). Loading these gives the model detailed API references and working code examples it can adapt when writing its NCBI queries.
+
+**Flags:**
+
+| Flag | Description |
+|------|-------------|
+| `--kdense DIR` | Path to the `scientific-skills` directory. Loads `SKILL.md` from every skill folder. |
+| `--kdense-skills s1,s2` | Comma-separated list of skill folder names to load instead of all ~140 skills. |
+| `--kdense-refs` | Also load `references/*.md` and `scripts/*.py` from each selected skill (detailed API docs and example code). |
+
+**Setup:**
+
+```bash
+# Clone the skills repo into data/
+git clone https://github.com/kdense/claude-scientific-skills.git data/claude-scientific-skills
+```
+
+**Example runs:**
+
+```bash
+# Load biopython + gget skills (~40K chars added to system prompt)
+python src/benchmark_claude.py --test \
+    --kdense data/claude-scientific-skills/scientific-skills \
+    --kdense-skills biopython,gget
+
+# Include full reference docs and example scripts (~195K chars)
+python src/benchmark_claude.py --test \
+    --kdense data/claude-scientific-skills/scientific-skills \
+    --kdense-skills biopython,gget --kdense-refs
+```
+
+Output files include a `_kd` suffix when K-Dense skills are enabled (e.g. `claude_benchmark_summary_kd_20260220_120000.csv`). When combined with gget virus mode the suffix is `_gv_kd`.
+
+### Output format
+
+Each benchmark run produces two files in its results subdirectory:
+
+- **CSV summary** (`*_benchmark_summary_YYYYMMDD_HHMMSS.csv`) — one row per run with query_id, run_number, expected_count, retrieved_count, is_correct, error, and duration_seconds
+- **JSON report** (`*_benchmark_report_YYYYMMDD_HHMMSS.json`) — full report including raw responses and running accuracy statistics
+
+Files with `_gv` in the name were run with gget virus mode enabled. 
+
+The analysis notebooks require expected_count and retrieved_count and therefore do not run against the published result files. Request the gated deposit to reproduce the figures.
+
+### Handling of errors and None results
+
+When computing metrics (accuracy, stability, MAE, duration), there are two categories of incomplete runs:
+
+1. **Explicit errors** — runs where the `error` column in the CSV contains a non-empty value (e.g. a timeout, API error, or exception traceback). These are always excluded from all metric computations (treated as `NaN`).
+
+2. **None results** — runs where `retrieved_count` is missing/empty but the `error` column is also empty. These represent cases where the agent completed without raising an exception but did not return a parseable integer count.
+
+The analysis notebook (`notebooks/main_comparisons.ipynb`) provides a toggle to control how None results are handled:
+
+```python
+NONE_TREATED_AS_ZERO = True   # None results count as 0 (included in metrics)
+NONE_TREATED_AS_ZERO = False  # None results are treated as errors (excluded from metrics)
+```
+
+When `NONE_TREATED_AS_ZERO = True`, a missing `retrieved_count` with no error is interpreted as "the agent found no matching sequences" (i.e. 0). When `False`, it is treated the same as an explicit error and excluded from all metric computations.
+
+### Rerunning failed queries
+
+The `src/rerun_errors.py` script identifies errored runs across all benchmark reports and reruns only those queries. It produces updated result files (with a `_rerun_` suffix) and a consolidated report at `results/rerun_errors_report_<timestamp>.json` summarizing errors before and after the rerun.
+
+```bash
+# Rerun all errored queries across all technologies
+python src/rerun_errors.py
+
+# Rerun errors for a specific report
+python src/rerun_errors.py --report results/gpt/gpt-5.2-pro/gpt_benchmark_report_20260226_211117.json
+```
+
+### Shared utilities (`src/utils.py`)
+
+| Export | Description |
+|--------|------------|
+| `QueryConfig` | Dataclass holding query_id, pathogen, expected_count, tax_id, and a filters dict |
+| `BenchmarkResult` | Dataclass for a single run's outcome (counts, correctness, timing, errors) |
+| `parse_csv(path)` | Parses the benchmark CSV into a list of `QueryConfig` objects |
+| `build_query(config, use_gget_virus)` | Converts a `QueryConfig` into a natural-language prompt |
+| `extract_count_from_response(text)` | Uses Claude to extract an integer count from free-text agent responses |
+| `NUM_RUNS` | Number of independent trials per query (default: 3) |
+| `GGET_VIRUS_DOC_MD_PATH` | Path to the gget virus documentation file |
+
+

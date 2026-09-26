@@ -1,0 +1,1126 @@
+{
+  "timestamp": "20260301_151055",
+  "summary": {
+    "total_reports_processed": 9,
+    "total_errors_before": 115,
+    "total_errors_after": 37,
+    "total_errors_resolved": 78
+  },
+  "technologies": [
+    {
+      "report_path": "results/edison_analysis/benchmark_report_20260226_211213.json",
+      "technology": "edison",
+      "gget_virus": false,
+      "total_runs": 360,
+      "before": {
+        "correct": 127,
+        "incorrect": 203,
+        "errors": 30,
+        "accuracy": 0.3528
+      },
+      "after": {
+        "correct": 140,
+        "incorrect": 215,
+        "errors": 5,
+        "accuracy": 0.3889
+      },
+      "rerun_details": [
+        {
+          "query_id": 13,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 458.24
+        },
+        {
+          "query_id": 18,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 581.07
+        },
+        {
+          "query_id": 22,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 548.14
+        },
+        {
+          "query_id": 27,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 401.49
+        },
+        {
+          "query_id": 43,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 797.98
+        },
+        {
+          "query_id": 45,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 402.06
+        },
+        {
+          "query_id": 46,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 390.95
+        },
+        {
+          "query_id": 46,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 473.81
+        },
+        {
+          "query_id": 47,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 1545.41
+        },
+        {
+          "query_id": 47,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 543.62
+        },
+        {
+          "query_id": 48,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 338.05
+        },
+        {
+          "query_id": 49,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 385.28
+        },
+        {
+          "query_id": 49,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 234.13
+        },
+        {
+          "query_id": 51,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 460.69
+        },
+        {
+          "query_id": 52,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 525.85
+        },
+        {
+          "query_id": 52,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 336.77
+        },
+        {
+          "query_id": 55,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 715.18
+        },
+        {
+          "query_id": 56,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 483.04
+        },
+        {
+          "query_id": 58,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 389.9
+        },
+        {
+          "query_id": 58,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2403.36
+        },
+        {
+          "query_id": 59,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 2401.74
+        },
+        {
+          "query_id": 60,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 515.77
+        },
+        {
+          "query_id": 60,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 865.29
+        },
+        {
+          "query_id": 62,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 2403.32
+        },
+        {
+          "query_id": 64,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 1725.44
+        },
+        {
+          "query_id": 74,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 559.87
+        },
+        {
+          "query_id": 75,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 504.17
+        },
+        {
+          "query_id": 82,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 418.62
+        },
+        {
+          "query_id": 86,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 861.7
+        },
+        {
+          "query_id": 99,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 554.05
+        }
+      ],
+      "output_csv": "results/edison_analysis/benchmark_summary_20260226_211213_rerun_20260301_213842.csv"
+    },
+    {
+      "report_path": "results/edison_analysis/benchmark_report_gv_20260227_113028.json",
+      "technology": "edison",
+      "gget_virus": true,
+      "total_runs": 360,
+      "before": {
+        "correct": 322,
+        "incorrect": 16,
+        "errors": 22,
+        "accuracy": 0.8944
+      },
+      "after": {
+        "correct": 324,
+        "incorrect": 25,
+        "errors": 11,
+        "accuracy": 0.9
+      },
+      "rerun_details": [
+        {
+          "query_id": 14,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 217.6
+        },
+        {
+          "query_id": 33,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 190.28
+        },
+        {
+          "query_id": 43,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 2286.93
+        },
+        {
+          "query_id": 57,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 2146.0
+        },
+        {
+          "query_id": 59,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2401.46
+        },
+        {
+          "query_id": 59,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2406.09
+        },
+        {
+          "query_id": 61,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2402.0
+        },
+        {
+          "query_id": 61,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 2402.84
+        },
+        {
+          "query_id": 62,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2406.01
+        },
+        {
+          "query_id": 62,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 2402.87
+        },
+        {
+          "query_id": 62,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 2404.73
+        },
+        {
+          "query_id": 63,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2405.3
+        },
+        {
+          "query_id": 63,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2401.54
+        },
+        {
+          "query_id": 64,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 2402.55
+        },
+        {
+          "query_id": 65,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2403.26
+        },
+        {
+          "query_id": 66,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 711.65
+        },
+        {
+          "query_id": 66,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2403.38
+        },
+        {
+          "query_id": 103,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 1639.38
+        },
+        {
+          "query_id": 103,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2406.21
+        },
+        {
+          "query_id": 118,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2403.19
+        },
+        {
+          "query_id": 118,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 2404.67
+        },
+        {
+          "query_id": 119,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 210.4
+        }
+      ],
+      "output_csv": "results/edison_analysis/benchmark_summary_gv_20260227_113028_rerun_20260302_094332.csv"
+    },
+    {
+      "report_path": "results/biomni/biomni_benchmark_report_20260226_211315.json",
+      "technology": "biomni",
+      "gget_virus": false,
+      "total_runs": 360,
+      "before": {
+        "correct": 81,
+        "incorrect": 278,
+        "errors": 1,
+        "accuracy": 0.225
+      },
+      "after": {
+        "correct": 81,
+        "incorrect": 279,
+        "errors": 0,
+        "accuracy": 0.225
+      },
+      "rerun_details": [
+        {
+          "query_id": 63,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 183.91
+        }
+      ],
+      "output_csv": "results/biomni/biomni_benchmark_summary_20260226_211315_rerun_20260302_095413.csv"
+    },
+    {
+      "report_path": "results/biomni/biomni_benchmark_report_gv_20260227_113135.json",
+      "technology": "biomni",
+      "gget_virus": true,
+      "total_runs": 360,
+      "before": {
+        "correct": 325,
+        "incorrect": 34,
+        "errors": 1,
+        "accuracy": 0.9028
+      },
+      "after": {
+        "correct": 325,
+        "incorrect": 35,
+        "errors": 0,
+        "accuracy": 0.9028
+      },
+      "rerun_details": [
+        {
+          "query_id": 43,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 3372.91
+        }
+      ],
+      "output_csv": "results/biomni/biomni_benchmark_summary_gv_20260227_113135_rerun_20260302_105027.csv"
+    },
+    {
+      "report_path": "results/gget_virus/gget_direct_benchmark_summary_20260301_112357.csv",
+      "technology": "gget_virus",
+      "gget_virus": null,
+      "total_runs": 360,
+      "before": {
+        "correct": 357,
+        "incorrect": 0,
+        "errors": 3,
+        "accuracy": 0.9917
+      },
+      "after": {
+        "correct": 358,
+        "incorrect": 0,
+        "errors": 2,
+        "accuracy": 0.9944
+      },
+      "rerun_details": [
+        {
+          "query_id": 57,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false
+        },
+        {
+          "query_id": 103,
+          "run_number": 2,
+          "error": "command_summary.txt contains 'FAILED OPERATIONS'",
+          "error_flag": true,
+          "still_error": true
+        },
+        {
+          "query_id": 103,
+          "run_number": 3,
+          "error": "command_summary.txt contains 'FAILED OPERATIONS'",
+          "error_flag": true,
+          "still_error": true
+        }
+      ],
+      "output_csv": "results/gget_virus/gget_direct_benchmark_summary_20260301_112357_rerun_20260302_112103.csv",
+      "rerun_duration_aggregate": {
+        "n_runs_with_duration": 3,
+        "mean_seconds": 611.6933333333334,
+        "median_seconds": 562.99,
+        "stdev_seconds": 115.0642604518594,
+        "min_seconds": 528.99,
+        "max_seconds": 743.1,
+        "total_seconds": 1835.08
+      }
+    },
+    {
+      "report_path": "results/claude/claude_benchmark_report_20260226_211231.json",
+      "technology": "claude",
+      "gget_virus": false,
+      "total_runs": 360,
+      "before": {
+        "correct": 59,
+        "incorrect": 289,
+        "errors": 12,
+        "accuracy": 0.1639
+      },
+      "after": {
+        "correct": 61,
+        "incorrect": 298,
+        "errors": 1,
+        "accuracy": 0.1694
+      },
+      "rerun_details": [
+        {
+          "query_id": 6,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 184.19
+        },
+        {
+          "query_id": 13,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 345.32
+        },
+        {
+          "query_id": 14,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 217.23
+        },
+        {
+          "query_id": 23,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 162.57
+        },
+        {
+          "query_id": 32,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 297.91
+        },
+        {
+          "query_id": 46,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 231.11
+        },
+        {
+          "query_id": 48,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 183.45
+        },
+        {
+          "query_id": 61,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 91.71
+        },
+        {
+          "query_id": 62,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 235.68
+        },
+        {
+          "query_id": 81,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 217.88
+        },
+        {
+          "query_id": 111,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 292.74
+        },
+        {
+          "query_id": 117,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 130.15
+        }
+      ],
+      "output_csv": "results/claude/claude_benchmark_summary_20260226_211231_rerun_20260302_120413.csv"
+    },
+    {
+      "report_path": "results/claude/claude_benchmark_report_gv_20260227_112923.json",
+      "technology": "claude",
+      "gget_virus": true,
+      "total_runs": 360,
+      "before": {
+        "correct": 323,
+        "incorrect": 30,
+        "errors": 7,
+        "accuracy": 0.8972
+      },
+      "after": {
+        "correct": 326,
+        "incorrect": 33,
+        "errors": 1,
+        "accuracy": 0.9056
+      },
+      "rerun_details": [
+        {
+          "query_id": 18,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 272.22
+        },
+        {
+          "query_id": 43,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 721.7
+        },
+        {
+          "query_id": 57,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 197.54
+        },
+        {
+          "query_id": 61,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 142.95
+        },
+        {
+          "query_id": 66,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 83.09
+        },
+        {
+          "query_id": 84,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 51.2
+        },
+        {
+          "query_id": 118,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 343.13
+        }
+      ],
+      "output_csv": "results/claude/claude_benchmark_summary_gv_20260227_112923_rerun_20260302_123424.csv"
+    },
+    {
+      "report_path": "results/gpt/gpt_benchmark_report_20260226_211117.json",
+      "technology": "gpt",
+      "gget_virus": false,
+      "total_runs": 360,
+      "before": {
+        "correct": 228,
+        "incorrect": 110,
+        "errors": 22,
+        "accuracy": 0.6333
+      },
+      "after": {
+        "correct": 239,
+        "incorrect": 118,
+        "errors": 3,
+        "accuracy": 0.6639
+      },
+      "rerun_details": [
+        {
+          "query_id": 15,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 199.74
+        },
+        {
+          "query_id": 16,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 467.84
+        },
+        {
+          "query_id": 18,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 1571.87
+        },
+        {
+          "query_id": 18,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 1614.22
+        },
+        {
+          "query_id": 19,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 418.49
+        },
+        {
+          "query_id": 31,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 1141.61
+        },
+        {
+          "query_id": 32,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 669.99
+        },
+        {
+          "query_id": 57,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1317.92
+        },
+        {
+          "query_id": 57,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1567.6
+        },
+        {
+          "query_id": 58,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 591.99
+        },
+        {
+          "query_id": 58,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 226.96
+        },
+        {
+          "query_id": 58,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 510.37
+        },
+        {
+          "query_id": 60,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 468.79
+        },
+        {
+          "query_id": 61,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 176.42
+        },
+        {
+          "query_id": 62,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 599.3
+        },
+        {
+          "query_id": 66,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 870.35
+        },
+        {
+          "query_id": 73,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 200.6
+        },
+        {
+          "query_id": 79,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 291.82
+        },
+        {
+          "query_id": 81,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 477.64
+        },
+        {
+          "query_id": 83,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 158.21
+        },
+        {
+          "query_id": 94,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 378.04
+        },
+        {
+          "query_id": 97,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 275.22
+        }
+      ],
+      "output_csv": "results/gpt/gpt_benchmark_summary_20260226_211117_rerun_20260302_163059.csv"
+    },
+    {
+      "report_path": "results/gpt/gpt_benchmark_report_gv_20260227_114331.json",
+      "technology": "gpt",
+      "gget_virus": true,
+      "total_runs": 360,
+      "before": {
+        "correct": 341,
+        "incorrect": 2,
+        "errors": 17,
+        "accuracy": 0.9472
+      },
+      "after": {
+        "correct": 344,
+        "incorrect": 2,
+        "errors": 14,
+        "accuracy": 0.9556
+      },
+      "rerun_details": [
+        {
+          "query_id": 18,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 192.74
+        },
+        {
+          "query_id": 31,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 1477.2
+        },
+        {
+          "query_id": 31,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 908.28
+        },
+        {
+          "query_id": 31,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 902.72
+        },
+        {
+          "query_id": 43,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 918.44
+        },
+        {
+          "query_id": 43,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1992.06
+        },
+        {
+          "query_id": 43,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1605.38
+        },
+        {
+          "query_id": 57,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1253.23
+        },
+        {
+          "query_id": 57,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1235.0
+        },
+        {
+          "query_id": 85,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": false,
+          "duration_seconds": 200.55
+        },
+        {
+          "query_id": 85,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1031.71
+        },
+        {
+          "query_id": 103,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1074.99
+        },
+        {
+          "query_id": 103,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1147.87
+        },
+        {
+          "query_id": 103,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 955.86
+        },
+        {
+          "query_id": 118,
+          "run_number": 1,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1312.09
+        },
+        {
+          "query_id": 118,
+          "run_number": 2,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1235.45
+        },
+        {
+          "query_id": 118,
+          "run_number": 3,
+          "error": null,
+          "error_flag": false,
+          "still_error": true,
+          "duration_seconds": 1310.52
+        }
+      ],
+      "output_csv": "results/gpt/gpt_benchmark_summary_gv_20260227_114331_rerun_20260302_214334.csv"
+    }
+  ]
+}
